@@ -2,17 +2,31 @@
 
 import type { AdPosition } from "@/types/tool";
 
-// Central ad configuration — change here to update all ad placements
-const ADS_ENABLED = false; // Set to true when AdSense/Ezoic approved
-const AD_NETWORK = "adsense"; // "adsense" | "ezoic" | "propellerads"
-const ADSENSE_CLIENT = "ca-pub-XXXXXXXXXXXXXXXX"; // Replace with real ID
+// ─── Central Ad Configuration ──────────────────────────────────────
+// To activate ads: set ADS_ENABLED=true in Vercel env vars
+// To change network: update AD_NETWORK below
+// To update IDs: update the slots/client values below
+// ───────────────────────────────────────────────────────────────────
 
-const adSlots: Record<AdPosition, string> = {
-  top: "1234567890",
-  "after-tool": "0987654321",
-  sidebar: "1122334455",
-  "in-article": "5544332211",
-  footer: "9988776655",
+const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
+const AD_NETWORK = process.env.NEXT_PUBLIC_AD_NETWORK ?? "adsense"; // "adsense" | "ezoic"
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-XXXXXXXXXXXXXXXX";
+
+const ADSENSE_SLOTS: Record<AdPosition, string> = {
+  top:          "1111111111",
+  "after-tool": "2222222222",
+  sidebar:      "3333333333",
+  "in-article": "4444444444",
+  footer:       "5555555555",
+};
+
+// Ezoic placeholder IDs (assign in Ezoic dashboard)
+const EZOIC_IDS: Record<AdPosition, number> = {
+  top:          101,
+  "after-tool": 102,
+  sidebar:      103,
+  "in-article": 104,
+  footer:       105,
 };
 
 interface AdUnitProps {
@@ -23,18 +37,26 @@ interface AdUnitProps {
 export default function AdUnit({ position, className = "" }: AdUnitProps) {
   if (!ADS_ENABLED) return null;
 
+  if (AD_NETWORK === "ezoic") {
+    return (
+      <div
+        id={`ezoic-pub-ad-placeholder-${EZOIC_IDS[position]}`}
+        className={`ad-unit ad-${position} ${className}`}
+      />
+    );
+  }
+
+  // Default: AdSense
   return (
-    <div className={`ad-unit ad-${position} ${className}`} data-position={position}>
-      {AD_NETWORK === "adsense" && (
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client={ADSENSE_CLIENT}
-          data-ad-slot={adSlots[position]}
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-      )}
+    <div className={`ad-unit ad-${position} ${className}`}>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block" }}
+        data-ad-client={ADSENSE_CLIENT}
+        data-ad-slot={ADSENSE_SLOTS[position]}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
     </div>
   );
 }

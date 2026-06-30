@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { events } from "@/lib/analytics";
 
 interface DownloadLink {
   quality: string;
@@ -146,6 +147,7 @@ export default function DownloaderWidget({ toolSlug, toolTitle }: DownloaderWidg
       }
 
       setLinks(data.links ?? []);
+      events.toolUsed(toolSlug);
     } catch {
       setError("Connection error. Please check your internet and try again.");
     } finally {
@@ -223,7 +225,9 @@ export default function DownloaderWidget({ toolSlug, toolTitle }: DownloaderWidg
                 <button
                   key={i}
                   onClick={() => {
+                    events.downloadStarted(toolSlug, link.quality);
                     if (hd) {
+                      events.downloadHdGate(toolSlug);
                       setHdOverlayUrl(link.url);
                     } else {
                       window.open(link.url, "_blank", "noopener,noreferrer");
