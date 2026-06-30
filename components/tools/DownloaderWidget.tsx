@@ -29,6 +29,16 @@ const PLATFORM_META: Record<string, { placeholder: string; hint: string; urlPatt
     hint: 'Open Instagram → tap ⋯ on video → "Copy Link"',
     urlPattern: /instagram\.com/i,
   },
+  "youtube-video-downloader": {
+    placeholder: "Paste YouTube video URL here...",
+    hint: "Copy the URL from the YouTube address bar or tap Share → Copy Link",
+    urlPattern: /youtube\.com|youtu\.be/i,
+  },
+  "twitter-video-downloader": {
+    placeholder: "Paste Twitter / X video URL here...",
+    hint: 'Open Twitter/X → tap Share → "Copy Link to Post"',
+    urlPattern: /twitter\.com|x\.com/i,
+  },
 };
 
 // HD countdown ad overlay

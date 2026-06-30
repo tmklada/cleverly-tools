@@ -1,6 +1,6 @@
 export type AdPosition = "top" | "after-tool" | "sidebar" | "in-article" | "footer";
 
-export type ToolType = "downloader" | "calculator" | "text" | "developer" | "converter";
+export type ToolType = "downloader" | "calculator" | "text" | "developer" | "converter" | "pdf" | "image";
 
 export type ToolSchema = "SoftwareApplication" | "WebApplication";
 

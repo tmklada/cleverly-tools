@@ -45,6 +45,9 @@ function buildApiUrl(platform: string, url: string): string | null {
       return `${BASE_URL}/youtube/v3/video/details?videoId=${videoId}&urlAccess=normal&renderableFormats=${formats}&getTranscript=false`;
     }
 
+    case "twitter-video-downloader":
+      return `${BASE_URL}/twitter/v3/post/details?url=${encoded}`;
+
     default:
       return null;
   }
