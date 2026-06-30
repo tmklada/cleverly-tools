@@ -1,7 +1,24 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "**.fbcdn.net" },
+      { protocol: "https", hostname: "**.cdninstagram.com" },
+      { protocol: "https", hostname: "**.tiktokcdn.com" },
+    ],
+  },
+  async headers() {
+    return [
+      {
+        source: "/api/:path*",
+        headers: [
+          { key: "Access-Control-Allow-Origin", value: "*" },
+          { key: "Access-Control-Allow-Methods", value: "GET, POST, OPTIONS" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
