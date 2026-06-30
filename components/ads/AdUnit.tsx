@@ -1,15 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
 import type { AdPosition } from "@/types/tool";
 
-// ─── Central Ad Configuration ──────────────────────────────────────
-// To activate ads: set ADS_ENABLED=true in Vercel env vars
-// To change network: update AD_NETWORK below
-// To update IDs: update the slots/client values below
-// ───────────────────────────────────────────────────────────────────
-
 const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
-const AD_NETWORK = process.env.NEXT_PUBLIC_AD_NETWORK ?? "adsense"; // "adsense" | "ezoic"
+const AD_NETWORK = process.env.NEXT_PUBLIC_AD_NETWORK ?? "ezoic";
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-XXXXXXXXXXXXXXXX";
 
 const ADSENSE_SLOTS: Record<AdPosition, string> = {
@@ -20,7 +15,6 @@ const ADSENSE_SLOTS: Record<AdPosition, string> = {
   footer:       "5555555555",
 };
 
-// Ezoic placeholder IDs (assign in Ezoic dashboard)
 const EZOIC_IDS: Record<AdPosition, number> = {
   top:          101,
   "after-tool": 102,
@@ -29,24 +23,54 @@ const EZOIC_IDS: Record<AdPosition, number> = {
   footer:       105,
 };
 
+declare global {
+  interface Window {
+    ezstandalone?: {
+      cmd: Array<() => void>;
+      showAds: (...ids: number[]) => void;
+      defined?: boolean;
+    };
+  }
+}
+
 interface AdUnitProps {
   position: AdPosition;
   className?: string;
 }
 
 export default function AdUnit({ position, className = "" }: AdUnitProps) {
+  const ezoicId = EZOIC_IDS[position];
+
+  useEffect(() => {
+    if (!ADS_ENABLED || AD_NETWORK !== "ezoic") return;
+    if (typeof window === "undefined") return;
+
+    const show = () => {
+      if (window.ezstandalone?.showAds) {
+        window.ezstandalone.showAds(ezoicId);
+      }
+    };
+
+    if (window.ezstandalone?.cmd) {
+      window.ezstandalone.cmd.push(show);
+    } else {
+      // retry once scripts load
+      setTimeout(show, 1500);
+    }
+  }, [ezoicId]);
+
   if (!ADS_ENABLED) return null;
 
   if (AD_NETWORK === "ezoic") {
     return (
       <div
-        id={`ezoic-pub-ad-placeholder-${EZOIC_IDS[position]}`}
+        id={`ezoic-pub-ad-placeholder-${ezoicId}`}
         className={`ad-unit ad-${position} ${className}`}
       />
     );
   }
 
-  // Default: AdSense
+  // AdSense fallback
   return (
     <div className={`ad-unit ad-${position} ${className}`}>
       <ins
