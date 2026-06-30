@@ -10,14 +10,18 @@ const HEADERS = {
   "x-rapidapi-key": RAPIDAPI_KEY,
 };
 
-// Extract Instagram shortcode from URL
-// e.g. https://www.instagram.com/reel/ABC123/ → ABC123
 function extractInstagramShortcode(url: string): string | null {
   const match = url.match(/instagram\.com\/(?:reel|p|tv)\/([A-Za-z0-9_-]+)/);
   return match ? match[1] : null;
 }
 
-// Build the correct API URL per platform
+function extractYouTubeVideoId(url: string): string | null {
+  const match = url.match(
+    /(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/
+  );
+  return match ? match[1] : null;
+}
+
 function buildApiUrl(platform: string, url: string): string | null {
   const encoded = encodeURIComponent(url);
   const formats = "720p%2Chighres";
@@ -33,6 +37,12 @@ function buildApiUrl(platform: string, url: string): string | null {
       const shortcode = extractInstagramShortcode(url);
       if (!shortcode) return null;
       return `${BASE_URL}/instagram/v3/media/post/details?renderableFormats=${formats}&shortcode=${shortcode}`;
+    }
+
+    case "youtube-video-downloader": {
+      const videoId = extractYouTubeVideoId(url);
+      if (!videoId) return null;
+      return `${BASE_URL}/youtube/v3/video/details?videoId=${videoId}&urlAccess=normal&renderableFormats=${formats}&getTranscript=false`;
     }
 
     default:

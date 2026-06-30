@@ -4,7 +4,7 @@ import { getToolBySlug, allTools } from "@/config/tools";
 import RelatedTools from "@/components/tools/RelatedTools";
 import ToolSchema from "@/components/seo/ToolSchema";
 import AdUnit from "@/components/ads/AdUnit";
-import DownloaderWidget from "@/components/tools/DownloaderWidget";
+import ToolWidget from "@/components/tools/ToolWidget";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 interface Props {
@@ -41,21 +41,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const SOCIAL_MEDIA_TOOLS = [
-  "facebook-video-downloader",
-  "tiktok-video-downloader",
-  "instagram-video-downloader",
-  "twitter-video-downloader",
-  "youtube-video-downloader",
-];
-
 export default async function ToolPage({ params }: Props) {
   const { slug } = await params;
   const tool = getToolBySlug(slug);
 
   if (!tool) notFound();
 
-  const isDownloaderTool = SOCIAL_MEDIA_TOOLS.includes(tool.slug);
   const toolUrl = `${SITE_URL}/tools/${tool.slug}`;
 
   return (
@@ -88,14 +79,7 @@ export default async function ToolPage({ params }: Props) {
 
         {/* Tool Widget */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mb-8 shadow-sm">
-          {isDownloaderTool ? (
-            <DownloaderWidget toolSlug={tool.slug} toolTitle={tool.title} />
-          ) : (
-            <div className="text-center py-12 text-gray-400">
-              <div className="text-4xl mb-3">{tool.icon}</div>
-              <p>Tool interface coming soon</p>
-            </div>
-          )}
+          <ToolWidget tool={tool} />
         </div>
 
         {/* After Tool Ad */}

@@ -1,5 +1,7 @@
 export type AdPosition = "top" | "after-tool" | "sidebar" | "in-article" | "footer";
 
+export type ToolType = "downloader" | "calculator" | "text" | "developer" | "converter";
+
 export type ToolSchema = "SoftwareApplication" | "WebApplication";
 
 export interface FAQ {
@@ -26,6 +28,7 @@ export interface ToolConfig {
   relatedTools: string[];
   schema: ToolSchema;
   adsPositions: AdPosition[];
+  toolType?: ToolType;
   featured?: boolean;
   trending?: boolean;
   isNew?: boolean;
