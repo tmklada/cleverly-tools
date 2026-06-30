@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
 import { allTools } from "@/config/tools";
 import { categories } from "@/data/categories";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://cleverly.tools";
+  const base = SITE_URL;
   const now = new Date();
 
   const staticPages: MetadataRoute.Sitemap = [

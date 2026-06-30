@@ -1,4 +1,5 @@
 import type { ToolConfig } from "@/types/tool";
+import { SITE_URL } from "@/lib/site";
 
 interface ToolSchemaProps {
   tool: ToolConfig;
@@ -38,8 +39,8 @@ export default function ToolSchema({ tool, url }: ToolSchemaProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://cleverly.tools" },
-      { "@type": "ListItem", position: 2, name: tool.category, item: `https://cleverly.tools/category/${tool.category}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: tool.category, item: `${SITE_URL}/category/${tool.category}` },
       { "@type": "ListItem", position: 3, name: tool.title, item: url },
     ],
   };

@@ -5,6 +5,7 @@ import RelatedTools from "@/components/tools/RelatedTools";
 import ToolSchema from "@/components/seo/ToolSchema";
 import AdUnit from "@/components/ads/AdUnit";
 import DownloaderWidget from "@/components/tools/DownloaderWidget";
+import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -24,17 +25,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: tool.description,
     keywords: tool.keywords,
     alternates: {
-      canonical: `https://cleverly.tools/tools/${tool.slug}`,
+      canonical: `${SITE_URL}/tools/${tool.slug}`,
     },
     openGraph: {
-      title: `${tool.title} | cleverly.tools`,
+      title: `${tool.title} | ${SITE_NAME}`,
       description: tool.description,
-      url: `https://cleverly.tools/tools/${tool.slug}`,
+      url: `${SITE_URL}/tools/${tool.slug}`,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tool.title} | cleverly.tools`,
+      title: `${tool.title} | ${SITE_NAME}`,
       description: tool.description,
     },
   };
@@ -55,7 +56,7 @@ export default async function ToolPage({ params }: Props) {
   if (!tool) notFound();
 
   const isDownloaderTool = SOCIAL_MEDIA_TOOLS.includes(tool.slug);
-  const toolUrl = `https://cleverly.tools/tools/${tool.slug}`;
+  const toolUrl = `${SITE_URL}/tools/${tool.slug}`;
 
   return (
     <>
