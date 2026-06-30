@@ -5,6 +5,7 @@ import RelatedTools from "@/components/tools/RelatedTools";
 import ToolSchema from "@/components/seo/ToolSchema";
 import AdUnit from "@/components/ads/AdUnit";
 import ToolWidget from "@/components/tools/ToolWidget";
+import ShareButtons from "@/components/ui/ShareButtons";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 interface Props {
@@ -128,6 +129,13 @@ export default async function ToolPage({ params }: Props) {
 
         {/* Related Tools */}
         <RelatedTools slugs={tool.relatedTools} />
+
+        {/* Share Buttons */}
+        <ShareButtons
+          url={toolUrl}
+          title={`${tool.title} — Free Online Tool`}
+          description={tool.shortDescription}
+        />
       </div>
     </>
   );

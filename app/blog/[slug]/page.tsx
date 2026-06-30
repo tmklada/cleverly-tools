@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getAllPosts, getPostBySlug, getRelatedPosts, markdownToHtml } from "@/lib/blog";
 import { getToolBySlug } from "@/config/tools";
 import AdUnit from "@/components/ads/AdUnit";
+import ShareButtons from "@/components/ui/ShareButtons";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 interface Props {
@@ -156,6 +157,13 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* Share Buttons */}
+        <ShareButtons
+          url={`${SITE_URL}/blog/${post.slug}`}
+          title={post.title}
+          description={post.description}
+        />
       </div>
     </>
   );
