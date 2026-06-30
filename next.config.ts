@@ -8,6 +8,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.tiktokcdn.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/ads.txt",
+        destination: "https://srv.adstxtmanager.com/19390/cleverly.tools",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
