@@ -23,15 +23,7 @@ const EZOIC_IDS: Record<AdPosition, number> = {
   footer:       105,
 };
 
-declare global {
-  interface Window {
-    ezstandalone?: {
-      cmd: Array<() => void>;
-      showAds: (...ids: number[]) => void;
-      defined?: boolean;
-    };
-  }
-}
+// Window.ezstandalone declared in EzoicPageHandler.tsx
 
 interface AdUnitProps {
   position: AdPosition;

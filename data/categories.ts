@@ -57,6 +57,48 @@ export const categories: Category[] = [
     icon: "💻",
     color: "gray",
   },
+  {
+    slug: "qr",
+    name: "QR Code Tools",
+    description: "Generate and read QR codes instantly",
+    icon: "📱",
+    color: "indigo",
+  },
+  {
+    slug: "finance",
+    name: "Finance Tools",
+    description: "Currency, ROI, profit and investment calculators",
+    icon: "💰",
+    color: "emerald",
+  },
+  {
+    slug: "health",
+    name: "Health Tools",
+    description: "Calorie, BMI, sleep and fitness calculators",
+    icon: "❤️",
+    color: "rose",
+  },
+  {
+    slug: "seo",
+    name: "SEO Tools",
+    description: "Meta tags, robots.txt and Open Graph generators",
+    icon: "🔍",
+    color: "violet",
+  },
+  {
+    slug: "utilities",
+    name: "Utilities",
+    description: "Timer, dice, randomizers and everyday tools",
+    icon: "🔧",
+    color: "amber",
+  },
+  {
+    slug: "network",
+    name: "Network Tools",
+    description: "IP lookup, DNS and web diagnostics",
+    icon: "🌐",
+    color: "cyan",
+  },
 ];
 
 export function getCategoryBySlug(slug: string): Category | undefined {

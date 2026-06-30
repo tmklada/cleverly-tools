@@ -56,6 +56,16 @@ export default async function DashboardPage() {
           ))}
         </div>
 
+        {/* Monitoring Alert */}
+        <Link href="/admin/monitoring"
+          className="flex items-center gap-3 bg-blue-900/20 border border-blue-800 rounded-2xl p-4 hover:bg-blue-900/30 transition-colors">
+          <span className="text-2xl">🔍</span>
+          <div>
+            <div className="text-white font-semibold">Site Monitoring</div>
+            <div className="text-blue-400 text-sm">Check tool health, API status & error logs →</div>
+          </div>
+        </Link>
+
         {/* Quick Actions */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6">

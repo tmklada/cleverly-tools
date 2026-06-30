@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { logError } from "@/lib/error-store";
 
 const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY ?? "";
 const RAPIDAPI_HOST = "social-media-video-downloader.p.rapidapi.com";
@@ -142,6 +143,7 @@ export async function POST(req: NextRequest) {
     const data = await response.json() as Record<string, unknown>;
 
     if (!response.ok) {
+      logError({ tool: platform, platform, url: url.trim(), error: `API returned ${response.status}`, statusCode: response.status });
       return NextResponse.json(
         { error: "Could not fetch the video. Make sure the URL is correct and the video is public." },
         { status: 400 }
@@ -151,6 +153,7 @@ export async function POST(req: NextRequest) {
     const links = normalizeLinks(data);
 
     if (links.length === 0) {
+      logError({ tool: platform, platform, url: url.trim(), error: "No downloadable links found" });
       return NextResponse.json(
         { error: "No downloadable video found. The video may be private or the URL is invalid." },
         { status: 404 }
