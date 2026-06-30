@@ -6,6 +6,7 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import MicrosoftClarity from "@/components/analytics/MicrosoftClarity";
 import AdSenseScript from "@/components/analytics/AdSenseScript";
 import EzoicScript from "@/components/analytics/EzoicScript";
+import EzoicPageHandler from "@/components/analytics/EzoicPageHandler";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
         <EzoicScript />
+        <EzoicPageHandler />
         <GoogleAnalytics />
         <MicrosoftClarity />
         <AdSenseScript />
