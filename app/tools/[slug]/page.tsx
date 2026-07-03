@@ -2,10 +2,12 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getToolBySlug, allTools } from "@/config/tools";
 import RelatedTools from "@/components/tools/RelatedTools";
+import RelatedArticles from "@/components/tools/RelatedArticles";
 import ToolSchema from "@/components/seo/ToolSchema";
 import AdUnit from "@/components/ads/AdUnit";
 import ToolWidget from "@/components/tools/ToolWidget";
 import ShareButtons from "@/components/ui/ShareButtons";
+import { getRelatedArticles } from "@/lib/related-content";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 interface Props {
@@ -49,6 +51,7 @@ export default async function ToolPage({ params }: Props) {
   if (!tool) notFound();
 
   const toolUrl = `${SITE_URL}/tools/${tool.slug}`;
+  const relatedArticles = getRelatedArticles(tool.slug);
 
   return (
     <>
@@ -129,6 +132,9 @@ export default async function ToolPage({ params }: Props) {
 
         {/* Related Tools */}
         <RelatedTools slugs={tool.relatedTools} />
+
+        {/* Related Articles */}
+        <RelatedArticles articles={relatedArticles} />
 
         {/* Share Buttons */}
         <ShareButtons
