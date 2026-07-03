@@ -22,8 +22,17 @@ interface HealthSummary {
 interface ApiStatus {
   name: string;
   ok: boolean;
+  status: "ok" | "quota_exceeded" | "error" | "not_subscribed";
   statusCode?: number;
-  error?: string;
+  message?: string;
+}
+
+interface ApiStatusResponse {
+  apis: ApiStatus[];
+  quotaExceeded: boolean;
+  allOk: boolean;
+  summary: string;
+  timestamp: string;
 }
 
 interface ErrorEntry {
@@ -37,7 +46,7 @@ interface ErrorEntry {
 
 export default function MonitoringClient() {
   const [health, setHealth] = useState<{ summary: HealthSummary; checks: HealthCheck[] } | null>(null);
-  const [apis, setApis] = useState<ApiStatus[]>([]);
+  const [apiStatus, setApiStatus] = useState<ApiStatusResponse | null>(null);
   const [errors, setErrors] = useState<ErrorEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [lastRefresh, setLastRefresh] = useState<Date | null>(null);
@@ -52,7 +61,7 @@ export default function MonitoringClient() {
       ]);
 
       if (healthRes.status === "fulfilled") setHealth(healthRes.value);
-      if (apiRes.status === "fulfilled") setApis(apiRes.value.apis ?? []);
+      if (apiRes.status === "fulfilled") setApiStatus(apiRes.value);
       if (errorsRes.status === "fulfilled") setErrors(errorsRes.value.errors ?? []);
       setLastRefresh(new Date());
     } finally {
@@ -106,23 +115,52 @@ export default function MonitoringClient() {
         ))}
       </div>
 
+      {/* Quota Alert */}
+      {apiStatus?.quotaExceeded && (
+        <div className="bg-orange-900/30 border border-orange-600 rounded-2xl p-5">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">⚠️</span>
+            <div>
+              <h3 className="text-orange-400 font-bold">RapidAPI Monthly Quota Exceeded!</h3>
+              <p className="text-orange-200 text-sm mt-1">The download API has used all 200 free requests this month. Users cannot download videos right now.</p>
+              <div className="flex gap-3 mt-3">
+                <a href="https://rapidapi.com/emmanueldavidyou/api/social-media-video-downloader" target="_blank"
+                  className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white text-sm font-bold rounded-xl transition-colors">
+                  Upgrade Plan ($8.80/mo) →
+                </a>
+                <p className="text-orange-300 text-xs self-center">Pro plan = 60,000 requests/month</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* API Status */}
       <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6">
-        <h2 className="text-white font-bold mb-4">🔌 External APIs (RapidAPI)</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-white font-bold">🔌 Download APIs Status</h2>
+          {apiStatus && <span className="text-xs text-gray-400">{apiStatus.summary}</span>}
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {apis.length === 0 && loading && (
+          {!apiStatus && loading && (
             <div className="text-gray-500 text-sm col-span-2">Checking APIs...</div>
           )}
-          {apis.map((api) => (
+          {apiStatus?.apis.map((api) => (
             <div key={api.name} className={`flex items-center justify-between p-4 rounded-xl border ${
-              api.ok ? "bg-green-900/20 border-green-800" : "bg-red-900/20 border-red-800"
+              api.ok ? "bg-green-900/20 border-green-800" :
+              api.status === "quota_exceeded" ? "bg-orange-900/20 border-orange-700" :
+              "bg-red-900/20 border-red-800"
             }`}>
               <div>
                 <div className="text-white font-medium text-sm">{api.name}</div>
-                {api.error && <div className="text-red-400 text-xs mt-0.5">{api.error}</div>}
+                {api.message && <div className={`text-xs mt-0.5 ${api.status === "quota_exceeded" ? "text-orange-400" : "text-red-400"}`}>{api.message}</div>}
               </div>
-              <span className={`text-sm font-bold ${api.ok ? "text-green-400" : "text-red-400"}`}>
-                {api.ok ? "✅ OK" : "❌ DOWN"}
+              <span className={`text-sm font-bold ${
+                api.ok ? "text-green-400" :
+                api.status === "quota_exceeded" ? "text-orange-400" :
+                "text-red-400"
+              }`}>
+                {api.ok ? "✅ OK" : api.status === "quota_exceeded" ? "⚠️ QUOTA" : "❌ ERROR"}
               </span>
             </div>
           ))}

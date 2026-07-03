@@ -141,6 +141,11 @@ export default function DownloaderWidget({ toolSlug, toolTitle }: DownloaderWidg
 
       const data = await res.json();
 
+      if (res.status === 429 || data.quotaExceeded) {
+        setError("⚠️ Our download service has reached its daily limit. Please try again in a few hours.");
+        return;
+      }
+
       if (!res.ok || data.error) {
         setError(data.error ?? "Could not fetch video. Make sure the video is public.");
         return;
