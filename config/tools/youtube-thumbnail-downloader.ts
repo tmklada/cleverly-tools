@@ -4,7 +4,7 @@ const config: ToolConfig = {
   title: "YouTube Thumbnail Downloader",
   description: "Download YouTube video thumbnails in full HD quality for free. Just paste the video URL and save the thumbnail as a JPG image instantly.",
   shortDescription: "Download YouTube thumbnails in HD — free tool",
-  category: "social-media",
+  category: "video",
   keywords: ["youtube thumbnail downloader", "download youtube thumbnail", "youtube thumbnail hd", "save youtube thumbnail", "youtube image downloader", "youtube thumbnail grabber", "youtube thumbnail saver"],
   icon: "🖼️",
   isNew: true,

@@ -4,7 +4,7 @@ const config: ToolConfig = {
   title: "YouTube Video Downloader",
   description: "Download YouTube videos in HD, 4K, and MP3 for free. Paste any YouTube URL and save it instantly — no software needed.",
   shortDescription: "Download YouTube videos in HD & 4K — free",
-  category: "social-media",
+  category: "video",
   keywords: ["youtube video downloader", "download youtube video", "youtube to mp4", "youtube hd download", "save youtube video", "youtube downloader free"],
   icon: "▶️",
   featured: true,

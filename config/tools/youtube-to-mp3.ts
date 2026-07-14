@@ -4,7 +4,7 @@ const config: ToolConfig = {
   title: "YouTube to MP3 Downloader",
   description: "Convert and download YouTube videos as high-quality MP3 audio files online for free with no software installation. Extract audio from any YouTube video in seconds.",
   shortDescription: "Download YouTube videos as MP3 audio files free",
-  category: "social-media",
+  category: "video",
   keywords: ["youtube to mp3", "youtube mp3 downloader", "download youtube audio", "convert youtube to mp3", "youtube audio extractor", "free youtube downloader", "yt to mp3"],
   icon: "🎵",
   toolType: "downloader",
