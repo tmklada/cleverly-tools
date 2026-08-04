@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { allTools } from "@/config/tools";
 import { categories } from "@/data/categories";
 import { getAllPosts } from "@/lib/blog";
+import { getAllVariants } from "@/config/variants";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,23 +17,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryPages: MetadataRoute.Sitemap = categories.map((cat) => ({
     url: `${base}/category/${cat.slug}`,
     lastModified: now,
-    changeFrequency: "weekly",
+    changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
   const toolPages: MetadataRoute.Sitemap = allTools.map((tool) => ({
     url: `${base}/tools/${tool.slug}`,
     lastModified: now,
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.9,
+  }));
+
+  const variantPages: MetadataRoute.Sitemap = getAllVariants().map(({ toolSlug, variantSlug }) => ({
+    url: `${base}/tools/${toolSlug}/${variantSlug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
   const blogPages: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
     url: `${base}/blog/${post.slug}`,
     lastModified: new Date(post.updatedDate ?? post.date),
-    changeFrequency: "monthly",
+    changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
-  return [...staticPages, ...categoryPages, ...toolPages, ...blogPages];
+  return [...staticPages, ...categoryPages, ...toolPages, ...variantPages, ...blogPages];
 }
