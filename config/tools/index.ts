@@ -116,6 +116,10 @@ import timeZoneConverter from "./time-zone-converter";
 import ipAddressLookup from "./ip-address-lookup";
 import dnsLookup from "./dns-lookup";
 
+// New Tools
+import backgroundRemover from "./background-remover";
+import videoConverter from "./video-converter";
+
 export const allTools: ToolConfig[] = [
   // Social Media
   facebookVideoDownloader,
@@ -125,12 +129,14 @@ export const allTools: ToolConfig[] = [
   twitterVideoDownloader,
   youtubeThumbnailDownloader,
   youtubeToMp3,
+  videoConverter,
   // PDF
   mergePdf,
   splitPdf,
   rotatePdf,
   compressPdf,
   // Image
+  backgroundRemover,
   imageResizer,
   imageConverter,
   imageCompressor,

@@ -80,6 +80,8 @@ const RotatePdf = ld("RotatePdf");
 const CompressPdf = ld("CompressPdf");
 
 // Image
+const BackgroundRemover = ld("BackgroundRemover");
+const VideoConverter = ld("VideoConverter");
 const ImageResizer = ld("ImageResizer");
 const ImageConverter = ld("ImageConverter");
 const ImageCompressor = ld("ImageCompressor");
@@ -193,6 +195,8 @@ const WIDGET_MAP: Record<string, React.ComponentType> = {
   "rotate-pdf": RotatePdf,
   "compress-pdf": CompressPdf,
   // Image
+  "background-remover": BackgroundRemover,
+  "video-converter": VideoConverter,
   "image-resizer": ImageResizer,
   "image-converter": ImageConverter,
   "image-compressor": ImageCompressor,
