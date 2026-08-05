@@ -130,6 +130,28 @@ export default async function ToolPage({ params }: Props) {
           </div>
         </section>
 
+        {/* About This Tool — extra text for SEO */}
+        <section className="mb-10 p-6 bg-gray-50 dark:bg-gray-800/50 rounded-2xl">
+          <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
+            About {tool.title}
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-3">
+            {tool.description}
+          </p>
+          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+            Our {tool.title} is completely free to use with no registration required.
+            It works directly in your browser on any device — desktop, iPhone, Android, and tablet.
+            {tool.keywords.slice(0, 3).join(", ")} — all handled instantly without any software download.
+          </p>
+          <div className="flex flex-wrap gap-2 mt-4">
+            {tool.keywords.slice(0, 6).map(kw => (
+              <span key={kw} className="text-xs bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 px-2 py-1 rounded-full">
+                {kw}
+              </span>
+            ))}
+          </div>
+        </section>
+
         {/* Related Tools */}
         <RelatedTools slugs={tool.relatedTools} />
 
