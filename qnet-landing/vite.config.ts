@@ -12,10 +12,10 @@ export default defineConfig({
     target: "es2020",
     rollupOptions: {
       output: {
-        manualChunks: {
-          motion: ["framer-motion"],
-          icons: ["lucide-react"],
-        },
+        // SINGLE_FILE=1 → bundle واحد (يُستخدم لتوليد معاينة مضمّنة)
+        manualChunks: process.env.SINGLE_FILE
+          ? undefined
+          : { motion: ["framer-motion"], icons: ["lucide-react"] },
       },
     },
   },
