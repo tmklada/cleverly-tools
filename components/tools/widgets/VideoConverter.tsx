@@ -35,11 +35,12 @@ export default function VideoConverter() {
         setProgress(Math.round(p * 100));
       });
 
-      // Load FFmpeg
+      // Load FFmpeg core (self-hosted from public/ffmpeg — copied from @ffmpeg/core@0.12.6,
+      // served with a long-lived immutable cache header, see next.config.ts)
       setProgress(5);
       await ffmpeg.load({
-        coreURL: await toBlobURL("https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js", "text/javascript"),
-        wasmURL: await toBlobURL("https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.wasm", "application/wasm"),
+        coreURL: await toBlobURL("/ffmpeg/ffmpeg-core.js", "text/javascript"),
+        wasmURL: await toBlobURL("/ffmpeg/ffmpeg-core.wasm", "application/wasm"),
       });
 
       // Write input file
@@ -153,7 +154,7 @@ export default function VideoConverter() {
 
       {/* Warning for large files */}
       <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl px-4 py-3 text-sm text-amber-700 dark:text-amber-400">
-        ⚠️ Video conversion runs in your browser. First use downloads ~30MB of AI tools. Large files (50MB+) may be slow.
+        ⚠️ Video conversion runs in your browser. First use downloads the converter engine (~30MB) once; it&apos;s cached afterwards. Large files (50MB+) may be slow.
       </div>
 
       {/* Convert Button */}

@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  turbopack: { root: __dirname },
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "**.fbcdn.net" },
@@ -49,6 +50,20 @@ const nextConfig: NextConfig = {
         source: "/",
         headers: [
           { key: "Cache-Control", value: "public, s-maxage=1800, stale-while-revalidate=3600" },
+        ],
+      },
+      // Self-hosted FFmpeg core (versioned copy of @ffmpeg/core) — cache forever
+      {
+        source: "/ffmpeg/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      // PWA icons — long cache
+      {
+        source: "/:file(icon-192.png|icon-512.png|icon-maskable-512.png)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=604800, stale-while-revalidate=86400" },
         ],
       },
       // API - no cache

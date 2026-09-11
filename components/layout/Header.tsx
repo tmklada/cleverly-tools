@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SearchBar from "@/components/tools/SearchBar";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 import { EASING, DURATION } from "@/lib/animations";
 
 export default function Header() {
@@ -17,9 +18,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "/category/social-media", label: "Social Media" },
+    { href: "/#all-tools", label: "All Tools" },
+    { href: "/category/social-media", label: "Downloaders" },
     { href: "/category/pdf", label: "PDF" },
-    { href: "/category/developer", label: "Dev Tools" },
+    { href: "/category/image", label: "Images" },
     { href: "/blog", label: "Blog" },
   ];
 
@@ -63,9 +65,12 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <ThemeToggle />
           </nav>
 
-          {/* Mobile menu button */}
+          {/* Mobile: theme + menu button */}
+          <div className="md:hidden flex items-center gap-1">
+          <ThemeToggle />
           <motion.button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             whileTap={{ scale: 0.9 }}
@@ -80,6 +85,7 @@ export default function Header() {
               {mobileMenuOpen ? "✕" : "☰"}
             </motion.span>
           </motion.button>
+          </div>
         </div>
 
         {/* Mobile Search */}
@@ -100,10 +106,13 @@ export default function Header() {
           >
             <div className="px-4 py-3 space-y-1">
               {[
-                { href: "/category/social-media", label: "📱 Social Media" },
+                { href: "/#all-tools", label: "🧰 All Tools" },
+                { href: "/category/social-media", label: "📱 Video Downloaders" },
                 { href: "/category/pdf", label: "📄 PDF Tools" },
+                { href: "/category/image", label: "🖼️ Image Tools" },
+                { href: "/category/calculators", label: "🧮 Calculators" },
                 { href: "/category/developer", label: "💻 Dev Tools" },
-                { href: "/blog", label: "✍️ Blog" },
+                { href: "/blog", label: "✍️ Blog & Guides" },
               ].map((link, i) => (
                 <motion.div
                   key={link.href}

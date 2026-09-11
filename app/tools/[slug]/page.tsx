@@ -7,8 +7,14 @@ import ToolSchema from "@/components/seo/ToolSchema";
 import AdUnit from "@/components/ads/AdUnit";
 import ToolWidget from "@/components/tools/ToolWidget";
 import ShareButtons from "@/components/ui/ShareButtons";
+import TrackToolVisit from "@/components/tools/TrackToolVisit";
+import FavoriteButton from "@/components/tools/FavoriteButton";
+import AlsoTry from "@/components/tools/AlsoTry";
+import ToolBenefits from "@/components/tools/ToolBenefits";
 import { getRelatedArticles } from "@/lib/related-content";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
+import { arTools } from "@/lib/i18n/ar";
+import { esTools } from "@/lib/i18n/es";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -23,12 +29,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tool = getToolBySlug(slug);
   if (!tool) return {};
 
+  const languages: Record<string, string> = {
+    en: `${SITE_URL}/tools/${tool.slug}`,
+    "x-default": `${SITE_URL}/tools/${tool.slug}`,
+  };
+  if (arTools[tool.slug]) languages.ar = `${SITE_URL}/ar/tools/${tool.slug}`;
+  if (esTools[tool.slug]) languages.es = `${SITE_URL}/es/tools/${tool.slug}`;
+
   return {
     title: tool.title,
     description: tool.description,
     keywords: tool.keywords,
     alternates: {
       canonical: `${SITE_URL}/tools/${tool.slug}`,
+      languages,
     },
     openGraph: {
       title: `${tool.title} | ${SITE_NAME}`,
@@ -56,6 +70,7 @@ export default async function ToolPage({ params }: Props) {
   return (
     <>
       <ToolSchema tool={tool} url={toolUrl} />
+      <TrackToolVisit slug={tool.slug} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
@@ -74,17 +89,28 @@ export default async function ToolPage({ params }: Props) {
 
         {/* Tool Header */}
         <div className="mb-8">
-          <div className="flex items-center gap-3 mb-3">
-            <span className="text-4xl">{tool.icon}</span>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">{tool.title}</h1>
+          <div className="flex items-start justify-between gap-4 mb-3">
+            <div className="flex items-center gap-3">
+              <span className="text-4xl">{tool.icon}</span>
+              <h1 className="text-3xl font-bold text-gray-900 dark:text-white">{tool.title}</h1>
+            </div>
+            <FavoriteButton slug={tool.slug} />
           </div>
           <p className="text-lg text-gray-600 dark:text-gray-400">{tool.description}</p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-gray-500 dark:text-gray-400">
+            <span>✅ 100% Free</span>
+            <span>🚫 No sign-up</span>
+            <span>⚡ Instant</span>
+            <span>📱 Works on mobile</span>
+          </div>
         </div>
 
         {/* Tool Widget */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mb-8 shadow-sm">
           <ToolWidget tool={tool} />
         </div>
+
+        <AlsoTry tool={tool} />
 
         {/* After Tool Ad */}
         <AdUnit position="after-tool" className="mb-8" />
@@ -106,6 +132,8 @@ export default async function ToolPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        <ToolBenefits tool={tool} />
 
         {/* FAQ */}
         <section className="mb-10">
@@ -140,8 +168,10 @@ export default async function ToolPage({ params }: Props) {
           </p>
           <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
             Our {tool.title} is completely free to use with no registration required.
-            It works directly in your browser on any device — desktop, iPhone, Android, and tablet.
-            {tool.keywords.slice(0, 3).join(", ")} — all handled instantly without any software download.
+            It works directly in your browser on any device — desktop, iPhone, Android, and tablet — and
+            there is nothing to download or install. People commonly use it for {tool.keywords.slice(0, 3).join(", ")}.
+            It is part of the <a href={`/category/${tool.category}`} className="text-blue-600 hover:underline">{tool.category.replace(/-/g, " ")}</a> collection
+            on cleverly.tools, which offers {allTools.length} free online tools.
           </p>
           <div className="flex flex-wrap gap-2 mt-4">
             {tool.keywords.slice(0, 6).map(kw => (
