@@ -13,15 +13,6 @@ const nextConfig: NextConfig = {
   },
   // Compress responses
   compress: true,
-  async redirects() {
-    return [
-      {
-        source: "/ads.txt",
-        destination: "https://srv.adstxtmanager.com/19390/cleverly.tools",
-        permanent: false,
-      },
-    ];
-  },
   async headers() {
     return [
       // Cache static pages aggressively

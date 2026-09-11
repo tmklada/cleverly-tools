@@ -1,10 +1,11 @@
 import Script from "next/script";
 
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
-const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
 
+// Loaded whenever a client ID exists: AdSense needs it for site verification and Auto ads,
+// independently of the manual AdUnit placements (gated by NEXT_PUBLIC_ADS_ENABLED).
 export default function AdSenseScript() {
-  if (!ADS_ENABLED || !ADSENSE_CLIENT) return null;
+  if (!ADSENSE_CLIENT) return null;
 
   return (
     <Script
