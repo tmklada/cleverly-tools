@@ -4,17 +4,17 @@
 
 **Name:** cleverly.tools  
 **URL:** https://cleverly.tools  
-**Tagline:** 92 free online tools — no sign up required  
+**Tagline:** 94 free online tools — no sign up required  
 **Category:** Online Tools / Productivity / Developer Tools  
 
 **Short Description (100 chars):**
 Free online tools for everyone — video downloaders, PDF tools, calculators. No registration.
 
 **Medium Description (250 chars):**
-cleverly.tools offers 92 free online tools including video downloaders (TikTok, Facebook, Instagram, YouTube), PDF tools (merge, split, compress), image editors, calculators, SEO tools, and developer utilities. No registration. No watermarks.
+cleverly.tools offers 94 free online tools including video downloaders (TikTok, Facebook, Instagram, YouTube), PDF tools (merge, split, compress), image editors, calculators, SEO tools, and developer utilities. No registration. No watermarks.
 
 **Long Description (500 chars):**
-cleverly.tools is a free online tools platform with 92 tools across 15 categories. Download TikTok videos without watermark, merge PDF files without Adobe, remove image backgrounds with AI, convert videos, calculate BMI and compound interest, generate QR codes, format JSON, create meta tags, and much more. Everything runs in your browser — no uploads to servers, complete privacy. Works on iPhone, Android, and desktop. 100% free, no sign-up required.
+cleverly.tools is a free online tools platform with 94 tools across 15 categories. Download TikTok videos without watermark, merge PDF files without Adobe, remove image backgrounds with AI, convert videos, calculate BMI and compound interest, generate QR codes, format JSON, create meta tags, and much more. Everything runs in your browser — no uploads to servers, complete privacy. Works on iPhone, Android, and desktop. 100% free, no sign-up required.
 
 **Keywords:**
 free online tools, video downloader, tiktok downloader no watermark, merge pdf free, background remover, bmi calculator, qr code generator, json formatter, image converter
@@ -33,10 +33,10 @@ free online tools, video downloader, tiktok downloader no watermark, merge pdf f
    
 2. **Product Hunt** ✅ DONE
 
-3. **SaaSHub** → https://www.saashub.com/add-product
+3. **SaaSHub** → https://www.saashub.com (link dead — use "Submit a product" in the site footer)
    - Category: Developer Tools / Online Tools
    
-4. **ToolPilot** → https://toolpilot.ai/submit
+4. **ToolPilot** → https://toolpilot.ai (submit link dead — check site nav)
    - Category: Productivity
 
 5. **There's An AI For That** → https://theresanaiforthat.com/submit/
@@ -55,9 +55,9 @@ free online tools, video downloader, tiktok downloader no watermark, merge pdf f
 10. **Slant** → https://www.slant.co/topics/new
 
 ### 🟡 Priority 3 — Niche Directories
-11. **FreeToolbox** → https://freetoolbox.io/submit
+11. ~~FreeToolbox~~ — site gone, skip
 12. **ToolScout** → https://toolscout.ai/submit
-13. **AI Tools Directory** → https://www.aitoolsdirectory.com/submit
+13. **AI Tools Directory** → https://www.aitoolsdirectory.com/submit (site erroring, retry later)
 14. **Uneed** → https://www.uneed.best/submit-a-tool
 15. **MicroStartups** → https://microstartups.co/add
 
@@ -66,7 +66,7 @@ free online tools, video downloader, tiktok downloader no watermark, merge pdf f
 ## Reddit Posts (copy-paste directly)
 
 ### r/webdev
-**Title:** I built a free browser-based toolkit with 92 tools — JSON formatter, regex tester, CSS generators, QR codes, and more
+**Title:** I built a free browser-based toolkit with 94 tools — JSON formatter, regex tester, CSS generators, QR codes, and more
 
 **Post:**
 Hey r/webdev! I've been building cleverly.tools for the past few months.
@@ -94,10 +94,10 @@ Would love feedback on what tools are missing!
 ---
 
 ### r/SideProject
-**Title:** Built 92 free online tools in one place — from TikTok downloader to background remover AI
+**Title:** Built 94 free online tools in one place — from TikTok downloader to background remover AI
 
 **Post:**
-After months of building, I launched cleverly.tools — a platform with 92 free online tools.
+After months of building, I launched cleverly.tools — a platform with 94 free online tools.
 
 What makes it different:
 ✅ Everything runs in your browser (privacy-first)
