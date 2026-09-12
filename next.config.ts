@@ -64,13 +64,23 @@ const nextConfig: NextConfig = {
         ],
       },
       // API - no cache
+      // Public API: open to any origin. Cache policy is set per route handler,
+      // because the deterministic endpoints (qr, hash, lorem) are meant to be cached.
       {
         source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Origin", value: "*" },
           { key: "Access-Control-Allow-Methods", value: "GET, POST, OPTIONS" },
-          { key: "Cache-Control", value: "no-store" },
         ],
+      },
+      // Private / per-request routes must never be cached.
+      {
+        source: "/api/download",
+        headers: [{ key: "Cache-Control", value: "no-store" }],
+      },
+      {
+        source: "/api/admin/:path*",
+        headers: [{ key: "Cache-Control", value: "no-store" }],
       },
       // Embeds are meant to run inside other people's sites.
       {
