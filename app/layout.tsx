@@ -59,11 +59,11 @@ export default function RootLayout({
     <html lang="en" className="h-full" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-        <AdSenseScript />
       </head>
       <body className="min-h-full flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
         <EzoicScript />
         <EzoicPageHandler />
+        <AdSenseScript />
         <GoogleAnalytics />
         <MicrosoftClarity />
         <Header />

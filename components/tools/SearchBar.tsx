@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useId } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { searchTools } from "@/lib/search-tools";
+import { trackEvent } from "@/lib/analytics";
 import type { ToolConfig } from "@/types/tool";
 
 interface SearchBarProps {
@@ -61,6 +62,7 @@ export default function SearchBar({ size = "default", autoFocus = false, placeho
   }, [size]);
 
   function goTo(tool: ToolConfig) {
+    trackEvent("search_result_opened", "engagement", `${query.trim().toLowerCase()} -> ${tool.slug}`);
     setOpen(false);
     setQuery("");
     router.push(`/tools/${tool.slug}`);
@@ -68,6 +70,7 @@ export default function SearchBar({ size = "default", autoFocus = false, placeho
 
   function goToResults() {
     if (!query.trim()) return;
+    trackEvent("search_no_pick", "engagement", query.trim().toLowerCase());
     setOpen(false);
     router.push(`/search?q=${encodeURIComponent(query.trim())}`);
   }
@@ -155,7 +158,11 @@ export default function SearchBar({ size = "default", autoFocus = false, placeho
                   role="option"
                   aria-selected={i === active}
                   onMouseEnter={() => setActive(i)}
-                  onClick={() => { setOpen(false); setQuery(""); }}
+                  onClick={() => {
+                    trackEvent("search_result_opened", "engagement", `${query.trim().toLowerCase()} -> ${tool.slug}`);
+                    setOpen(false);
+                    setQuery("");
+                  }}
                   className={`flex items-center gap-3 px-4 py-3 transition-colors ${
                     i === active ? "bg-blue-50 dark:bg-blue-900/30" : "hover:bg-gray-50 dark:hover:bg-gray-700"
                   }`}

@@ -8,6 +8,7 @@ import AdUnit from "@/components/ads/AdUnit";
 import ToolWidget from "@/components/tools/ToolWidget";
 import ShareButtons from "@/components/ui/ShareButtons";
 import TrackToolVisit from "@/components/tools/TrackToolVisit";
+import ToolUsageEvents from "@/components/analytics/ToolUsageEvents";
 import FavoriteButton from "@/components/tools/FavoriteButton";
 import AlsoTry from "@/components/tools/AlsoTry";
 import ToolBenefits from "@/components/tools/ToolBenefits";
@@ -74,6 +75,7 @@ export default async function ToolPage({ params }: Props) {
     <>
       <ToolSchema tool={tool} url={toolUrl} />
       <TrackToolVisit slug={tool.slug} />
+      <ToolUsageEvents slug={tool.slug} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
@@ -109,7 +111,7 @@ export default async function ToolPage({ params }: Props) {
         </div>
 
         {/* Tool Widget */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mb-8 shadow-sm">
+        <div id="tool-widget" className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mb-8 shadow-sm">
           <ToolWidget tool={tool} />
         </div>
 
