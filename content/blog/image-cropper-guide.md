@@ -12,7 +12,7 @@ relatedTool: "image-cropper"
 
 Need to crop a photo but don't have Photoshop? Don't want to install software just to trim an image?
 
-Our free [Image Cropper](https://cleverly.tools/image-cropper) runs entirely in your browser. Upload your image, drag to select the area you want, and download the cropped result — in seconds, with no account required and no files uploaded to any server.
+Our free [Image Cropper](https://cleverly.tools/tools/image-cropper) runs entirely in your browser. Upload your image, drag to select the area you want, and download the cropped result — in seconds, with no account required and no files uploaded to any server.
 
 ---
 
@@ -36,7 +36,7 @@ Cropping is one of the most common image edits for a reason — it serves many p
 
 ## How to Use the Image Cropper
 
-1. Open the [Image Cropper](https://cleverly.tools/image-cropper) on cleverly.tools
+1. Open the [Image Cropper](https://cleverly.tools/tools/image-cropper) on cleverly.tools
 2. **Upload your image** — drag and drop or click to browse. Supports JPG, PNG, WebP, GIF
 3. **Select your crop area:**
    - Drag the corners or edges of the crop box to resize
@@ -80,7 +80,7 @@ These are often confused:
 
 **The key question:** Do you want to remove part of the image (crop) or scale the whole thing (resize)?
 
-For profile photos and thumbnails, you usually need to **crop first** (to the right content and ratio), then **resize** (to hit the pixel dimension). Use our [Image Cropper](https://cleverly.tools/image-cropper) for the first step and [Image Resizer](https://cleverly.tools/image-resizer) for the second.
+For profile photos and thumbnails, you usually need to **crop first** (to the right content and ratio), then **resize** (to hit the pixel dimension). Use our [Image Cropper](https://cleverly.tools/tools/image-cropper) for the first step and [Image Resizer](https://cleverly.tools/tools/image-resizer) for the second.
 
 ---
 
@@ -112,9 +112,9 @@ Crop horizontally (landscape) to show room width. The 3:2 or 4:3 ratio typically
 
 ## Related Image Tools
 
-- [Image Resizer](https://cleverly.tools/image-resizer) — scale images to exact pixel dimensions
-- [Image Compressor](https://cleverly.tools/image-compressor) — reduce file size without visible quality loss
-- [JPG to PNG Converter](https://cleverly.tools/jpg-to-png) — convert between image formats
+- [Image Resizer](https://cleverly.tools/tools/image-resizer) — scale images to exact pixel dimensions
+- [Image Compressor](https://cleverly.tools/tools/image-compressor) — reduce file size without visible quality loss
+- [JPG to PNG Converter](https://cleverly.tools/tools/image-converter) — convert between image formats
 
 ---
 
@@ -127,7 +127,7 @@ A: No — cropping only removes pixels from the edges. The remaining portion ret
 A: Our cropper supports square and rectangular crops with a crop-to-circle output option. Upload your image, crop to a square (1:1), then enable the circle mask option to get a circular crop saved as a PNG with a transparent background.
 
 **Q: What file formats can I crop?**
-A: The image cropper accepts JPG/JPEG, PNG, WebP, and GIF files. Output is available as JPG or PNG. If your image is in another format, use our [Image Converter](https://cleverly.tools/image-converter) first.
+A: The image cropper accepts JPG/JPEG, PNG, WebP, and GIF files. Output is available as JPG or PNG. If your image is in another format, use our [Image Converter](https://cleverly.tools/tools/image-converter) first.
 
 **Q: Is there a file size limit?**
 A: Since processing happens in your browser, there's no server-side upload limit. However, very large images (50MB+) may cause the browser to slow down depending on your device. Most photos from phones and cameras (typically 3–10MB) work perfectly.

@@ -12,7 +12,7 @@ relatedTool: "cron-expression-builder"
 
 Cron is one of the most powerful and widely used tools in software development — and one of the most confusing to write from memory. The five-field (or six-field) syntax is compact by design, but even experienced developers look up the field order every time.
 
-Our free [Cron Expression Builder](https://cleverly.tools/cron-expression-builder) gives you a visual interface to build any cron schedule, see a plain-English description, and preview the next run times — no syntax memorization needed.
+Our free [Cron Expression Builder](https://cleverly.tools/tools/cron-expression-builder) gives you a visual interface to build any cron schedule, see a plain-English description, and preview the next run times — no syntax memorization needed.
 
 ## What Is a Cron Job?
 
@@ -119,7 +119,7 @@ Regular polling during work hours on weekdays.
 
 ## How to Use the Cron Expression Builder
 
-The [Cron Expression Builder on cleverly.tools](https://cleverly.tools/cron-expression-builder) gives you two ways to work:
+The [Cron Expression Builder on cleverly.tools](https://cleverly.tools/tools/cron-expression-builder) gives you two ways to work:
 
 ### Visual Mode
 Use dropdowns and checkboxes for each field:
@@ -182,4 +182,4 @@ Standard Linux cron uses the server's local timezone. Cloud schedulers like GitH
 Standard cron has a minimum resolution of one minute. For sub-minute scheduling, use a different tool: `sleep` loops in a 1-minute cron job, a Kubernetes CronJob with a workaround, or a purpose-built tool like AWS Step Functions or a message queue.
 
 ### How do I test a cron expression without waiting for it to run?
-Use our [Cron Expression Builder](https://cleverly.tools/cron-expression-builder) — it shows the next 5 scheduled run times based on your expression and the current date, so you can verify the schedule instantly.
+Use our [Cron Expression Builder](https://cleverly.tools/tools/cron-expression-builder) — it shows the next 5 scheduled run times based on your expression and the current date, so you can verify the schedule instantly.

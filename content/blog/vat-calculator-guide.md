@@ -12,7 +12,7 @@ relatedTool: "vat-calculator"
 
 Whether you are a freelancer invoicing a client, a business owner pricing products, or a shopper trying to understand the real cost of something — VAT calculations come up constantly. The math is simple but easy to get wrong, especially when you need to work backwards (remove VAT from a price that already includes it).
 
-Our free [VAT Calculator](https://cleverly.tools/vat-calculator) handles both directions: add VAT to a net price, or strip VAT from a gross price. No spreadsheet, no mental math, no mistakes.
+Our free [VAT Calculator](https://cleverly.tools/tools/vat-calculator) handles both directions: add VAT to a net price, or strip VAT from a gross price. No spreadsheet, no mental math, no mistakes.
 
 ## What Is VAT?
 
@@ -66,7 +66,7 @@ Understand the pre-tax price of a purchase or estimate the tax amount before buy
 
 ## How to Use the Free VAT Calculator
 
-The [VAT Calculator on cleverly.tools](https://cleverly.tools/vat-calculator) works in three steps:
+The [VAT Calculator on cleverly.tools](https://cleverly.tools/tools/vat-calculator) works in three steps:
 
 1. **Enter the amount** — either the net price or the gross price
 2. **Enter the VAT rate** — in percentage (e.g., 20)
@@ -97,7 +97,7 @@ Always verify the current rate with your local tax authority, as rates can chang
 VAT is collected at every stage of production, with each business reclaiming VAT paid to its suppliers. Sales tax (used in the US) is collected only at the point of final sale. The end consumer pays a similar total amount, but the collection mechanics differ.
 
 ### How do I remove VAT from a price that already includes it?
-Divide the gross (VAT-inclusive) price by (1 + VAT rate as a decimal). For 20% VAT: divide by 1.20. Our [VAT Calculator](https://cleverly.tools/vat-calculator) does this automatically when you select "Remove VAT."
+Divide the gross (VAT-inclusive) price by (1 + VAT rate as a decimal). For 20% VAT: divide by 1.20. Our [VAT Calculator](https://cleverly.tools/tools/vat-calculator) does this automatically when you select "Remove VAT."
 
 ### Can I use this calculator for any VAT rate?
 Yes. Our VAT Calculator accepts any percentage rate. Simply type in whatever rate applies in your country or for your specific goods/service.

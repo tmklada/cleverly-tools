@@ -10,7 +10,7 @@ relatedTool: "random-number-generator"
 
 # Random Number Generator — Generate Random Numbers Online
 
-Need a random number right now? Our free [Random Number Generator](https://cleverly.tools/random-number-generator) lets you set any range and generate as many numbers as you need — instantly, in your browser, no setup required.
+Need a random number right now? Our free [Random Number Generator](https://cleverly.tools/tools/random-number-generator) lets you set any range and generate as many numbers as you need — instantly, in your browser, no setup required.
 
 From picking a winner in a raffle to running statistical research, random numbers are used in dozens of everyday situations. Here's everything you need to know.
 
@@ -18,7 +18,7 @@ From picking a winner in a raffle to running statistical research, random number
 
 ## How to Use the Random Number Generator
 
-Using the [Random Number Generator on cleverly.tools](https://cleverly.tools/random-number-generator) is straightforward:
+Using the [Random Number Generator on cleverly.tools](https://cleverly.tools/tools/random-number-generator) is straightforward:
 
 1. **Set your minimum value** (default: 1)
 2. **Set your maximum value** (default: 100)
@@ -125,16 +125,16 @@ When you need genuinely fair, unbiased decisions, a random number generator remo
 
 ## Related Utility Tools
 
-- [Countdown Timer](https://cleverly.tools/countdown-timer) — time your games and activities
-- [Age Calculator](https://cleverly.tools/age-calculator) — calculate age from any date
-- [Unit Converter](https://cleverly.tools/unit-converter) — convert any measurement unit
+- [Countdown Timer](https://cleverly.tools/tools/countdown-timer) — time your games and activities
+- [Age Calculator](https://cleverly.tools/tools/age-calculator) — calculate age from any date
+- [Unit Converter](https://cleverly.tools/tools/unit-converter) — convert any measurement unit
 
 ---
 
 ## Frequently Asked Questions
 
 **Q: How do I generate a random number between 1 and 100?**
-A: Open the [Random Number Generator](https://cleverly.tools/random-number-generator), set minimum to 1, maximum to 100, quantity to 1, and click Generate. That's it.
+A: Open the [Random Number Generator](https://cleverly.tools/tools/random-number-generator), set minimum to 1, maximum to 100, quantity to 1, and click Generate. That's it.
 
 **Q: Can I generate random numbers without repeats?**
 A: Yes. Uncheck the "Allow duplicates" option before generating. The generator will only return unique numbers within your specified range. Note that you can't request more unique numbers than exist in your range (e.g., you can't get 15 unique numbers from a range of 10).

@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
   },
   // Compress responses
   compress: true,
+  async redirects() {
+    return [
+      { source: "/stopwatch", destination: "/tools/timer-stopwatch", permanent: true },
+      { source: "/jpg-to-png", destination: "/tools/image-converter", permanent: true },
+    ];
+  },
   async headers() {
     return [
       // Cache static pages aggressively

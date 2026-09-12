@@ -12,7 +12,7 @@ relatedTool: "favicon-generator"
 
 The favicon — that tiny icon in the browser tab, bookmarks bar, and mobile home screen — is often an afterthought. But it is one of the first visual signals your brand sends to visitors. A professional favicon makes your site look legitimate. A missing or blurry one makes it look unfinished.
 
-Our free [Favicon Generator](https://cleverly.tools/favicon-generator) lets you create a favicon from an image, text, or emoji and download all the required file formats in seconds — no design software needed.
+Our free [Favicon Generator](https://cleverly.tools/tools/favicon-generator) lets you create a favicon from an image, text, or emoji and download all the required file formats in seconds — no design software needed.
 
 ## What Is a Favicon?
 
@@ -62,7 +62,7 @@ If you have an icon from a design tool (Figma, Adobe Illustrator), export it as 
 
 ## How to Use the Favicon Generator
 
-The [Favicon Generator on cleverly.tools](https://cleverly.tools/favicon-generator) takes three steps:
+The [Favicon Generator on cleverly.tools](https://cleverly.tools/tools/favicon-generator) takes three steps:
 
 1. **Upload your image or enter text/emoji** — add a background color if using text
 2. **Preview** — see how the favicon looks at 16×16, 32×32, and larger sizes
@@ -124,4 +124,4 @@ Modern browsers handle PNG favicons perfectly. ICO files are included for compat
 Browser caching is the most common cause. Hard-refresh with Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac). If that does not fix it, check that the favicon file path in your HTML matches the actual file location on the server, and that the `<link>` tag is inside `<head>`.
 
 ### Can I create a favicon from an emoji?
-Yes. The [Favicon Generator](https://cleverly.tools/favicon-generator) lets you paste any emoji as the icon and apply a background color. This is a quick way to get a distinctive, recognizable favicon for any type of site.
+Yes. The [Favicon Generator](https://cleverly.tools/tools/favicon-generator) lets you paste any emoji as the icon and apply a background color. This is a quick way to get a distinctive, recognizable favicon for any type of site.

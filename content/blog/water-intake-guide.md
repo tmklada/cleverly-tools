@@ -13,7 +13,7 @@ featured: true
 
 "Drink 8 glasses of water a day" — you've heard it a hundred times. But where does that number actually come from? And is it right for you?
 
-The truth: there's no single amount that works for everyone. Your ideal water intake depends on your weight, activity level, climate, and diet. Our free [Water Intake Calculator](https://cleverly.tools/water-intake-calculator) gives you a personalized daily goal in seconds.
+The truth: there's no single amount that works for everyone. Your ideal water intake depends on your weight, activity level, climate, and diet. Our free [Water Intake Calculator](https://cleverly.tools/tools/water-intake-calculator) gives you a personalized daily goal in seconds.
 
 ---
 
@@ -67,7 +67,7 @@ Fever, diarrhea, vomiting, and urinary tract infections all increase fluid needs
 
 ## How to Use the Water Intake Calculator
 
-1. Open the [Water Intake Calculator](https://cleverly.tools/water-intake-calculator) on cleverly.tools
+1. Open the [Water Intake Calculator](https://cleverly.tools/tools/water-intake-calculator) on cleverly.tools
 2. Enter your weight
 3. Select your activity level (sedentary, lightly active, moderately active, very active)
 4. Choose your climate (temperate, hot, or very hot)
@@ -119,9 +119,9 @@ Yes — it's called hyponatremia (water intoxication), and it occurs when you dr
 
 ## Related Health Tools
 
-- [BMI Calculator](https://cleverly.tools/bmi-calculator) — check your body mass index
-- [Sleep Calculator](https://cleverly.tools/sleep-calculator) — find your ideal bedtime
-- [Body Fat Calculator](https://cleverly.tools/body-fat-calculator) — estimate your body fat percentage
+- [BMI Calculator](https://cleverly.tools/tools/bmi-calculator) — check your body mass index
+- [Sleep Calculator](https://cleverly.tools/tools/sleep-calculator) — find your ideal bedtime
+- [Body Fat Calculator](https://cleverly.tools/tools/body-fat-calculator) — estimate your body fat percentage
 
 ---
 
@@ -131,7 +131,7 @@ Yes — it's called hyponatremia (water intoxication), and it occurs when you dr
 A: Yes, despite the old myth. Coffee is about 99% water and has a mild diuretic effect that does not offset the fluid you gain from drinking it. Studies show that moderate coffee consumption (up to 4 cups per day) contributes to daily hydration. That said, plain water is always the best choice for hydration.
 
 **Q: Is 2 liters of water a day enough?**
-A: For a small, sedentary woman in a cool climate, possibly. For an active man in a hot environment, it's far too little. Use the [Water Intake Calculator](https://cleverly.tools/water-intake-calculator) to get your personal number rather than relying on generic guidelines.
+A: For a small, sedentary woman in a cool climate, possibly. For an active man in a hot environment, it's far too little. Use the [Water Intake Calculator](https://cleverly.tools/tools/water-intake-calculator) to get your personal number rather than relying on generic guidelines.
 
 **Q: Should I drink water during meals?**
 A: Yes. The old belief that water during meals "dilutes digestive enzymes" is not supported by science. Drinking water with meals can help with digestion and prevent overeating.

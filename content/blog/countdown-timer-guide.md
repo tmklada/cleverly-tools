@@ -12,7 +12,7 @@ relatedTool: "countdown-timer"
 
 Whether you're timing a workout, running a meeting, cooking dinner, managing a presentation, or counting down to an important event — a countdown timer is one of those simple tools you reach for constantly.
 
-Our free [Online Countdown Timer](https://cleverly.tools/countdown-timer) runs entirely in your browser. No download, no account, no ads covering the display. Just set the time and go.
+Our free [Online Countdown Timer](https://cleverly.tools/tools/countdown-timer) runs entirely in your browser. No download, no account, no ads covering the display. Just set the time and go.
 
 ---
 
@@ -47,7 +47,7 @@ A countdown timer is more versatile than you might think:
 
 ## How to Use the Countdown Timer
 
-Using the [Countdown Timer on cleverly.tools](https://cleverly.tools/countdown-timer) takes seconds:
+Using the [Countdown Timer on cleverly.tools](https://cleverly.tools/tools/countdown-timer) takes seconds:
 
 1. **Set your time:** Enter hours, minutes, and seconds using the number inputs or the +/- buttons
 2. **Press Start:** The timer begins counting down
@@ -96,7 +96,7 @@ HIIT (High-Intensity Interval Training) alternates between intense effort and re
 | 1:2 ratio | 20 sec | 40 sec | 8–12 |
 | Extended | 60 sec | 60 sec | 6–8 |
 
-Set the [Countdown Timer](https://cleverly.tools/countdown-timer) for your work interval, start your exercise, and reset when the alarm sounds for your rest. Simple and effective.
+Set the [Countdown Timer](https://cleverly.tools/tools/countdown-timer) for your work interval, start your exercise, and reset when the alarm sounds for your rest. Simple and effective.
 
 ---
 
@@ -109,7 +109,7 @@ Set the [Countdown Timer](https://cleverly.tools/countdown-timer) for your work 
 | Cooking, meetings, workouts | Racing, timing experiments, speed runs |
 | External deadline (bread in oven) | Internal deadline (how fast can I do this?) |
 
-We have both. If you need a stopwatch instead, check out our [Stopwatch tool](https://cleverly.tools/stopwatch).
+We have both. If you need a stopwatch instead, check out our [Stopwatch tool](https://cleverly.tools/tools/timer-stopwatch).
 
 ---
 
@@ -127,9 +127,9 @@ We have both. If you need a stopwatch instead, check out our [Stopwatch tool](ht
 
 ## Related Utility Tools
 
-- [Random Number Generator](https://cleverly.tools/random-number-generator) — generate random numbers for games and decisions
-- [Age Calculator](https://cleverly.tools/age-calculator) — calculate age from birth date
-- [Unit Converter](https://cleverly.tools/unit-converter) — convert any unit instantly
+- [Random Number Generator](https://cleverly.tools/tools/random-number-generator) — generate random numbers for games and decisions
+- [Age Calculator](https://cleverly.tools/tools/age-calculator) — calculate age from birth date
+- [Unit Converter](https://cleverly.tools/tools/unit-converter) — convert any unit instantly
 
 ---
 

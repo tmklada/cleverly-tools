@@ -13,7 +13,7 @@ featured: true
 
 Every freelancer, contractor, and small business eventually faces the same situation: you need to send an invoice quickly, you do not have accounting software, and you definitely do not want to pay a monthly subscription just to bill one client.
 
-Our free [Invoice Generator](https://cleverly.tools/invoice-generator) solves this. Fill in your details, add your line items, and download a clean PDF invoice — all in under three minutes, with no account required and no watermark on your document.
+Our free [Invoice Generator](https://cleverly.tools/tools/invoice-generator) solves this. Fill in your details, add your line items, and download a clean PDF invoice — all in under three minutes, with no account required and no watermark on your document.
 
 ## Why Use an Online Invoice Generator?
 
@@ -59,7 +59,7 @@ How you accept payment: bank transfer (with account details), PayPal, credit car
 
 ## How to Create an Invoice in 3 Minutes
 
-Using the [Invoice Generator on cleverly.tools](https://cleverly.tools/invoice-generator):
+Using the [Invoice Generator on cleverly.tools](https://cleverly.tools/tools/invoice-generator):
 
 ### Step 1 — Enter Your Details
 Fill in your name/business name, address, and contact info. These auto-populate every new invoice if you save your profile.
@@ -117,7 +117,7 @@ Most clients need an invoice first; they may also ask for a receipt after paying
 ## FAQ
 
 ### Can I download the invoice as a PDF without creating an account?
-Yes. Our [Invoice Generator](https://cleverly.tools/invoice-generator) requires no account or sign-up. Fill in the details and download your PDF instantly.
+Yes. Our [Invoice Generator](https://cleverly.tools/tools/invoice-generator) requires no account or sign-up. Fill in the details and download your PDF instantly.
 
 ### Is there a watermark on the downloaded invoice?
 No. Invoices downloaded from cleverly.tools are completely clean — no watermark, no branding added to your document.

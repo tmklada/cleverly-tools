@@ -12,7 +12,7 @@ relatedTool: "roi-calculator"
 
 Every business decision involves spending money to get something back. ROI — Return on Investment — tells you whether that exchange was worth it. It is one of the most universally used financial metrics because it works for everything: marketing campaigns, equipment purchases, hiring decisions, and stock investments.
 
-Our free [ROI Calculator](https://cleverly.tools/roi-calculator) gives you an instant result with no formulas to memorize and no spreadsheet to set up.
+Our free [ROI Calculator](https://cleverly.tools/tools/roi-calculator) gives you an instant result with no formulas to memorize and no spreadsheet to set up.
 
 ## What Is ROI?
 
@@ -78,7 +78,7 @@ ROI also does not capture risk. Two investments with the same ROI are not equall
 
 ## Using the Free ROI Calculator
 
-The [ROI Calculator on cleverly.tools](https://cleverly.tools/roi-calculator) needs just two numbers:
+The [ROI Calculator on cleverly.tools](https://cleverly.tools/tools/roi-calculator) needs just two numbers:
 
 1. **Investment cost** — how much you spent or plan to spend
 2. **Return value** — how much you earned or expect to earn

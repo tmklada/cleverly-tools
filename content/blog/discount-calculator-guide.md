@@ -12,7 +12,7 @@ relatedTool: "discount-calculator"
 
 You see a sign: "30% off!" You want to know: what do I actually pay? What am I saving?
 
-You could do the math in your head, or you could use our free [Discount Calculator](https://cleverly.tools/discount-calculator) and get the answer in one second — no math required.
+You could do the math in your head, or you could use our free [Discount Calculator](https://cleverly.tools/tools/discount-calculator) and get the answer in one second — no math required.
 
 Whether you're shopping for clothes, comparing prices online, or figuring out whether a Black Friday deal is actually good, this tool does the work for you.
 
@@ -42,7 +42,7 @@ Or directly: $80 × (1 − 0.25) = $80 × 0.75 = **$60**
 
 ## How to Use the Discount Calculator
 
-Our [Discount Calculator](https://cleverly.tools/discount-calculator) handles three common scenarios:
+Our [Discount Calculator](https://cleverly.tools/tools/discount-calculator) handles three common scenarios:
 
 **Scenario 1: What's the sale price?**
 Enter the original price and the discount percentage → get the final price and savings amount.
@@ -127,16 +127,16 @@ Research shows that for items under $100, "20% off" sounds better than "$20 off"
 
 ## Related Finance Tools
 
-- [Tip Calculator](https://cleverly.tools/tip-calculator) — calculate how much to tip at restaurants
-- [Loan Calculator](https://cleverly.tools/loan-calculator) — monthly payments and total interest
-- [Percentage Calculator](https://cleverly.tools/percentage-calculator) — calculate any percentage quickly
+- [Tip Calculator](https://cleverly.tools/tools/tip-calculator) — calculate how much to tip at restaurants
+- [Loan Calculator](https://cleverly.tools/tools/loan-calculator) — monthly payments and total interest
+- [Percentage Calculator](https://cleverly.tools/tools/percentage-calculator) — calculate any percentage quickly
 
 ---
 
 ## Frequently Asked Questions
 
 **Q: How do I calculate 20% off a price?**
-A: Multiply the original price by 0.80 (which is 1 − 0.20). For example, 20% off $75 = $75 × 0.80 = $60. Or use our [Discount Calculator](https://cleverly.tools/discount-calculator) to skip the math.
+A: Multiply the original price by 0.80 (which is 1 − 0.20). For example, 20% off $75 = $75 × 0.80 = $60. Or use our [Discount Calculator](https://cleverly.tools/tools/discount-calculator) to skip the math.
 
 **Q: What's the difference between a discount and a markdown?**
 A: They're often used interchangeably, but technically a discount is a temporary reduction (like a sale), while a markdown is a permanent price reduction. Both reduce the price you pay — the difference is whether the "original" price will return.

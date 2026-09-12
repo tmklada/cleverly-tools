@@ -12,7 +12,7 @@ relatedTool: "body-fat-calculator"
 
 Your weight on a scale tells you very little. Two people can weigh exactly the same and look completely different — because what matters isn't total weight, it's **body composition**: how much of your body is fat versus lean mass (muscle, bone, water, organs).
 
-Body fat percentage is a far more accurate health metric than weight or even BMI. Our free [Body Fat Calculator](https://cleverly.tools/body-fat-calculator) estimates your body fat % using the U.S. Navy Method — accurate, proven, and requires only a tape measure.
+Body fat percentage is a far more accurate health metric than weight or even BMI. Our free [Body Fat Calculator](https://cleverly.tools/tools/body-fat-calculator) estimates your body fat % using the U.S. Navy Method — accurate, proven, and requires only a tape measure.
 
 ---
 
@@ -53,7 +53,7 @@ The formula uses the difference between waist (and hips for women) and neck meas
 
 ## How to Use the Body Fat Calculator
 
-1. Open the [Body Fat Calculator](https://cleverly.tools/body-fat-calculator) on cleverly.tools
+1. Open the [Body Fat Calculator](https://cleverly.tools/tools/body-fat-calculator) on cleverly.tools
 2. Select your sex (male/female)
 3. Choose your preferred unit (cm or inches)
 4. Enter your measurements:
@@ -83,7 +83,7 @@ That said, neither metric tells the whole story. For a complete health picture, 
 - Waist-to-height ratio (central obesity risk)
 - Visceral fat (fat around organs — the most dangerous kind)
 
-Try our [BMI Calculator](https://cleverly.tools/bmi-calculator) alongside this tool for a fuller picture.
+Try our [BMI Calculator](https://cleverly.tools/tools/bmi-calculator) alongside this tool for a fuller picture.
 
 ---
 
@@ -104,15 +104,15 @@ Resistance training signals your body to keep muscle even when losing fat. Witho
 Any cardio burns calories. The "best" cardio is the kind you do consistently.
 
 **5. Sleep enough**
-Poor sleep elevates cortisol, which promotes fat storage — especially around the belly. Use our [Sleep Calculator](https://cleverly.tools/sleep-calculator) to optimize your rest.
+Poor sleep elevates cortisol, which promotes fat storage — especially around the belly. Use our [Sleep Calculator](https://cleverly.tools/tools/sleep-calculator) to optimize your rest.
 
 ---
 
 ## Related Health Tools
 
-- [BMI Calculator](https://cleverly.tools/bmi-calculator) — check your body mass index
-- [Water Intake Calculator](https://cleverly.tools/water-intake-calculator) — daily hydration goals
-- [Heart Rate Zones Calculator](https://cleverly.tools/heart-rate-calculator) — optimize your workouts
+- [BMI Calculator](https://cleverly.tools/tools/bmi-calculator) — check your body mass index
+- [Water Intake Calculator](https://cleverly.tools/tools/water-intake-calculator) — daily hydration goals
+- [Heart Rate Zones Calculator](https://cleverly.tools/tools/heart-rate-calculator) — optimize your workouts
 
 ---
 

@@ -14,7 +14,7 @@ You've probably heard people talk about "training in zone 2" or "staying in the 
 
 Heart rate zones are ranges of exercise intensity, expressed as a percentage of your maximum heart rate. Training in the right zone at the right time is what separates effective training from just going through the motions.
 
-Our free [Heart Rate Zones Calculator](https://cleverly.tools/heart-rate-calculator) calculates all 5 zones in seconds. All you need is your age.
+Our free [Heart Rate Zones Calculator](https://cleverly.tools/tools/heart-rate-calculator) calculates all 5 zones in seconds. All you need is your age.
 
 ---
 
@@ -54,7 +54,7 @@ From there, multiply by the zone percentages:
 - Zone 4: 185 × 0.80–0.90 = **148–167 bpm**
 - Zone 5: 185 × 0.90–1.00 = **167–185 bpm**
 
-Our [Heart Rate Zones Calculator](https://cleverly.tools/heart-rate-calculator) does all of this automatically — just enter your age.
+Our [Heart Rate Zones Calculator](https://cleverly.tools/tools/heart-rate-calculator) does all of this automatically — just enter your age.
 
 ---
 
@@ -107,9 +107,9 @@ Elite endurance athletes often have RHRs in the 40s. As fitness improves with co
 
 ## Related Health Tools
 
-- [Body Fat Calculator](https://cleverly.tools/body-fat-calculator) — track your body composition
-- [BMI Calculator](https://cleverly.tools/bmi-calculator) — check your body mass index
-- [Water Intake Calculator](https://cleverly.tools/water-intake-calculator) — stay hydrated during workouts
+- [Body Fat Calculator](https://cleverly.tools/tools/body-fat-calculator) — track your body composition
+- [BMI Calculator](https://cleverly.tools/tools/bmi-calculator) — check your body mass index
+- [Water Intake Calculator](https://cleverly.tools/tools/water-intake-calculator) — stay hydrated during workouts
 
 ---
 

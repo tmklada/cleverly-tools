@@ -12,7 +12,7 @@ relatedTool: "sleep-calculator"
 
 Most people focus on how many hours of sleep they get. But here's what the science actually shows: **when** you wake up matters just as much as how long you sleep. Waking up in the middle of a sleep cycle leaves you groggy and sluggish — even if you technically got 8 hours.
 
-Our free [Sleep Calculator](https://cleverly.tools/sleep-calculator) solves this by calculating the ideal times to fall asleep or wake up, based on 90-minute sleep cycles.
+Our free [Sleep Calculator](https://cleverly.tools/tools/sleep-calculator) solves this by calculating the ideal times to fall asleep or wake up, based on 90-minute sleep cycles.
 
 ---
 
@@ -31,7 +31,7 @@ One full cycle takes approximately **90 minutes**. Most adults complete 4–6 cy
 
 ## How to Use the Sleep Calculator
 
-Using our [Sleep Calculator on cleverly.tools](https://cleverly.tools/sleep-calculator) is simple:
+Using our [Sleep Calculator on cleverly.tools](https://cleverly.tools/tools/sleep-calculator) is simple:
 
 **Option 1 — I know when I need to wake up:**
 Enter your wake-up time and the calculator shows the best times to fall asleep (counting back in 90-minute intervals, plus 15 minutes to fall asleep).
@@ -92,9 +92,9 @@ Other factors that disrupt sleep quality:
 
 While you're optimizing your health, check out these other free tools on cleverly.tools:
 
-- [Water Intake Calculator](https://cleverly.tools/water-intake-calculator) — how much water you need daily
-- [BMI Calculator](https://cleverly.tools/bmi-calculator) — calculate your body mass index
-- [Heart Rate Zones Calculator](https://cleverly.tools/heart-rate-calculator) — find your optimal training zones
+- [Water Intake Calculator](https://cleverly.tools/tools/water-intake-calculator) — how much water you need daily
+- [BMI Calculator](https://cleverly.tools/tools/bmi-calculator) — calculate your body mass index
+- [Heart Rate Zones Calculator](https://cleverly.tools/tools/heart-rate-calculator) — find your optimal training zones
 
 ---
 

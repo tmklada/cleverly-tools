@@ -12,7 +12,7 @@ relatedTool: "json-to-csv"
 
 JSON is the standard format for APIs and web applications. CSV is the standard format for spreadsheets, databases, and reporting tools. Sooner or later, you need to get data from one format to the other — and writing a script just to do a one-time conversion is overkill.
 
-Our free [JSON to CSV Converter](https://cleverly.tools/json-to-csv) handles the conversion in your browser: paste JSON, get CSV, download the file. No coding, no server, no account.
+Our free [JSON to CSV Converter](https://cleverly.tools/tools/json-to-csv) handles the conversion in your browser: paste JSON, get CSV, download the file. No coding, no server, no account.
 
 ## JSON vs CSV — When to Use Which
 
@@ -77,7 +77,7 @@ id,user.name,user.email,amount
 1,Alice,alice@example.com,150
 ```
 
-Our [JSON to CSV tool](https://cleverly.tools/json-to-csv) handles this flattening automatically, giving you sensible column names for nested fields.
+Our [JSON to CSV tool](https://cleverly.tools/tools/json-to-csv) handles this flattening automatically, giving you sensible column names for nested fields.
 
 ## Step-by-Step: Convert JSON to CSV
 
@@ -85,7 +85,7 @@ Our [JSON to CSV tool](https://cleverly.tools/json-to-csv) handles this flatteni
 Copy your JSON from an API response, a database export, a `.json` file, or any source. It should be a valid JSON array of objects.
 
 ### Step 2 — Paste Into the Tool
-Go to [cleverly.tools/json-to-csv](https://cleverly.tools/json-to-csv) and paste your JSON into the input area. The tool validates the JSON immediately and shows an error if the format is invalid.
+Go to [cleverly.tools/tools/json-to-csv](https://cleverly.tools/tools/json-to-csv) and paste your JSON into the input area. The tool validates the JSON immediately and shows an error if the format is invalid.
 
 ### Step 3 — Preview the Table
 The tool displays your data as a table preview, so you can verify that the columns and rows look correct before downloading.
@@ -120,7 +120,7 @@ If you get a conversion error, it usually means your JSON is malformed. Common i
 - Missing brackets or braces
 - Unescaped special characters in strings
 
-Use a [JSON formatter and validator](https://cleverly.tools/json-formatter) to check and fix your JSON before converting.
+Use a [JSON formatter and validator](https://cleverly.tools/tools/json-formatter) to check and fix your JSON before converting.
 
 ---
 

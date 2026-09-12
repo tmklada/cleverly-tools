@@ -12,7 +12,7 @@ relatedTool: "tip-calculator"
 
 You've finished a great meal. The bill arrives. Now comes the mental math — and the social anxiety: Is 18% enough? Should I tip on the pre-tax total? How do we split this evenly?
 
-Skip the math entirely. Our free [Tip Calculator](https://cleverly.tools/tip-calculator) calculates the tip, total, and per-person split in seconds.
+Skip the math entirely. Our free [Tip Calculator](https://cleverly.tools/tools/tip-calculator) calculates the tip, total, and per-person split in seconds.
 
 ---
 
@@ -61,13 +61,13 @@ Per Person = Final Total / Number of People
 - Total: $65 + $13 = **$78.00**
 - Per Person: $78 ÷ 4 = **$19.50**
 
-Or: use our [Tip Calculator](https://cleverly.tools/tip-calculator) and get this in two seconds.
+Or: use our [Tip Calculator](https://cleverly.tools/tools/tip-calculator) and get this in two seconds.
 
 ---
 
 ## How to Use the Tip Calculator
 
-1. Open the [Tip Calculator](https://cleverly.tools/tip-calculator) on cleverly.tools
+1. Open the [Tip Calculator](https://cleverly.tools/tools/tip-calculator) on cleverly.tools
 2. Enter your **bill amount** (before tip)
 3. Select your **tip percentage** (or type a custom %)
 4. Enter the **number of people** splitting the bill
@@ -124,9 +124,9 @@ Delivery tipping has become more complicated with apps like DoorDash, Uber Eats,
 
 ## Related Finance Tools
 
-- [Discount Calculator](https://cleverly.tools/discount-calculator) — calculate sale prices and savings
-- [Loan Calculator](https://cleverly.tools/loan-calculator) — monthly payments and interest
-- [Percentage Calculator](https://cleverly.tools/percentage-calculator) — calculate any percentage instantly
+- [Discount Calculator](https://cleverly.tools/tools/discount-calculator) — calculate sale prices and savings
+- [Loan Calculator](https://cleverly.tools/tools/loan-calculator) — monthly payments and interest
+- [Percentage Calculator](https://cleverly.tools/tools/percentage-calculator) — calculate any percentage instantly
 
 ---
 
@@ -139,7 +139,7 @@ A: Tipping norms exist because servers in many countries (especially the U.S.) e
 A: Counter-service restaurants (fast casual, coffee shops) now frequently prompt for tips on digital payment screens. There's no social obligation to tip here the way there is at sit-down restaurants. If you're a regular or the staff goes out of their way, a tip is appreciated but never required.
 
 **Q: Should I split the tip or the total?**
-A: Split the **total** (bill + tip) — our [Tip Calculator](https://cleverly.tools/tip-calculator) does this automatically. If you split just the bill and calculate tips separately, rounding errors often mean the tip is underpaid.
+A: Split the **total** (bill + tip) — our [Tip Calculator](https://cleverly.tools/tools/tip-calculator) does this automatically. If you split just the bill and calculate tips separately, rounding errors often mean the tip is underpaid.
 
 **Q: What's the easiest way to calculate 20% in my head?**
 A: Find 10% of the bill (move the decimal one place left), then double it. On a $47 bill: 10% = $4.70, double = $9.40 tip. For 15%, find 10%, then add half: $4.70 + $2.35 = $7.05 tip.

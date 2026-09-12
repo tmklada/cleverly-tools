@@ -12,7 +12,7 @@ relatedTool: "number-to-words"
 
 Writing numbers in words is one of those tasks that sounds trivial but trips people up constantly. Is it "one hundred twenty three" or "one hundred and twenty-three"? How do you write "$2,450.75" in words for a check? What about large numbers like 1,000,000,000?
 
-Our free [Number to Words Converter](https://cleverly.tools/number-to-words) converts any number to its written-out form instantly — no guessing, no mistakes, no wasted time.
+Our free [Number to Words Converter](https://cleverly.tools/tools/number-to-words) converts any number to its written-out form instantly — no guessing, no mistakes, no wasted time.
 
 ## Why Convert Numbers to Words?
 
@@ -75,7 +75,7 @@ Note: In the British "long scale" system (used in some European countries), a bi
 
 ## How to Use the Number to Words Converter
 
-The [Number to Words Converter on cleverly.tools](https://cleverly.tools/number-to-words) is simple:
+The [Number to Words Converter on cleverly.tools](https://cleverly.tools/tools/number-to-words) is simple:
 
 1. **Type or paste any number** — integers, decimals, large numbers, negative numbers
 2. **Select the format:**
@@ -102,7 +102,7 @@ Number-to-word conventions vary significantly between languages. English is rela
 ## FAQ
 
 ### How do I write a check amount in words?
-Write the dollar amount in words, then the cents as a fraction over 100. Example: $1,250.75 → "One thousand two hundred fifty and 75/100 dollars." Use our [Number to Words Converter](https://cleverly.tools/number-to-words) and select the "Currency" format to get the exact check-ready format.
+Write the dollar amount in words, then the cents as a fraction over 100. Example: $1,250.75 → "One thousand two hundred fifty and 75/100 dollars." Use our [Number to Words Converter](https://cleverly.tools/tools/number-to-words) and select the "Currency" format to get the exact check-ready format.
 
 ### Is there a difference between American and British number-to-words?
 Yes. In American English: "one hundred twenty-three." In British English: "one hundred and twenty-three" — note the "and" before the tens. Also, Americans say "a billion" for 10^9, while the British long scale traditionally used "a thousand million" — though modern British usage has adopted the American short scale.

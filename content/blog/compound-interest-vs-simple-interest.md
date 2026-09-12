@@ -12,7 +12,7 @@ relatedTool: "compound-interest-calculator"
 
 Whether you are saving money, investing, or taking out a loan, understanding how interest works can be worth thousands of dollars. The difference between **simple interest** and **compound interest** sounds like a math lesson — but in practice, it determines whether your money grows slowly or exponentially.
 
-Use our free [Compound Interest Calculator](https://cleverly.tools/compound-interest-calculator) to see the exact numbers for your situation without any formulas or spreadsheets.
+Use our free [Compound Interest Calculator](https://cleverly.tools/tools/compound-interest-calculator) to see the exact numbers for your situation without any formulas or spreadsheets.
 
 ## What Is Simple Interest?
 
@@ -79,7 +79,7 @@ Compound interest works against you when you borrow. Credit card debt compounded
 
 ## How to Use the Compound Interest Calculator
 
-The [Compound Interest Calculator on cleverly.tools](https://cleverly.tools/compound-interest-calculator) needs just four inputs:
+The [Compound Interest Calculator on cleverly.tools](https://cleverly.tools/tools/compound-interest-calculator) needs just four inputs:
 
 1. **Principal** — your starting amount
 2. **Annual interest rate** — in percentage

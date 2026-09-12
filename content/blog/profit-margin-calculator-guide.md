@@ -12,7 +12,7 @@ relatedTool: "profit-margin-calculator"
 
 Pricing your product or service correctly is one of the most critical decisions in any business. Too low and you lose money even as sales increase. Too high and customers go elsewhere. Understanding **profit margin** — and the difference between gross, net, and markup — gives you the foundation to price with confidence.
 
-Our free [Profit Margin Calculator](https://cleverly.tools/profit-margin-calculator) lets you calculate any of these figures instantly, without formulas or spreadsheets.
+Our free [Profit Margin Calculator](https://cleverly.tools/tools/profit-margin-calculator) lets you calculate any of these figures instantly, without formulas or spreadsheets.
 
 ## What Is Profit Margin?
 
@@ -83,7 +83,7 @@ To convert margin to markup:
 
 ## How to Use the Profit Margin Calculator
 
-The [Profit Margin Calculator on cleverly.tools](https://cleverly.tools/profit-margin-calculator) handles all three calculations. You can:
+The [Profit Margin Calculator on cleverly.tools](https://cleverly.tools/tools/profit-margin-calculator) handles all three calculations. You can:
 
 - Enter **revenue and cost** to get gross margin, net margin, and markup
 - Enter a **desired margin** and cost to find the required selling price

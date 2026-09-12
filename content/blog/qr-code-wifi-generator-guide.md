@@ -12,7 +12,7 @@ relatedTool: "wifi-qr-code-generator"
 
 Sharing your WiFi password the old way — reading it out loud, writing it on a sticky note, or typing it character by character — is frustrating for everyone. There is a better way: a **WiFi QR code**. Anyone who scans it connects instantly, no password typing needed.
 
-Our free [WiFi QR Code Generator](https://cleverly.tools/wifi-qr-code-generator) lets you create a scannable QR code for your network in under 30 seconds. No sign-up, no watermark, no app required — just fill in your network details, download the image, and you're done.
+Our free [WiFi QR Code Generator](https://cleverly.tools/tools/wifi-qr-code-generator) lets you create a scannable QR code for your network in under 30 seconds. No sign-up, no watermark, no app required — just fill in your network details, download the image, and you're done.
 
 ## What Is a WiFi QR Code?
 
@@ -29,7 +29,7 @@ Modern iPhones (iOS 11+) and Android phones (Android 9+) support WiFi QR codes n
 
 ## How to Create a WiFi QR Code Step by Step
 
-Using the [WiFi QR Code Generator on cleverly.tools](https://cleverly.tools/wifi-qr-code-generator) is straightforward:
+Using the [WiFi QR Code Generator on cleverly.tools](https://cleverly.tools/tools/wifi-qr-code-generator) is straightforward:
 
 ### Step 1 — Enter Your Network Name (SSID)
 Type the exact name of your WiFi network as it appears in the device's network list. It is case-sensitive.
@@ -76,7 +76,7 @@ For guest access, consider creating a separate guest network with its own passwo
 ## FAQ
 
 ### Can I create a WiFi QR code without an app?
-Yes. The [WiFi QR Code Generator on cleverly.tools](https://cleverly.tools/wifi-qr-code-generator) works entirely in your browser. No app, no account, no installation needed.
+Yes. The [WiFi QR Code Generator on cleverly.tools](https://cleverly.tools/tools/wifi-qr-code-generator) works entirely in your browser. No app, no account, no installation needed.
 
 ### Does the WiFi QR code expire?
 No. A WiFi QR code does not expire on its own. It stops working only if you change your network name or password — in that case, generate a new one.

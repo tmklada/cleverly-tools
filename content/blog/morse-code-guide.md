@@ -10,7 +10,7 @@ relatedTool: "morse-code-translator"
 
 # Morse Code Translator — Convert Text to Morse Code Free
 
-Morse code is one of the oldest and most clever communication systems ever invented — and it's still used today. Whether you need to encode a message, learn the alphabet, or just satisfy your curiosity, our free [Morse Code Translator](https://cleverly.tools/morse-code-translator) converts text to Morse code and Morse code to text instantly.
+Morse code is one of the oldest and most clever communication systems ever invented — and it's still used today. Whether you need to encode a message, learn the alphabet, or just satisfy your curiosity, our free [Morse Code Translator](https://cleverly.tools/tools/morse-code-translator) converts text to Morse code and Morse code to text instantly.
 
 ---
 
@@ -65,7 +65,7 @@ Each letter and number has a unique pattern of dots and dashes:
 
 ## How to Use the Morse Code Translator
 
-Our [Morse Code Translator](https://cleverly.tools/morse-code-translator) is simple:
+Our [Morse Code Translator](https://cleverly.tools/tools/morse-code-translator) is simple:
 
 **Text to Morse Code:**
 1. Type or paste your text in the input field
@@ -126,9 +126,9 @@ Morse code was officially retired from maritime communications in 1999, when the
 
 ## Related Text Tools
 
-- [Text Case Converter](https://cleverly.tools/text-case-converter) — convert text to uppercase, lowercase, title case
-- [Word Counter](https://cleverly.tools/word-counter) — count words, characters, and reading time
-- [Lorem Ipsum Generator](https://cleverly.tools/lorem-ipsum-generator) — generate placeholder text
+- [Text Case Converter](https://cleverly.tools/tools/text-case-converter) — convert text to uppercase, lowercase, title case
+- [Word Counter](https://cleverly.tools/tools/word-counter) — count words, characters, and reading time
+- [Lorem Ipsum Generator](https://cleverly.tools/tools/lorem-ipsum-generator) — generate placeholder text
 
 ---
 

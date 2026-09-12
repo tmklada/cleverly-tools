@@ -12,7 +12,7 @@ relatedTool: "box-shadow-generator"
 
 CSS box shadows can make a button feel clickable, a card feel elevated, and a UI feel polished — or they can make everything look muddy and overdone if the values are wrong. Getting the right combination of offset, blur, spread, and color by hand is tedious, especially when you are fine-tuning by eye.
 
-Our free [CSS Box Shadow Generator](https://cleverly.tools/box-shadow-generator) lets you adjust all the parameters with sliders and see the result live — then copy the finished CSS code in one click.
+Our free [CSS Box Shadow Generator](https://cleverly.tools/tools/box-shadow-generator) lets you adjust all the parameters with sliders and see the result live — then copy the finished CSS code in one click.
 
 ## Understanding the CSS box-shadow Property
 
@@ -101,7 +101,7 @@ box-shadow:
 
 ## How to Use the Box Shadow Generator
 
-The [Box Shadow Generator on cleverly.tools](https://cleverly.tools/box-shadow-generator) gives you a live visual preview as you adjust each parameter:
+The [Box Shadow Generator on cleverly.tools](https://cleverly.tools/tools/box-shadow-generator) gives you a live visual preview as you adjust each parameter:
 
 1. **Set X and Y offset** using sliders — watch the shadow direction change in real time
 2. **Adjust blur radius** — from crisp (0) to very soft (60+)
@@ -125,7 +125,7 @@ You can also add multiple shadows and see how they layer together before copying
 ## FAQ
 
 ### Can I generate an inset box shadow with this tool?
-Yes. Toggle the "Inset" option in the [CSS Box Shadow Generator](https://cleverly.tools/box-shadow-generator) and the shadow moves inside the element. This is useful for pressed-state buttons, inner glow effects, and embossed looks.
+Yes. Toggle the "Inset" option in the [CSS Box Shadow Generator](https://cleverly.tools/tools/box-shadow-generator) and the shadow moves inside the element. This is useful for pressed-state buttons, inner glow effects, and embossed looks.
 
 ### How do I create multiple box shadows in CSS?
 Separate each shadow definition with a comma in the `box-shadow` property. Our generator supports multiple shadows — add them in the tool and copy the combined CSS output.

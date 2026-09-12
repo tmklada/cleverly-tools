@@ -12,7 +12,7 @@ relatedTool: "image-flipper"
 
 Flipping or mirroring an image is one of those tasks that should take five seconds but ends up taking five minutes if you are opening Photoshop, fighting with Microsoft Paint, or searching for an app. There is a faster way.
 
-Our free [Image Flipper](https://cleverly.tools/image-flipper) lets you flip any image horizontally or vertically instantly in your browser — no upload to a server, no software to install, no account needed.
+Our free [Image Flipper](https://cleverly.tools/tools/image-flipper) lets you flip any image horizontally or vertically instantly in your browser — no upload to a server, no software to install, no account needed.
 
 ## The Difference Between Flipping and Mirroring
 
@@ -47,7 +47,7 @@ Flip an image vertically and place it below the original to simulate a reflectio
 
 ## How to Flip an Image Step by Step
 
-Using the [Image Flipper on cleverly.tools](https://cleverly.tools/image-flipper):
+Using the [Image Flipper on cleverly.tools](https://cleverly.tools/tools/image-flipper):
 
 ### Step 1 — Upload Your Image
 Click the upload area or drag and drop your image file. Supported formats include JPG, PNG, WebP, GIF, and BMP.
@@ -106,14 +106,14 @@ Example: flipping text horizontally makes it backwards (mirror writing). Rotatin
 
 ## Privacy — Does the Tool Upload My Photos?
 
-No. The [Image Flipper](https://cleverly.tools/image-flipper) processes everything in your browser using the HTML5 Canvas API. Your image is never sent to any server. This makes it safe to use with sensitive photos, client work, or private documents.
+No. The [Image Flipper](https://cleverly.tools/tools/image-flipper) processes everything in your browser using the HTML5 Canvas API. Your image is never sent to any server. This makes it safe to use with sensitive photos, client work, or private documents.
 
 ---
 
 ## FAQ
 
 ### How do I flip an image on my phone without an app?
-Our [Image Flipper](https://cleverly.tools/image-flipper) works directly in any mobile browser — open it on your phone, tap to upload from your camera roll, and download the flipped image. No app installation required.
+Our [Image Flipper](https://cleverly.tools/tools/image-flipper) works directly in any mobile browser — open it on your phone, tap to upload from your camera roll, and download the flipped image. No app installation required.
 
 ### Does flipping an image reduce quality?
 No. A flip is a lossless geometric transformation. The pixels are rearranged but not recompressed. Your image quality is preserved at the original resolution.

@@ -13,7 +13,7 @@ featured: true
 
 Every device connected to the internet has an IP address — a numerical label that identifies it on the network. Knowing your IP address comes up more often than you would expect: troubleshooting connectivity issues, setting up a server, configuring a firewall, whitelisting your office IP, or checking whether a VPN is working.
 
-Our free [IP Address Lookup](https://cleverly.tools/ip-address-lookup) shows your public IP address, approximate location, ISP, and more — instantly, without any sign-up or app.
+Our free [IP Address Lookup](https://cleverly.tools/tools/ip-address-lookup) shows your public IP address, approximate location, ISP, and more — instantly, without any sign-up or app.
 
 ## What Is an IP Address?
 
@@ -47,7 +47,7 @@ This is the IP address assigned to your specific device within your local networ
 
 Your router assigns private IPs to each device and translates between private and public addresses using NAT.
 
-When you use our [IP Address Lookup](https://cleverly.tools/ip-address-lookup), you see your **public IP** — the one visible to the outside world.
+When you use our [IP Address Lookup](https://cleverly.tools/tools/ip-address-lookup), you see your **public IP** — the one visible to the outside world.
 
 ## What Information Does an IP Address Reveal?
 
@@ -104,7 +104,7 @@ Yes. A VPN routes your traffic through a server in another location, and website
 ## FAQ
 
 ### What is my current IP address?
-Open our [IP Address Lookup tool](https://cleverly.tools/ip-address-lookup) to see your current public IP instantly — no sign-up or software needed.
+Open our [IP Address Lookup tool](https://cleverly.tools/tools/ip-address-lookup) to see your current public IP instantly — no sign-up or software needed.
 
 ### Why does my IP show a different city than where I live?
 IP geolocation uses ISP registration data, not your actual location. Your ISP may route traffic through a hub in a different city, causing the reported location to differ. This is normal and expected. Geolocation is an estimate, not GPS tracking.

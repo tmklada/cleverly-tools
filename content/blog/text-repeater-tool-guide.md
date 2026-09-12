@@ -12,7 +12,7 @@ relatedTool: "text-repeater"
 
 Sometimes you need to repeat a word, phrase, emoji, line, or character pattern many times over — for testing, content formatting, data generation, or filling a template. Doing it manually is tedious. Writing a loop in code is overkill for a quick one-off task.
 
-Our free [Text Repeater](https://cleverly.tools/text-repeater) does it in seconds: paste your text, set the count, choose a separator, and copy the result. No code, no account, no friction.
+Our free [Text Repeater](https://cleverly.tools/tools/text-repeater) does it in seconds: paste your text, set the count, choose a separator, and copy the result. No code, no account, no friction.
 
 ## What Is a Text Repeater?
 
@@ -59,7 +59,7 @@ hello
 
 ## How to Use the Text Repeater
 
-The [Text Repeater on cleverly.tools](https://cleverly.tools/text-repeater) takes three inputs:
+The [Text Repeater on cleverly.tools](https://cleverly.tools/tools/text-repeater) takes three inputs:
 
 ### Step 1 — Enter Your Text
 Type or paste anything in the input box: a word, sentence, emoji, symbol, or code snippet. There is no length limit — repeat a single character or a full paragraph.
@@ -145,21 +145,21 @@ printf 'hello%.0s' {1..5}
 # hellohellohellohellohello
 ```
 
-For quick one-offs outside of code, the [Text Repeater tool](https://cleverly.tools/text-repeater) is faster than writing and running a script.
+For quick one-offs outside of code, the [Text Repeater tool](https://cleverly.tools/tools/text-repeater) is faster than writing and running a script.
 
 ## Tips and Tricks
 
 - **Repeat multi-line text:** Paste a full paragraph, set repeat to 3 with newline separator — generates 3 paragraphs instantly
 - **Test character limits:** Repeat a single letter 1000+ times to see where an input field or database field truncates
 - **Generate repeating patterns:** Use no separator for unbroken patterns (great for design mocks and visual tests)
-- **Mix with other tools:** Use the output with our [Word Counter](https://cleverly.tools/word-counter) to verify the repeated word count
+- **Mix with other tools:** Use the output with our [Word Counter](https://cleverly.tools/tools/word-counter) to verify the repeated word count
 
 ---
 
 ## FAQ
 
 ### How many times can I repeat text?
-There is no hard cap in the [Text Repeater](https://cleverly.tools/text-repeater). You can repeat text thousands of times. Very large outputs (millions of characters) may take a second to generate and could be slow to copy depending on your browser.
+There is no hard cap in the [Text Repeater](https://cleverly.tools/tools/text-repeater). You can repeat text thousands of times. Very large outputs (millions of characters) may take a second to generate and could be slow to copy depending on your browser.
 
 ### Can I repeat multi-line text?
 Yes. Paste any multi-line block into the input — each full block will be repeated as a unit, separated by your chosen delimiter.

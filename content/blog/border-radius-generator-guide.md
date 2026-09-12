@@ -12,7 +12,7 @@ relatedTool: "border-radius-generator"
 
 Rounded corners are everywhere in modern web design — from buttons and cards to avatars and modals. CSS `border-radius` is simple for basic cases, but when you want asymmetric corners, elliptical radii, or complex organic shapes, the syntax quickly becomes confusing.
 
-Our free [CSS Border Radius Generator](https://cleverly.tools/border-radius-generator) lets you drag sliders to adjust each corner independently, see the live preview, and copy the finished CSS code with one click.
+Our free [CSS Border Radius Generator](https://cleverly.tools/tools/border-radius-generator) lets you drag sliders to adjust each corner independently, see the live preview, and copy the finished CSS code with one click.
 
 ## The CSS border-radius Property
 
@@ -105,7 +105,7 @@ One exaggerated corner for asymmetric design accents.
 
 ## How to Use the Border Radius Generator
 
-The [Border Radius Generator on cleverly.tools](https://cleverly.tools/border-radius-generator) makes visual experimentation fast:
+The [Border Radius Generator on cleverly.tools](https://cleverly.tools/tools/border-radius-generator) makes visual experimentation fast:
 
 1. **Adjust each corner** — four independent sliders for top-left, top-right, bottom-right, bottom-left
 2. **Toggle elliptical mode** — unlock separate horizontal and vertical radii per corner for advanced shapes
@@ -147,7 +147,7 @@ Apply `border-radius: 50%` to an element that has equal width and height (a squa
 Pixel values define an absolute radius size. Percentage values are relative to the element's dimensions — `50%` on a 100×100px element gives a 50px radius. Percentages are useful for responsive designs because the radius scales with the element.
 
 ### Can I generate CSS blob shapes with this tool?
-Yes. By enabling elliptical mode and setting different horizontal and vertical radii per corner, you can create organic blob shapes. The [Border Radius Generator](https://cleverly.tools/border-radius-generator) previews these shapes live so you can experiment until it looks right.
+Yes. By enabling elliptical mode and setting different horizontal and vertical radii per corner, you can create organic blob shapes. The [Border Radius Generator](https://cleverly.tools/tools/border-radius-generator) previews these shapes live so you can experiment until it looks right.
 
 ### Does border-radius work on images?
 Yes. Applying `border-radius` to an `<img>` element rounds its visual corners. Combined with `overflow: hidden` on a parent container, you can also clip images to any custom shape.
