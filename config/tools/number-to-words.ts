@@ -10,8 +10,8 @@ const config: ToolConfig = {
   toolType: "text",
   faq: [
     { question: "What is Number to Words used for?", answer: "It is commonly used for writing check amounts, legal contracts, invoices, and anywhere numbers must be spelled out in full." },
-    { question: "What is the largest number supported?", answer: "Numbers up to one trillion are fully supported, including proper use of billion, million, and thousand." },
-    { question: "Can it handle decimal numbers?", answer: "Yes, decimals are converted too — for example, 3.14 becomes 'three point one four' or as currency 'three dollars and 14 cents'." },
+    { question: "What is the largest number supported?", answer: "Numbers up to 999,999,999,999,999 (999 trillion) are fully supported, including proper use of trillion, billion, million, and thousand." },
+    { question: "Can it handle decimal numbers?", answer: "In Words and Ordinal mode only the whole-number part is converted, so 3.14 becomes 'three'. In Currency mode the decimal part is converted too, as cents — 3.14 becomes 'three dollars and fourteen cents'." },
   ],
   howItWorks: [
     { step: 1, title: "Enter a number", description: "Type any whole number or decimal into the input field." },

@@ -11,7 +11,7 @@ const config: ToolConfig = {
   faq: [
     { question: "What can I use Text Repeater for?", answer: "It is useful for generating test data, creating patterns, filling placeholder content, or quickly building repeated strings." },
     { question: "Can I set a separator between repetitions?", answer: "Yes, you can choose any separator — newline, space, comma, or a custom character between each repetition." },
-    { question: "Is there a limit to how many times I can repeat?", answer: "You can repeat text up to 10,000 times — suitable for most testing and content generation needs." },
+    { question: "Is there a limit to how many times I can repeat?", answer: "You can repeat text up to 1,000 times using the slider — suitable for most testing and content generation needs." },
   ],
   howItWorks: [
     { step: 1, title: "Enter your text", description: "Type or paste the text, word, or character you want to repeat." },

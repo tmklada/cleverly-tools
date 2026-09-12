@@ -15,7 +15,7 @@ const config: ToolConfig = {
   ],
   howItWorks: [
     { step: 1, title: "Paste your content", description: "Copy and paste your article, blog post, or page content into the text area." },
-    { step: 2, title: "Analyze keyword frequency", description: "The tool counts all words and calculates how often each keyword and phrase appears." },
+    { step: 2, title: "Analyze keyword frequency", description: "The tool counts all single words in your text and calculates how often each one appears." },
     { step: 3, title: "Review and optimize", description: "See density percentages for each term and adjust your content to optimal levels." },
   ],
   relatedTools: ["meta-tag-generator", "robots-txt-generator", "schema-markup-generator"],

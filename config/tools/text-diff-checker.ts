@@ -12,7 +12,7 @@ const config: ToolConfig = {
   faq: [
     { question: "What is a text diff checker?", answer: "It compares two blocks of text and highlights what has been added, removed, or changed between them." },
     { question: "Can I compare code with this tool?", answer: "Yes, it works with any text including source code, documents, emails, and configuration files." },
-    { question: "Is comparison case-sensitive?", answer: "By default yes, but you can toggle case-insensitive mode to ignore capitalization differences." },
+    { question: "Is comparison case-sensitive?", answer: "Yes, the comparison is always case-sensitive, so a change in capitalization on an otherwise identical line will show up as a removed and added line." },
   ],
   howItWorks: [
     { step: 1, title: "Paste original text", description: "Enter or paste the original version of your text in the left panel." },

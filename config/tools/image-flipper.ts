@@ -2,7 +2,7 @@ import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-flipper",
   title: "Image Flipper & Mirror",
-  description: "Flip or mirror any image horizontally or vertically online for free with no software needed. Create perfect mirror images instantly and download the result in your original format.",
+  description: "Flip or mirror any image horizontally or vertically online for free with no software needed. Create perfect mirror images instantly and download the result as a PNG file.",
   shortDescription: "Flip and mirror images horizontally or vertically",
   category: "image",
   keywords: ["image flipper", "flip image online", "mirror image", "flip photo", "horizontal flip", "vertical flip", "image mirror tool"],
@@ -16,7 +16,7 @@ const config: ToolConfig = {
   howItWorks: [
     { step: 1, title: "Upload your image", description: "Select or drag your image file into the upload area." },
     { step: 2, title: "Choose flip direction", description: "Click Flip Horizontal or Flip Vertical — preview updates instantly." },
-    { step: 3, title: "Download the result", description: "Download the flipped image in your original format." },
+    { step: 3, title: "Download the result", description: "Download the flipped image as a PNG file." },
   ],
   relatedTools: ["image-cropper", "image-resizer", "image-compressor"],
   schema: "WebApplication",

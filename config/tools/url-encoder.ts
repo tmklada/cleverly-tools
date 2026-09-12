@@ -10,7 +10,7 @@ const config: ToolConfig = {
   toolType: "developer",
   faq: [
     { question: "Why do URLs need encoding?", answer: "URLs can only contain certain characters. Special characters like spaces, &, = must be percent-encoded (e.g. space becomes %20)." },
-    { question: "What is the difference between encodeURI and encodeURIComponent?", answer: "encodeURI encodes a full URL, encodeURIComponent encodes a query parameter value. Our tool uses encodeURIComponent by default." },
+    { question: "What is the difference between encodeURI and encodeURIComponent?", answer: "encodeURI encodes a full URL and leaves reserved characters like / and : untouched; encodeURIComponent encodes a single query parameter value, including those reserved characters. This tool always uses encodeURIComponent and decodeURIComponent — it does not offer a separate encodeURI mode for encoding a whole pre-built URL." },
   ],
   howItWorks: [
     { step: 1, title: "Paste your text or URL", description: "Enter the string you want to encode or decode." },

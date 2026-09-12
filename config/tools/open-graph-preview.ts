@@ -2,7 +2,7 @@ import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "open-graph-preview",
   title: "Open Graph Preview Tool",
-  description: "Preview how your website looks when shared on Facebook, Twitter, LinkedIn, and WhatsApp before publishing. Check your Open Graph tags and fix issues instantly.",
+  description: "Preview how your website looks when shared on Facebook, LinkedIn, Twitter, and Google Search before publishing. Enter your Open Graph tags manually and check them instantly.",
   shortDescription: "Preview social media link cards for your site",
   category: "seo",
   keywords: ["open graph preview", "og preview tool", "social media preview", "facebook link preview", "twitter card preview", "og tags checker", "link preview tool", "social sharing preview"],
@@ -14,7 +14,7 @@ const config: ToolConfig = {
     { question: "What is the ideal image size for Open Graph?", answer: "The recommended Open Graph image size is 1200×630 pixels with at least 200×200 minimum. Use JPG or PNG format with a file size under 8MB." },
   ],
   howItWorks: [
-    { step: 1, title: "Enter your page URL or tags", description: "Paste your URL or manually enter your Open Graph title, description, and image URL." },
+    { step: 1, title: "Enter your Open Graph tags", description: "Manually type in your title, description, image URL, site name, and page URL — this tool does not fetch tags from a live page automatically." },
     { step: 2, title: "Preview across platforms", description: "See how your link card looks on Facebook, Twitter, LinkedIn, and WhatsApp." },
     { step: 3, title: "Fix and improve", description: "Identify issues with your OG tags and make corrections before sharing." },
   ],

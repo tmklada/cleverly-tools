@@ -10,13 +10,13 @@ const config: ToolConfig = {
   toolType: "text",
   faq: [
     { question: "What does the String Reverse tool do?", answer: "It flips your text backwards — reversing the order of all characters so the last character becomes the first." },
-    { question: "Can I reverse word order instead of characters?", answer: "Yes, the tool offers both options: reverse all characters or reverse the order of words while keeping each word intact." },
+    { question: "Can I reverse word order instead of characters?", answer: "Yes — the tool shows four versions at once: the full string reversed, each word's letters reversed while word order stays the same, the word order reversed while each word stays intact, and a Unicode mirror-flip version." },
     { question: "Is there a limit to text length?", answer: "No practical limit — you can reverse paragraphs, code snippets, or any amount of text." },
   ],
   howItWorks: [
     { step: 1, title: "Enter your text", description: "Type or paste the string or sentence you want to reverse." },
-    { step: 2, title: "Choose reverse mode", description: "Select character reverse or word-order reverse." },
-    { step: 3, title: "Copy the result", description: "The reversed text appears instantly — copy it with one click." },
+    { step: 2, title: "View all reverse formats", description: "Four versions appear instantly: full string reversed, word letters reversed, word order reversed, and a Unicode mirror flip." },
+    { step: 3, title: "Copy the result you need", description: "Each version has its own copy button — click the one matching what you're after." },
   ],
   relatedTools: ["text-repeater", "text-diff-checker", "lorem-ipsum-generator"],
   schema: "WebApplication",

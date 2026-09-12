@@ -16,7 +16,7 @@ const config: ToolConfig = {
   howItWorks: [
     { step: 1, title: "Upload your image", description: "Select a color photo from your device or drag it into the tool." },
     { step: 2, title: "Preview the result", description: "See the grayscale version instantly in the live preview." },
-    { step: 3, title: "Download the image", description: "Download the black and white image in your preferred format." },
+    { step: 3, title: "Download the image", description: "Download the result as a PNG file, regardless of the format you uploaded." },
   ],
   relatedTools: ["image-converter", "image-compressor", "image-color-picker"],
   schema: "WebApplication",

@@ -10,7 +10,7 @@ const config: ToolConfig = {
   toolType: "seo",
   faq: [
     { question: "What is schema markup?", answer: "Schema markup is structured data code added to your webpage's HTML that helps search engines better understand your content. It can enable rich results like star ratings, FAQs, and event details in search results." },
-    { question: "What schema types are supported?", answer: "The generator supports common schema types including Article, Product, LocalBusiness, FAQ, Event, Recipe, Person, Organization, and BreadcrumbList." },
+    { question: "What schema types are supported?", answer: "The generator supports six schema types: Article, Product, FAQ, LocalBusiness (with sub-types like Restaurant, Store, Hotel, Hospital, School, and Gym), Recipe, and Event." },
     { question: "How do I add schema markup to my website?", answer: "Copy the generated JSON-LD code and paste it inside a <script type='application/ld+json'> tag in your page's HTML head or body section." },
   ],
   howItWorks: [

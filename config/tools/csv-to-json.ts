@@ -11,10 +11,10 @@ const config: ToolConfig = {
   faq: [
     { question: "How does CSV to JSON conversion work?", answer: "The first row of your CSV is used as keys and each subsequent row becomes a JSON object in an array." },
     { question: "What delimiter types are supported?", answer: "Commas, semicolons, and tabs are supported as delimiters." },
-    { question: "Can I paste CSV directly or do I need to upload a file?", answer: "Both options are supported — paste raw CSV text or upload a .csv file." },
+    { question: "Can I paste CSV directly or do I need to upload a file?", answer: "You paste raw CSV text directly into the input box — there is no file upload button, so open your .csv file in a text editor or spreadsheet app first and copy its contents." },
   ],
   howItWorks: [
-    { step: 1, title: "Paste or upload CSV", description: "Paste your CSV text or upload a .csv file into the tool." },
+    { step: 1, title: "Paste your CSV", description: "Copy your CSV data and paste it into the input field, then choose the matching delimiter." },
     { step: 2, title: "Convert to JSON", description: "Click Convert and the tool builds a JSON array from your data." },
     { step: 3, title: "Copy or download", description: "Copy the JSON output or download it as a .json file." },
   ],
