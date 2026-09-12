@@ -11,6 +11,8 @@ import TrackToolVisit from "@/components/tools/TrackToolVisit";
 import FavoriteButton from "@/components/tools/FavoriteButton";
 import AlsoTry from "@/components/tools/AlsoTry";
 import ToolBenefits from "@/components/tools/ToolBenefits";
+import ToolGuideContent from "@/components/tools/ToolGuideContent";
+import { getToolGuide } from "@/config/guides";
 import { getRelatedArticles } from "@/lib/related-content";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 import { arTools } from "@/lib/i18n/ar";
@@ -66,6 +68,7 @@ export default async function ToolPage({ params }: Props) {
 
   const toolUrl = `${SITE_URL}/tools/${tool.slug}`;
   const relatedArticles = getRelatedArticles(tool.slug);
+  const guide = getToolGuide(tool.slug);
 
   return (
     <>
@@ -134,6 +137,8 @@ export default async function ToolPage({ params }: Props) {
         </section>
 
         <ToolBenefits tool={tool} />
+
+        {guide && <ToolGuideContent guide={guide} toolTitle={tool.title} />}
 
         {/* FAQ */}
         <section className="mb-10">
