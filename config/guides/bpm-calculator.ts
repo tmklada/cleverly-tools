@@ -3,19 +3,20 @@ import type { ToolGuide } from "@/types/guide";
 const guide: ToolGuide = {
   slug: "bpm-calculator",
   intro: [
-    "This free online BPM calculator finds the tempo of any song by having you tap along to the beat instead of asking you to already know the number. Play the track, click the Tap button in time with the beat, and the tool calculates the average beats per minute from your last 8 taps, updating live as you keep tapping and stabilizing once you've tapped a steady rhythm a few times.",
-    "Alongside the raw BPM number, the tool shows which classical tempo marking that speed falls into, from Grave at the slowest end up through Presto at the fastest, using the same Italian terms found in sheet music and DAW tempo displays. That gives musicians, DJs, and producers a quick sense of how a track's tempo compares to traditional tempo language, not just a bare number.",
-    "It's useful anywhere you need a song's tempo and don't have it labeled: matching two tracks for a DJ transition, figuring out a workout playlist's pace, or setting a metronome or delay effect to match a recording you're working from.",
+    "This free online BPM calculator finds the tempo of any song by having you tap along to the beat instead of asking you to already know the number. Play the track, then click the Tap button or simply press the spacebar in time with the beat, and the tool calculates the average beats per minute from your last 8 taps, updating live as you keep tapping and stabilizing once you've tapped a steady rhythm a few times.",
+    "Alongside the raw BPM number, the tool shows which classical tempo marking that speed falls into, from Grave at the slowest end up through Presto at the fastest, using the same Italian terms found in sheet music and DAW tempo displays. It also prints a full BPM-to-milliseconds table — whole, half, quarter, eighth, and sixteenth notes, each with its dotted and triplet variant — so the delay and reverb times you need are on screen without any mental arithmetic.",
+    "It's useful anywhere you need a song's tempo and don't have it labeled: matching two tracks for a DJ transition, figuring out a workout playlist's pace, or setting a metronome or delay effect to match a recording you're working from. If you already know the tempo, you can skip tapping altogether and type the BPM in directly to read off the note lengths.",
   ],
   sections: [
     {
       heading: "How to Find the BPM of a Song by Tapping",
       paragraphs: [
-        "Start playing the song, then click the Tap button in time with the beat, ideally on the kick drum or the most obvious rhythmic pulse rather than a melody note that might fall off-beat. After your second tap, a BPM number appears and updates with every additional tap, calculated from the average time interval between your last 8 taps converted into beats per minute.",
+        "Start playing the song, then tap in time with the beat, ideally on the kick drum or the most obvious rhythmic pulse rather than a melody note that might fall off-beat. You can click the Tap button or press the spacebar, whichever is easier while you're listening; the spacebar is usually steadier because you're not chasing a target with the mouse, and the page is stopped from scrolling while you use it. After your second tap, a BPM number appears and updates with every additional tap, calculated from the average time interval between your last 8 taps converted into beats per minute.",
         "The more consistently you tap, the more the number settles into a stable, accurate reading; a shaky first tap or two will swing the number around before it converges. If you lose the beat or want to start over, the Reset button clears your tap history and the BPM display so you can begin a fresh, clean measurement.",
       ],
       bullets: [
         "Tap on the strongest, most consistent beat (usually the kick drum or a clear downbeat)",
+        "Press the spacebar instead of clicking to keep your timing steadier",
         "Keep tapping steadily; the calculation only uses your most recent 8 taps",
         "Use Reset if you miss a beat badly, rather than trying to average through the mistake",
       ],
@@ -30,14 +31,15 @@ const guide: ToolGuide = {
     {
       heading: "BPM to Milliseconds: Setting Delay and Reverb Times in Music Production",
       paragraphs: [
-        "Once you know a track's BPM, you can calculate the exact millisecond length of a musical note at that tempo using a simple formula: a quarter note in milliseconds equals 60,000 divided by the BPM. At 120 BPM, that's 60,000 ÷ 120 = 500ms per quarter note; at 140 BPM, it's about 428ms. From there, an eighth note is half that value and a sixteenth note is a quarter of it, which is exactly the math delay and reverb plugins use internally when you dial in a tempo-synced effect.",
-        "This matters in production because a delay or echo set to a musically related time value, like a dotted eighth note, locks into the groove of the track instead of drifting against it, which is why producers reach for BPM-to-ms conversion constantly when setting up effects manually rather than relying on a plugin's built-in tempo sync.",
+        "Once you know a track's BPM, the tool prints the exact millisecond length of every common note value at that tempo, so there's nothing to work out by hand. The formula behind the table is simple: a quarter note in milliseconds equals 60,000 divided by the BPM. At 120 BPM, that's 60,000 ÷ 120 = 500 ms per quarter note, making an eighth note 250 ms, a sixteenth 125 ms, and a dotted quarter 750 ms; at 140 BPM the quarter note is about 428.6 ms. That is exactly the math delay and reverb plugins use internally when you dial in a tempo-synced effect.",
+        "The table gives you three columns for each note length — straight, dotted (×1.5), and triplet (×2/3) — because those are the three feels producers actually reach for. A delay set to a musically related time value, like the famous dotted eighth, locks into the groove of the track instead of drifting against it, which is why BPM-to-ms conversion comes up constantly when setting up effects manually rather than relying on a plugin's built-in tempo sync. To set an LFO in hertz instead, divide 1000 by the millisecond value.",
       ],
       bullets: [
-        "Quarter note (ms) = 60,000 ÷ BPM",
-        "Eighth note (ms) = quarter note ÷ 2",
-        "Sixteenth note (ms) = quarter note ÷ 4",
-        "Dotted eighth note (ms) = eighth note × 1.5 (a classic delay setting popularized in reggae and pop production)",
+        "Quarter note (ms) = 60,000 ÷ BPM — 500 ms at 120 BPM",
+        "Eighth note (ms) = quarter note ÷ 2 — 250 ms at 120 BPM",
+        "Sixteenth note (ms) = quarter note ÷ 4 — 125 ms at 120 BPM",
+        "Dotted note (ms) = straight value × 1.5 — a dotted quarter is 750 ms at 120 BPM",
+        "Triplet note (ms) = straight value × 2/3 — a quarter-note triplet is about 333 ms at 120 BPM",
       ],
     },
     {
@@ -57,7 +59,7 @@ const guide: ToolGuide = {
   ],
   useCases: [
     { title: "DJ beatmatching", description: "Tap out the tempo of a track that isn't labeled to help match or blend it with another song's BPM." },
-    { title: "Setting tempo-synced delay and reverb", description: "Find a song's BPM, then use the millisecond formulas to manually set delay or reverb times that lock to the groove." },
+    { title: "Setting tempo-synced delay and reverb", description: "Find a song's BPM, then copy the millisecond value for the note length you want straight from the table into your delay or reverb plugin." },
     { title: "Building workout playlists", description: "Tap along to a track to check its BPM against a target pace for running, cycling, or interval training." },
     { title: "Transcribing or covering a song", description: "Measure the original tempo before setting up a metronome to practice or record a cover at the right speed." },
     { title: "Sorting a music library by feel", description: "Tap a handful of unlabeled tracks to get a rough sense of which ones share a similar energy or tempo range." },
@@ -66,13 +68,16 @@ const guide: ToolGuide = {
     { title: "Tapping on the melody instead of the beat", description: "Tap on the rhythmic pulse, usually the kick drum or clearest downbeat, not a melody note that can fall off the grid." },
     { title: "Judging BPM from only 2-3 taps", description: "A couple of taps can be thrown off by small timing slips; keep tapping until the number stabilizes." },
     { title: "Tapping every other beat on a half-time or double-time groove", description: "Some genres feel slower or faster than their actual BPM; compare your reading against typical genre ranges if it seems off." },
-    { title: "Expecting the tool to show a millisecond value directly", description: "The tool displays BPM and its tempo classification only; convert to milliseconds yourself with 60,000 ÷ BPM." },
+    { title: "Working out delay times by hand", description: "The millisecond table already lists every note length, including dotted and triplet variants, for whatever BPM is showing." },
+    { title: "Tapping the spacebar while a text field is focused", description: "Click outside the BPM input first, otherwise the spacebar types a space instead of registering a tap." },
   ],
   tips: [
     "Tap on the kick drum or clearest downbeat rather than a melody note for the most accurate reading.",
     "Keep tapping for at least 6-8 beats before trusting the displayed number.",
     "Use Reset and start over if you clearly miss a beat, rather than trying to tap through the mistake.",
-    "Convert BPM to milliseconds with 60,000 ÷ BPM to manually set delay or reverb times.",
+    "Use the spacebar rather than the mouse to tap; it's easier to keep in time.",
+    "Read delay and reverb times straight off the millisecond table instead of calculating 60,000 ÷ BPM yourself.",
+    "Type a BPM into the field above the table when you already know a track's tempo and just want the note lengths.",
     "Compare your result against typical genre BPM ranges if the number seems unexpectedly high or low.",
     "Double or halve your tapped BPM if a track feels like it's being measured at the wrong speed for its genre.",
   ],
@@ -83,6 +88,8 @@ const guide: ToolGuide = {
     { title: "Tempo-synced delay", description: "An audio effect whose repeat timing is set to a musical note length calculated from the track's BPM, so it stays in rhythm with the song." },
     { title: "Half-time / double-time feel", description: "When a track's perceived tempo is half or double its programmed BPM, common in genres like drum and bass or trap." },
     { title: "Classical tempo marking", description: "Italian terms like Allegro or Adagio historically used in sheet music to describe a range of tempos rather than one exact BPM." },
+    { title: "Dotted note", description: "A note held one and a half times its normal length; a dotted eighth delay is the classic tempo-synced echo sound." },
+    { title: "Triplet", description: "Three notes played in the space of two, so each lasts two-thirds of the straight value, giving a swung or shuffled feel." },
   ],
 };
 

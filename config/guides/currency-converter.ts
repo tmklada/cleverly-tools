@@ -4,7 +4,7 @@ const guide: ToolGuide = {
   slug: "currency-converter",
   intro: [
     "A currency converter answers a simple but constantly moving question: how much is this amount of money worth in another currency right now. Exchange rates shift throughout the trading day based on global supply and demand, so a number that was accurate yesterday can already be slightly off today. This tool pulls live exchange rate data so you're working from a current rate rather than a stale textbook figure.",
-    "This currency conversion calculator is built for travelers budgeting a trip, online shoppers checking the real cost of a purchase from a foreign store, freelancers invoicing international clients, and anyone comparing prices quoted in a currency they don't use daily. It covers 10 major world currencies, including the US dollar, euro, British pound, Japanese yen, and the Israeli shekel and UAE dirham, enough to handle the currencies most people actually need to convert between.",
+    "This currency conversion calculator is built for travelers budgeting a trip, online shoppers checking the real cost of a purchase from a foreign store, freelancers invoicing international clients, and anyone comparing prices quoted in a currency they don't use daily. It covers 166 world currencies, including the US dollar, euro, British pound, Japanese yen, Chinese yuan, Indian rupee, Israeli shekel, and UAE dirham, with a searchable selector so you can find any of them by ISO code or name.",
     "The rate this tool shows is the mid-market rate, the midpoint between what currency traders are buying and selling at, which is the same reference rate you'd see on financial news sites. It is not the exact rate a bank or card network will apply to a real transaction, which almost always includes a markup, a distinction worth understanding before assuming a converted number is exactly what you'll pay.",
   ],
   sections: [
@@ -47,8 +47,8 @@ const guide: ToolGuide = {
     {
       heading: "Currency Converter Accuracy: What This Tool Does and Doesn't Cover",
       paragraphs: [
-        "This calculator pulls live exchange rate data for 10 major currencies and calculates conversions by routing through US dollars as the reference currency, which is standard practice since most currency pairs are quoted against the dollar. The quick-convert buttons for 1, 10, 100, and 1,000 units let you see common amounts converted at a glance without retyping the amount each time.",
-        "This tool does not support cryptocurrency conversion, and it covers 10 major fiat currencies rather than all roughly 180 currencies in circulation worldwide; for less common currencies, a broader financial data provider would be needed. As with any online rate tool, treat the result as a close, current estimate for budgeting and comparison rather than the guaranteed final rate a specific bank or payment provider will apply to an actual transaction.",
+        "This calculator pulls live exchange rate data for 166 currencies and calculates conversions by routing through US dollars as the reference currency, which is standard practice since most currency pairs are quoted against the dollar. It displays the effective rate for the pair you selected (for example, 1 USD = 3.0453 ILS) along with the date the rate data was last refreshed, and the quick-convert buttons for 1, 10, 100, and 1,000 units let you see common amounts at a glance without retyping.",
+        "This tool covers fiat (national) currencies only and does not support cryptocurrency conversion. If the live rate feed is ever unreachable, the tool says so and stops converting rather than quietly showing stale numbers. As with any online rate tool, treat the result as a close, current estimate for budgeting and comparison rather than the guaranteed final rate a specific bank or payment provider will apply to an actual transaction.",
       ],
     },
   ],
@@ -65,7 +65,7 @@ const guide: ToolGuide = {
     { title: "Accepting dynamic currency conversion at checkout", description: "Choosing to pay in your home currency at a foreign checkout or ATM usually applies a worse rate than letting your card network convert it; paying in the local currency is typically cheaper." },
     { title: "Exchanging cash at airport kiosks", description: "Airport currency exchange counters often charge some of the largest markups available, sometimes 8-15% below the mid-market rate shown here." },
     { title: "Treating the rate as fixed for the day", description: "Exchange rates move continuously during trading hours; a rate checked in the morning may differ noticeably from one checked in the evening, especially during volatile market periods." },
-    { title: "Expecting cryptocurrency or exotic currency support", description: "This tool covers 10 major fiat currencies only; it does not include cryptocurrency pairs or less commonly traded national currencies." },
+    { title: "Expecting cryptocurrency support", description: "This tool covers 166 fiat (national) currencies; it does not include cryptocurrency pairs such as Bitcoin or Ethereum." },
   ],
   tips: [
     "Use the mid-market rate from this tool as a benchmark, then compare it to your bank or card's actual rate before a large transaction.",

@@ -3,7 +3,7 @@ import type { ToolGuide } from "@/types/guide";
 const guide: ToolGuide = {
   slug: "text-repeater",
   intro: [
-    "A text repeater takes any word, phrase, or character and repeats it a set number of times, joined by a separator you choose, producing the result instantly as you adjust the settings. Type your text, drag the slider to set how many times it repeats — up to 1,000 — and pick a separator like a new line, comma, space, tab, or a custom string, and the output box updates immediately with a live character and word count.",
+    "A text repeater takes any word, phrase, or character and repeats it a set number of times, joined by a separator you choose, producing the result instantly as you adjust the settings. Type your text, drag the slider or type into the number box to set how many times it repeats — up to 10,000 — and pick a separator like a new line, comma, space, tab, or a custom string, and the output box updates immediately with a live character and word count.",
     "It's a small, purpose-built utility for developers testing how a UI handles repeated or long input, writers and social media users generating stylized repeated text, and anyone who needs placeholder or pattern content quickly without writing a script. Everything runs client-side in your browser, and a one-click Copy button grabs the full output.",
     "This guide covers common uses for repeated text, how separators change the output, and where a repeated-text pattern is useful versus where a different tool fits better.",
   ],
@@ -27,7 +27,7 @@ const guide: ToolGuide = {
       heading: "Testing Input Limits and UI Behavior With Repeated Text",
       paragraphs: [
         "Developers commonly use repeated text to stress-test how a text field, database column, or UI component handles unusually long input — repeating a short string hundreds of times quickly produces a large block of text without writing a script or generating random filler. This is useful for checking whether a form field truncates text correctly, whether a UI element wraps or overflows with a long string, and whether a backend enforces a character limit the way it's supposed to.",
-        "Because the tool shows a live character and word count for the generated output, you can dial in an exact target length — for example, repeating a 10-character string 150 times to test a 1,500-character limit — rather than guessing at how long a block of text will end up.",
+        "Because the tool shows a live character and word count for the generated output, you can dial in an exact target length — for example, repeating a 10-character string 150 times to test a 1,500-character limit — rather than guessing at how long a block of text will end up. With the cap at 10,000 repetitions, even a short seed string reaches well past the limits most databases and form fields enforce, so you can check what happens when a field is genuinely overwhelmed rather than merely full.",
       ],
     },
     {
@@ -47,8 +47,9 @@ const guide: ToolGuide = {
     {
       heading: "How to Get the Output You Expect",
       paragraphs: [
-        "Type your text into the input field first, since the output stays empty until there's something to repeat. Adjust the Repeat Times slider — it ranges from 1 to 1,000 — and watch the character and word count update below the output so you can confirm you've hit the length you're targeting.",
+        "Type your text into the input field first, since the output stays empty until there's something to repeat. Adjust the Repeat Times slider — it ranges from 1 to 10,000 — or type an exact number into the box beside it when the slider is too coarse, and watch the character and word count update above the output so you can confirm you've hit the length you're targeting.",
         "If you need a separator that isn't one of the presets, click Custom and type any string you like directly into the field that appears; it can be empty for no separator at all, producing one continuous repeated string with nothing between each instance.",
+        "At the top of the range the output can run to hundreds of thousands of characters, so the tool renders only the first 20,000 on screen and notes how much has been left out. That keeps typing and dragging responsive; the Copy button always puts the complete string on your clipboard regardless of what the preview shows.",
       ],
     },
   ],
@@ -62,11 +63,13 @@ const guide: ToolGuide = {
   mistakes: [
     { title: "Expecting varied output", description: "Every repetition is identical, so this tool isn't a substitute for randomized or unique test data." },
     { title: "Forgetting to set a separator", description: "Leaving the default separator when a different format is needed can produce output that doesn't match what you're pasting it into." },
-    { title: "Assuming an unlimited repeat count", description: "The slider caps at 1,000 repetitions, which is enough for most testing but not unlimited." },
+    { title: "Assuming an unlimited repeat count", description: "The slider caps at 10,000 repetitions, which covers almost any testing need but isn't unlimited." },
+    { title: "Thinking the preview is the whole output", description: "Above 20,000 characters only the start is displayed; Copy still gives you every repetition." },
     { title: "Using it for natural-looking filler text", description: "Repeated text looks structurally repetitive; a Lorem Ipsum generator is a better fit for realistic-looking placeholder prose." },
   ],
   tips: [
     "Use the live character count to hit an exact length when testing a specific input limit.",
+    "Type into the number box instead of dragging the slider when you need a precise repeat count in the thousands.",
     "Pick New Line as the separator when generating test rows for a spreadsheet or list.",
     "Use the Custom separator option for any format the presets don't cover, including no separator at all.",
     "Reach for a Lorem Ipsum generator instead when you need varied, natural-looking filler text.",

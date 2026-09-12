@@ -3,8 +3,8 @@ import type { ToolGuide } from "@/types/guide";
 const guide: ToolGuide = {
   slug: "dice-roller",
   intro: [
-    "This free online dice roller replaces a physical set of dice for board games, tabletop role-playing games, and any quick decision that needs a fair random outcome. Pick a dice type, pick how many dice, and click Roll to see each individual result along with the total sum, all in under a second, with a short rolling animation before the numbers land.",
-    "Six standard dice types are supported: D4, D6, D8, D10, D12, and D20, covering the shapes used in almost every board game and tabletop RPG system, from a basic six-sided die for Monopoly or Yahtzee to a twenty-sided die for Dungeons & Dragons. You can roll up to six dice of the same type at once, which covers the most common combinations like 2d6 for a board game move or a handful of d6s for a dice-pool system.",
+    "This free online dice roller replaces a physical set of dice for board games, tabletop role-playing games, and any quick decision that needs a fair random outcome. Pick a dice type, pick how many dice, add a plus or minus modifier if your game calls for one, and click Roll to see each individual die result along with the dice subtotal and the final total, all in under a second, with a short rolling animation before the numbers land.",
+    "Six standard dice types are preset: D4, D6, D8, D10, D12, and D20, covering the shapes used in almost every board game and tabletop RPG system, from a basic six-sided die for Monopoly or Yahtzee to a twenty-sided die for Dungeons & Dragons. Beyond those, a custom-sides field takes any number from 2 to 1000, so a D3, a D100 percentile roll, or a house-rule D7 is a single typed number away. You can roll up to ten dice of the same type at once, which covers dice-pool systems as well as everyday combinations like 2d6 for a board game move.",
     "Every roll is added to a short history list, so you can see your last several results without writing them down, whether you're tracking damage rolls in a combat round or just settling an argument about whose turn it is. There's no account, no ads blocking the dice, and no physical dice to lose under the couch.",
   ],
   sections: [
@@ -25,14 +25,14 @@ const guide: ToolGuide = {
       heading: "D20 Rolls, Advantage and Modifiers for D&D",
       paragraphs: [
         "A single d20 is the backbone of Dungeons & Dragons 5th edition and many other tabletop RPGs, used for attack rolls, skill checks, and saving throws, and unlike 2d6 it's a flat distribution: every number from 1 to 20 is exactly as likely as every other, at 5% each. That's what makes a natural 20 always feel possible and a natural 1 always feel like it's lurking, since neither extreme is rarer than rolling a 10 or 11.",
-        "This tool rolls the raw die; it doesn't apply ability modifiers, proficiency bonuses, or advantage and disadvantage rules automatically. To roll with advantage (roll twice, keep the higher), set the dice count to 2, select D20, roll, and manually take the higher of the two results; for disadvantage, take the lower one instead. Add any modifier from your character sheet to the number shown after the roll, since the tool only returns the raw die faces and their sum.",
+        "Modifiers are built in: type your ability modifier and proficiency bonus into the modifier field and the roll shows the raw die, the dice subtotal, and the final total with the bonus already applied, exactly the way a \"1d20+7\" instruction reads. Advantage and disadvantage still need a human decision, though — set the dice count to 2, select D20, roll, and take the higher result for advantage or the lower for disadvantage, since the tool sums dice rather than picking between them.",
       ],
     },
     {
       heading: "Dice Notation Explained: 2d6, 3d8, and Similar Formats",
       paragraphs: [
-        "Tabletop game books describe dice rolls in a shorthand format: the number before the \"d\" is how many dice to roll, and the number after it is how many sides each die has. So \"2d6\" means roll two six-sided dice and add them together, and \"3d8\" means roll three eight-sided dice and add those. This tool's controls map directly onto that notation: the number buttons set the count, and the dX buttons set the die type.",
-        "To roll 4d10 for a damage instruction in a game manual, set the dice count to 4 and select D10, then read the Total field for the combined sum, which is exactly what \"4d10\" is asking for. If a rule calls for more dice than this tool supports in one click, roll in two batches and add the totals together afterward, since the same math applies regardless of whether all the dice are rolled in a single click.",
+        "Tabletop game books describe dice rolls in a shorthand format: the number before the \"d\" is how many dice to roll, the number after it is how many sides each die has, and a trailing \"+3\" or \"-1\" is a modifier added to the result. So \"2d6\" means roll two six-sided dice and add them together, and \"3d8+2\" means roll three eight-sided dice, add those, then add 2. This tool's controls map directly onto that notation: the number buttons set the count, the dX buttons or the custom-sides field set the die type, and the modifier box handles the trailing bonus. The Roll button even shows the notation you've built.",
+        "To roll 4d10 for a damage instruction in a game manual, set the dice count to 4 and select D10, then read the Total field for the combined sum, which is exactly what \"4d10\" is asking for. For an unusual die a preset doesn't cover, like the 1d100 behind a percentile table, type 100 into the custom-sides field instead of rolling two d10s.",
       ],
     },
     {
@@ -52,8 +52,8 @@ const guide: ToolGuide = {
     {
       heading: "How Fair Is a Virtual Dice Roll Compared to Real Dice?",
       paragraphs: [
-        "Each die roll here is generated independently using the browser's built-in random number function, scaled to the number of sides on the selected die type, so every face has an equal chance of appearing on every roll, the same fairness principle a well-balanced physical die aims for. Unlike a real die, there's no risk of a chipped corner, an uneven table, or a slightly weighted mold nudging the odds in one direction.",
-        "This level of randomness is well suited to games, practice rolls, and casual decisions, but it isn't built to cryptographic standards the way a password generator needs to be; that distinction only matters for security-sensitive use cases, not for board games or tabletop sessions, where statistical fairness is exactly what's needed.",
+        "Each die roll here is generated independently using your browser's cryptographic random number generator (crypto.getRandomValues), the same source a password generator draws on, so every face has an equal chance of appearing on every roll. Unlike a real die, there's no risk of a chipped corner, an uneven table, or a slightly weighted mold nudging the odds in one direction.",
+        "The tool also uses rejection sampling rather than a plain remainder, which matters for dice whose side count doesn't divide evenly into the random range: taking a simple modulo would make the lowest few faces come up very slightly more often. Rejecting and redrawing the rare out-of-range value removes that bias entirely, so a d100 or a custom d7 is exactly as fair as a d4.",
       ],
     },
   ],
@@ -65,23 +65,25 @@ const guide: ToolGuide = {
     { title: "Random decisions", description: "Use a quick d6 or d20 roll to settle a tie, assign a task, or make a low-stakes choice." },
   ],
   mistakes: [
-    { title: "Expecting a custom number of sides", description: "Only the six standard types (D4, D6, D8, D10, D12, D20) are available; there's no field for an arbitrary side count." },
-    { title: "Forgetting to add modifiers", description: "The tool returns the raw die faces and their sum only; any character sheet bonus or penalty has to be added manually." },
+    { title: "Overlooking the custom-sides field", description: "The six presets aren't the whole set; typing any number from 2 to 1000 gives you a D3, D100, or any other die your game needs." },
+    { title: "Leaving a stale modifier set", description: "The modifier stays put between rolls, so reset it to 0 when you move from a +7 attack roll to an unmodified damage roll." },
     { title: "Assuming 2d6 spreads evenly like a d12", description: "Adding two dice together produces a bell curve centered on 7, not a flat distribution; each total has different odds." },
-    { title: "Rolling more dice than one click supports", description: "Up to 6 dice can be rolled at once; a larger pool needs two rolls added together afterward." },
+    { title: "Expecting advantage to be automatic", description: "Rolling 2d20 sums both dice; for advantage or disadvantage, read the individual results and take the higher or lower yourself." },
+    { title: "Rolling more dice than one click supports", description: "Up to 10 dice can be rolled at once; a larger pool needs two rolls added together afterward." },
   ],
   tips: [
-    "Match the dice count and type to the game's notation exactly, like setting 3 and D8 for a \"3d8\" instruction.",
-    "For advantage or disadvantage in D&D, roll 2 D20s and manually take the higher or lower result.",
+    "Match the dice count, type, and modifier to the game's notation exactly, like setting 3, D8 and +2 for a \"3d8+2\" instruction.",
+    "For advantage or disadvantage in D&D, roll 2 D20s and manually take the higher or lower of the two individual results.",
     "Use the history list to review your last several rolls during a session instead of writing them down.",
-    "Remember the tool shows the raw total; add any character or game modifiers yourself.",
+    "Type 100 into the custom-sides field for a true percentile roll instead of combining two d10s.",
     "Roll a larger batch than one click supports by rolling twice and adding the two totals together.",
   ],
   glossary: [
     { title: "Dice notation", description: "Shorthand like \"2d6\" or \"4d10\" where the first number is how many dice to roll and the second is how many sides each die has." },
     { title: "Advantage / disadvantage", description: "A D&D 5th edition rule where two d20s are rolled and either the higher (advantage) or lower (disadvantage) result is used." },
     { title: "Flat distribution", description: "A probability spread where every possible outcome, like each face of a single die, is equally likely, unlike the bell curve produced by adding multiple dice." },
-    { title: "Percentile roll", description: "A method of generating a number from 1 to 100 by rolling two ten-sided dice, one representing tens and one representing ones." },
+    { title: "Modifier", description: "A fixed number added to or subtracted from a dice total, written as the \"+3\" in 2d6+3 and applied here by the modifier field." },
+    { title: "Percentile roll", description: "A number from 1 to 100, traditionally rolled with two ten-sided dice (one for tens, one for ones) or here with a single custom d100." },
     { title: "Dice pool", description: "A game system that rolls several dice at once and counts successes or totals them, rather than relying on a single die result." },
   ],
 };

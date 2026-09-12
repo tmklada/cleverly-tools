@@ -4,8 +4,8 @@ const guide: ToolGuide = {
   slug: "lorem-ipsum-generator",
   intro: [
     "Lorem ipsum is placeholder text designers and developers drop into a layout when the real content isn't ready yet, so that a page, mockup, or document can be evaluated for spacing, font sizing, and visual flow without waiting on final copy. This generator produces that placeholder text on demand, sized to however much you need for the section you're filling in.",
-    "You control two things: how many paragraphs to generate, from 1 to 10, and roughly how many words go into each paragraph, from 10 to 150. Click Generate and the tool builds fresh paragraphs on the spot, breaking the words into sentences of varying length so the output reads with natural rhythm rather than one unbroken block of text.",
-    "Every paragraph starts with the word \"Lorem,\" but the words after that are pulled randomly from a pool of authentic Latin-derived vocabulary each time you generate, so no two runs produce identical text — useful when you need several different but visually similar blocks of filler across a design, like multiple card descriptions on the same page.",
+    "Start by choosing what you want to measure text in: paragraphs, sentences, or words. Paragraph mode generates 1 to 10 blocks and lets you set roughly how many words go into each, from 10 to 150. Sentence mode generates 1 to 50 standalone sentences, which suits a subheading or a card blurb. Word mode generates 5 to 500 words, which is the right unit when you're filling a label, a menu item, or a fixed-width component. Click Generate and the tool builds fresh text on the spot, breaking words into sentences of varying length so the output reads with natural rhythm rather than one unbroken block.",
+    "A toggle controls whether the text opens with the classic \"Lorem ipsum dolor sit amet\" line. It's on by default, because that opening is what clients and reviewers expect to recognise, but turn it off and the whole output is randomised. Either way, the words after the opening are pulled randomly from a pool of authentic Latin-derived vocabulary each time you generate, so no two runs produce identical text — useful when you need several different but visually similar blocks of filler across a design, like multiple card descriptions on the same page.",
   ],
   sections: [
     {
@@ -18,8 +18,8 @@ const guide: ToolGuide = {
     {
       heading: "Why This Generator's Output Is Randomized, Not the Classic Fixed Passage",
       paragraphs: [
-        "Some lorem ipsum tools reproduce one fixed, memorized passage every time, always starting with the exact phrase \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\" This generator works differently: only the very first word of each paragraph is fixed as \"Lorem,\" and every word after that is chosen at random from a pool of about 100 Latin-derived words each time you click Generate, so the resulting text changes on every run.",
-        "The tradeoff is that you won't get the exact, universally recognized classical passage that some clients or reviewers may specifically expect to see. What you gain instead is variety: generating text for five different sections of a page produces five distinct paragraphs rather than the same repeated block, which better simulates how real content of different lengths and word choices will eventually look in that layout.",
+        "Some lorem ipsum tools reproduce one fixed, memorized passage every time, always starting with the exact phrase \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\" This generator gives you both behaviours. With the \"Start with Lorem ipsum dolor sit amet\" toggle on — the default — your output opens with that familiar line, which is what most designers and clients expect to see at the top of a mockup. Everything after it is chosen at random from a pool of about 100 Latin-derived words on each click of Generate.",
+        "Turn the toggle off and even the opening is randomised, so there's no recognisable phrase at all. Either way you get variety: generating text for five different sections of a page produces five distinct blocks rather than the same repeated passage, which better simulates how real content of different lengths and word choices will eventually look in that layout.",
       ],
     },
     {
@@ -30,16 +30,17 @@ const guide: ToolGuide = {
       ],
     },
     {
-      heading: "Choosing Paragraph Count and Word Count for Your Layout",
+      heading: "Choosing Paragraphs, Sentences, or Words for Your Layout",
       paragraphs: [
-        "The Paragraphs slider (1-10) controls how many separate blocks of text are generated, each separated by a blank line in the output, which maps naturally onto a page section, a list of cards, or a multi-paragraph body of text. The Words per Paragraph slider (10-150) controls roughly how long each of those paragraphs runs, with sentences inside each paragraph varying in length automatically rather than being a fixed count you set separately.",
-        "For a short UI element like a card description or a tooltip, a low word count around 15-25 words in a single paragraph is usually closer to what real content will look like than a long block. For a full body of article or blog text, several paragraphs at 60-100 words each better represents how that layout will behave once real copy is dropped in, including how paragraph breaks affect vertical spacing on the page.",
+        "Pick the mode that matches the unit your design actually thinks in. Paragraph mode generates 1-10 separate blocks separated by a blank line, which maps onto a page section, a list of cards, or a multi-paragraph body of text, and the Words per Paragraph slider (10-150) sets roughly how long each block runs. Sentence mode generates 1-50 sentences as one continuous run, which is the right shape for a subheading, a meta description, or a short card blurb where a full paragraph would overflow. Word mode generates an exact 5-500 words, which is what you want when a component has a hard character budget — a nav label, a button, a truncated list item.",
+        "For a short UI element like a card description or a tooltip, 15-25 words or two or three sentences is usually closer to what real content will look like than a long block. For a full body of article or blog text, several paragraphs at 60-100 words each better represents how that layout will behave once real copy is dropped in, including how paragraph breaks affect vertical spacing on the page. In every mode the sentences inside the output vary in length automatically, so the rhythm stays natural rather than mechanical.",
       ],
       bullets: [
-        "Short UI copy (tooltips, card descriptions): 1 paragraph, 15-25 words",
-        "A short paragraph of body text: 1 paragraph, 40-60 words",
-        "A full article mockup: 3-5 paragraphs, 60-100 words each",
-        "Maximum output: 10 paragraphs at 150 words each",
+        "Short UI copy (tooltips, card descriptions): word mode, 15-25 words",
+        "A subheading or meta description: sentence mode, 1-2 sentences",
+        "A short paragraph of body text: paragraph mode, 1 paragraph, 40-60 words",
+        "A full article mockup: paragraph mode, 3-5 paragraphs, 60-100 words each",
+        "Maximum output: 10 paragraphs at 150 words each, 50 sentences, or 500 words",
       ],
     },
     {
@@ -58,14 +59,17 @@ const guide: ToolGuide = {
     { title: "Filling multiple similar sections with distinct text", description: "Generate several separate outputs so repeated layout elements, like a row of cards, don't all show identical filler." },
   ],
   mistakes: [
-    { title: "Expecting the exact classic passage every time", description: "Only the first word of each paragraph is fixed as 'Lorem' — the rest is randomized on every generation, unlike some tools that repeat one fixed passage." },
+    { title: "Expecting the exact classic passage every time", description: "The toggle fixes only the opening 'Lorem ipsum dolor sit amet' — everything after it is randomized on every generation, unlike tools that repeat one fixed passage word for word." },
+    { title: "Using paragraph mode for a one-line element", description: "Switch to sentence or word mode for labels, subheadings, and card blurbs so the amount of text matches the component." },
     { title: "Leaving lorem ipsum in a design past the review stage", description: "Swap in real or realistic sample copy before final visual or usability review, since meaningless text can hide real content-fit problems." },
     { title: "Setting an unrealistically high word count for a small UI element", description: "A 150-word paragraph in a tooltip or card description won't reflect how that element will look with real, much shorter copy." },
     { title: "Trying to edit the generated text directly for a small change", description: "The output box is read-only; adjust the sliders and click Generate again rather than trying to type into the result." },
     { title: "Assuming more paragraphs always means a better layout test", description: "Match the paragraph count to what the actual content will realistically contain, not the maximum the sliders allow." },
   ],
   tips: [
+    "Match the mode to the component: words for labels, sentences for subheadings, paragraphs for body copy.",
     "Match your word count to the real content length you expect, rather than defaulting to the maximum every time.",
+    "Leave the classic opening on when a client will see the mockup, and turn it off when you want nothing recognisable.",
     "Generate a fresh block for each repeated layout element so filler text doesn't look identical across a page.",
     "Use a short, single paragraph for buttons, tooltips, and card descriptions instead of a long block.",
     "Swap lorem ipsum for real or near-final copy before moving from layout review to usability testing.",
@@ -76,7 +80,8 @@ const guide: ToolGuide = {
     { title: "Placeholder text", description: "Any filler text used to represent where real content will eventually go in a design, layout, or document." },
     { title: "Cicero", description: "The ancient Roman philosopher whose 45 BC text 'De Finibus Bonorum et Malorum' is the original source of lorem ipsum's vocabulary." },
     { title: "Filler content", description: "Sample text, images, or data used temporarily in a design or system before final content is available." },
-    { title: "Word count", description: "The number of individual words in a piece of text, used here to control roughly how long each generated paragraph is." },
+    { title: "Word count", description: "The number of individual words in a piece of text, used here both as an output mode and to control roughly how long each generated paragraph is." },
+    { title: "Output mode", description: "Whether the generator measures its output in paragraphs, sentences, or words, so the amount of filler matches the component being designed." },
   ],
 };
 

@@ -3,8 +3,8 @@ import type { ToolGuide } from "@/types/guide";
 const guide: ToolGuide = {
   slug: "open-graph-preview",
   intro: [
-    "The title and description you write for a page and the card that actually shows up when someone pastes your link into Facebook, LinkedIn, or Twitter are controlled by an entirely separate set of tags called Open Graph, and it's easy to publish a page without ever checking what its share card looks like until a customer sends you a screenshot of a broken preview. This tool lets you type in your Open Graph values and immediately see how the resulting card would render across the major platforms, before you've deployed anything.",
-    "You enter the title, description, image URL, site name, and page URL by hand, and the tool renders a Facebook/LinkedIn-style card, a Twitter Card, and a Google search-result snippet side by side, along with the exact meta tag HTML you'd paste into your page's head. Because everything is generated from what you type rather than fetched from a live page, you can experiment freely with different title lengths or image URLs before touching your actual site.",
+    "The title and description you write for a page and the card that actually shows up when someone pastes your link into Facebook, LinkedIn, Twitter, or a WhatsApp chat are controlled by an entirely separate set of tags called Open Graph, and it's easy to publish a page without ever checking what its share card looks like until a customer sends you a screenshot of a broken preview. This tool lets you type in your Open Graph values and immediately see how the resulting card would render across the major platforms, before you've deployed anything.",
+    "You enter the title, description, image URL, site name, and page URL by hand, and the tool renders four cards — a Facebook/LinkedIn-style card, a Twitter Card, a WhatsApp chat preview, and a Google search-result snippet — along with the exact meta tag HTML you'd paste into your page's head. A live length check sits above them, showing your title and description character counts against each platform's truncation point and flagging the ones that will be cut. Because everything is generated from what you type rather than fetched from a live page, you can experiment freely with different title lengths or image URLs before touching your actual site.",
     "This is a preview and tag-generation tool, not a live crawler — it doesn't reach out to your website to pull its current tags for you. For that, you'll want your browser's view-source or an extension, described below, then bring those values in here to check how they'll actually render.",
   ],
   sections: [
@@ -37,17 +37,18 @@ const guide: ToolGuide = {
       ],
     },
     {
-      heading: "Reading the Three Previews: Facebook/LinkedIn, Twitter Card, and Google",
+      heading: "Reading the Four Previews: Facebook/LinkedIn, Twitter Card, WhatsApp, and Google",
       paragraphs: [
         "The Facebook/LinkedIn preview renders the large-image card style both platforms use by default, pairing your og:image with the domain, title, and description underneath. The Twitter Card preview reflects the summary_large_image card type (the layout generated in the meta tags below), which most link previews on that platform use today.",
+        "The WhatsApp preview is deliberately shaped differently, because WhatsApp's card is: instead of a full-width banner it uses a small square thumbnail on the left with the bold title, description, and domain stacked beside it, all inside a chat bubble. That compact crop is the single biggest reason a card that looks great on Facebook can look wrong in a chat — a wide 1200×630 image gets squeezed into a square, so anything important near the left or right edge disappears. Keep the logo or focal point near the centre and it survives both crops.",
         "The Google Search preview is a separate case worth noting: search result snippets are influenced by your page's actual <title> tag and meta description, plus what Google decides to show based on the query — not by Open Graph tags at all. It's included here as a convenient side-by-side reference since search and social snippets often get written together, but changing your og:title won't change what Google shows in search results.",
       ],
     },
     {
       heading: "Writing OG Titles and Descriptions That Don't Get Cut Off",
       paragraphs: [
-        "Most platforms truncate an Open Graph title somewhere around 60 characters and a description somewhere around 110 to 160 characters, though the exact cutoff varies by platform and even by device width. Front-load the important information — your core message or keyword — in the first several words of both fields so that even a truncated version on a narrow mobile screen still makes sense on its own.",
-        "Watch the live preview cards above as you type rather than counting characters manually; if a sentence visibly wraps to a third line or gets cut off mid-word in the card, that's your signal to trim it, and it's much easier to catch here than after a customer has already shared the truncated version.",
+        "Every platform truncates at a different point, so the tool checks your text against all five at once and tells you which ones will cut it. The practical limits it uses are Facebook 88 characters of title and 200 of description, LinkedIn 119 and 160, X (Twitter) 70 and 200, WhatsApp 65 and 160, and Google 60 and 155. WhatsApp and Google are the tightest, which means a title written to fit Facebook comfortably can still be cut in half in a chat message.",
+        "Front-load the important information — your core message or keyword — in the first several words of both fields, so even a truncated version on a narrow mobile screen still makes sense on its own. The counters turn amber the moment you cross a platform's limit, and each preview card carries its own badge, so you can either aim for the tightest limit and fit everywhere, or knowingly accept a cut on one platform while the rest stay intact. Text past the limit still lives in the tag; it just doesn't get shown.",
       ],
     },
   ],
@@ -56,18 +57,21 @@ const guide: ToolGuide = {
     { title: "Debugging a broken link preview", description: "Reproduce your current og:title, og:description, and og:image values here to see exactly how they're rendering across platforms." },
     { title: "Writing OG tags from scratch", description: "Draft title, description, and image values for a new page and copy the generated meta tag HTML straight into your site." },
     { title: "Auditing a client site's social sharing setup", description: "Enter a client's existing tag values to demonstrate how their current link previews look before proposing changes." },
-    { title: "Comparing description lengths across platforms", description: "See the same description rendered in Facebook, Twitter, and Google-style cards side by side to judge where it gets truncated first." },
+    { title: "Comparing description lengths across platforms", description: "See the same description rendered in Facebook, Twitter, WhatsApp, and Google-style cards side by side, with a length check showing exactly which platforms will truncate it." },
+    { title: "Checking how a link looks shared in a chat", description: "Preview the WhatsApp card's square thumbnail crop before sending a link to a customer or a group." },
   ],
   mistakes: [
     { title: "Expecting the tool to fetch tags from a pasted URL", description: "This is a manual-entry preview, not a live scraper — CORS restrictions prevent browser-based tools from reading another site's HTML, so you have to type in the values yourself." },
     { title: "Using an image smaller than roughly 200x200", description: "Images below most platforms' minimum size threshold are often rejected or ignored, leaving the card with no image at all." },
     { title: "Forgetting to re-scrape after changing og:image", description: "Platforms cache Open Graph data, so an image swap on your live page won't show up in shares until you force a refresh through that platform's debugger tool." },
-    { title: "Writing a description well past 160 characters", description: "Longer descriptions get truncated, often mid-sentence, which can look unfinished or confusing in the actual share card." },
+    { title: "Writing a description well past 160 characters", description: "WhatsApp, LinkedIn, and Google all cut around 155-160 characters; watch the length check rather than assuming Facebook's roomier 200 applies everywhere." },
+    { title: "Designing the image only for the wide Facebook crop", description: "WhatsApp squeezes the same picture into a small square, so keep the logo or focal point near the centre instead of the edges." },
     { title: "Using a relative image path instead of an absolute URL", description: "og:image needs a full https:// URL — a relative path like /images/cover.jpg won't resolve correctly when a platform's server fetches it." },
   ],
   tips: [
     "View your page's source or use a meta-tag browser extension to find your current OG values before pasting them in here.",
-    "Keep titles under about 60 characters and descriptions under about 160 to avoid mid-sentence truncation.",
+    "Keep titles under about 60 characters and descriptions under about 155 to fit every platform in the length check without a warning.",
+    "Watch for the amber badges on each preview card — they tell you which platform is about to cut your text.",
     "Always use a full, absolute image URL starting with https:// rather than a relative path.",
     "Re-scrape with Facebook's Sharing Debugger or LinkedIn's Post Inspector after every og:image or og:title change on your live site.",
     "Check the image URL by opening it directly in a new browser tab if the preview shows a gray placeholder instead of your picture.",

@@ -3,8 +3,8 @@ import type { ToolGuide } from "@/types/guide";
 const guide: ToolGuide = {
   slug: "coin-flip",
   intro: [
-    "This free online coin flip gives you a fast, fair heads-or-tails result whenever you need to make a quick 50/50 decision, without digging a real coin out of a pocket or a drawer. Click Flip Coin for a single toss with a short spinning animation, or click Flip 10x to run ten flips back to back and watch the running tally update, useful for settling an argument, choosing who goes first, or just running a quick probability experiment.",
-    "Every flip is generated using the browser's own random number function, scaled to a simple 50/50 split between heads and tails, so over many flips the results balance out the way a fair physical coin would, even though any single flip is unpredictable. A running statistics panel tracks your total flips along with the count and percentage of heads and tails, so you can see how close your session is running to an even split.",
+    "This free online coin flip gives you a fast, fair heads-or-tails result whenever you need to make a quick 50/50 decision, without digging a real coin out of a pocket or a drawer. Click Flip Coin for a single toss with a short spinning animation, or set any number from 1 to 100 to flip a whole handful at once and see every result laid out side by side, useful for settling an argument, choosing who goes first, or just running a quick probability experiment.",
+    "Every flip comes from your browser's cryptographic random number generator, taking one unbiased bit per coin, so heads and tails are an exact 50/50 with no rounding or modulo bias creeping in. Each multi-coin flip shows its own heads and tails counts and percentages, and a running statistics panel tracks your total flips across the whole session, so you can see how close your results are running to an even split.",
     "There's no sign-up, no ads interrupting the flip, and no physical coin to lose, drop, or argue about the edge case of it landing on its side.",
   ],
   sections: [
@@ -36,10 +36,10 @@ const guide: ToolGuide = {
       ],
     },
     {
-      heading: "Flipping Multiple Times: Reading the Running Statistics",
+      heading: "Flipping Multiple Coins at Once: Reading Every Result",
       paragraphs: [
-        "The Flip 10x button runs ten flips in immediate succession and adds all ten outcomes to your running total, updating the total flip count, the heads and tails counts, and their percentages in the statistics panel below the coin. This is faster than clicking the single-flip button ten separate times when you just want a batch result, like simulating ten coin tosses for a probability lesson or a quick group vote.",
-        "The coin itself only displays the result of the final flip in a batch, since the animation shows one outcome at a time, but every flip in the batch is still counted toward the statistics panel, so the heads and tails totals reflect all ten results even though you only see the last one land.",
+        "Set the coin count to anything from 1 to 100 and a single click flips them all together. Every individual coin appears as its own marker, so you can read the actual sequence of heads and tails rather than just a summary, and the batch's own heads/tails counts and percentages are shown alongside them. This is far faster than clicking the single-flip button dozens of times when you want a batch result, like simulating a hundred coin tosses for a probability lesson or a quick group vote.",
+        "Every coin in the batch also rolls into the session statistics panel below, which keeps a running total across all your flips. So you get two views at once: the exact outcomes of the flip you just made, and the long-run split of everything you've flipped since the page loaded.",
       ],
     },
     {
@@ -53,19 +53,20 @@ const guide: ToolGuide = {
   useCases: [
     { title: "Settling a quick disagreement", description: "Use a single flip to decide something low-stakes, like who picks the movie or takes the last slice." },
     { title: "Choosing turn order in a game", description: "Flip once at the start of a board game or match to fairly decide who goes first." },
-    { title: "Running a probability demonstration", description: "Use Flip 10x repeatedly and watch the statistics panel converge toward a 50/50 split over many flips." },
+    { title: "Running a probability demonstration", description: "Flip 100 coins at once, read the individual results and the batch percentage, then repeat and watch the session total converge toward a 50/50 split." },
     { title: "Remote or video-call decisions", description: "Flip on screen so everyone in a call can see the exact same result at the same time." },
     { title: "Practicing understanding of independent events", description: "Flip several times in a row to see that streaks happen naturally and don't change the next flip's odds." },
   ],
   mistakes: [
     { title: "Expecting heads to be \"due\" after a streak", description: "Each flip is independent; a run of heads doesn't make tails more likely on the next flip." },
-    { title: "Assuming Flip 10x shows all ten results individually", description: "The coin displays only the final flip's result; the statistics panel is where all ten outcomes are tallied." },
+    { title: "Confusing the batch results with the session total", description: "The result grid shows only the coins from the flip you just made; the statistics panel below is the running total for the whole session." },
     { title: "Using a coin flip for a high-stakes decision", description: "A flip is best for low-stakes tiebreakers between two acceptable options, not decisions with real consequences." },
     { title: "Expecting the session history to persist", description: "The running statistics reset when you close or refresh the tab; there's no saved log across sessions." },
   ],
   tips: [
-    "Use a single flip for quick individual decisions and Flip 10x when you want a faster batch result.",
+    "Use a single flip for quick individual decisions and raise the coin count when you want a whole batch at once.",
     "Watch the statistics panel rather than a single flip if you want to see the 50/50 split play out.",
+    "Flipping 100 coins in one click is the fastest way to see how much a real sample can wander from an exact half.",
     "Remember each flip is independent; past results never change the odds of the next one.",
     "Reserve coin flips for decisions where both outcomes are genuinely fine with you.",
     "Refresh the page to reset your running statistics back to zero for a fresh session.",
@@ -73,7 +74,7 @@ const guide: ToolGuide = {
   glossary: [
     { title: "Independent event", description: "An event whose outcome isn't affected by previous events, meaning each coin flip has the same 50% odds regardless of past results." },
     { title: "Gambler's fallacy", description: "The mistaken belief that a random outcome is more or less likely because of what happened in recent independent trials." },
-    { title: "Random number generator", description: "A function that produces unpredictable values, used here to decide heads or tails with equal probability on each flip." },
+    { title: "Cryptographic random number generator", description: "A source of unpredictable values strong enough for security use, called here through the browser's crypto.getRandomValues to decide heads or tails with exactly equal probability on each flip." },
     { title: "Statistical variance", description: "The natural spread of results around an expected average, which is why small samples often look uneven even when the underlying odds are exactly 50/50." },
   ],
 };

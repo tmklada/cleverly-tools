@@ -3,8 +3,8 @@ import type { ToolGuide } from "@/types/guide";
 const guide: ToolGuide = {
   slug: "invoice-generator",
   intro: [
-    "An invoice generator lets you build a clean, professional invoice in your browser without opening a spreadsheet template or design tool. You fill in your business details, your client's details, and a list of items or services, and a formatted invoice appears instantly on the right side of the screen, ready to print or save as a PDF. It's built for freelancers, contractors, and small business owners who need to bill a client today, not after setting up accounting software.",
-    "Everything you enter stays in your browser for the current session. Nothing is uploaded to a server, which keeps client names, amounts, and contact details private, but it also means the form resets if you refresh the page, so finish and download the invoice before you navigate away. There's no account to create and no monthly fee.",
+    "An invoice generator lets you build a clean, professional invoice in your browser without opening a spreadsheet template or design tool. You fill in your business details, your client's details, and a list of items or services, and a formatted invoice appears instantly on screen, ready to download as a PDF or print. You can also add your own PNG or JPG logo so the finished invoice carries your branding. It's built for freelancers, contractors, and small business owners who need to bill a client today, not after setting up accounting software.",
+    "Everything you enter stays in your browser. Nothing is uploaded to a server, which keeps client names, amounts, logos, and contact details private, and your draft is saved to your browser's local storage as you type, so a refresh or an accidentally closed tab doesn't wipe a half-finished invoice. A Clear invoice button removes the saved draft whenever you want to start fresh. There's no account to create and no monthly fee.",
     "This guide covers what a proper invoice needs, how invoices differ from receipts and quotes, and common billing terms freelancers run into. It is general information about invoicing practices, not legal or tax advice — check with an accountant or your local tax authority for rules that apply to your business.",
   ],
   sections: [
@@ -48,8 +48,8 @@ const guide: ToolGuide = {
     {
       heading: "Building and Sending Your Invoice With This Tool",
       paragraphs: [
-        "Start by filling in your business name, address, and email, then do the same for the client in the Client Info panel — both update the invoice preview below in real time. Add an invoice number, invoice date, and due date, then add as many line items as needed with a description, quantity, and rate; the amount and running subtotal recalculate automatically as you type.",
-        "Set a tax rate as a percentage if applicable, and use the notes field for payment terms, a thank-you message, or bank details for wire transfer. When everything looks right, click Print / Download Invoice — this opens your browser's print dialog, where you can print a paper copy or choose \"Save as PDF\" to generate a PDF file to email or store.",
+        "Start by filling in your business name, address, and email, then upload a PNG or JPG logo if you have one — it appears in the invoice header, scaled to fit while keeping its proportions. Do the same for the client in the Client Info panel; both update the invoice preview below in real time. Add an invoice number, invoice date, and due date, then add as many line items as needed with a description, quantity, and rate; the amount and running subtotal recalculate automatically as you type.",
+        "Set a tax rate as a percentage if applicable, and use the notes field for payment terms, a thank-you message, or bank details for wire transfer. When everything looks right, click Download PDF — a properly formatted A4 invoice file is generated in your browser and saved straight to your device, ready to email or archive, with long item lists flowing onto additional pages automatically. The Print button is still available if you'd rather send a paper copy.",
       ],
     },
     {
@@ -71,15 +71,16 @@ const guide: ToolGuide = {
     { title: "Leaving the due date blank", description: "Without a due date, clients have no clear deadline, which is one of the most common causes of slow payment." },
     { title: "Reusing the same invoice number", description: "A duplicate invoice number across clients or months makes bookkeeping and tax filing harder to reconcile." },
     { title: "Forgetting to note payment terms", description: "Late fees or net-30 terms are hard to enforce if they weren't stated on the original invoice." },
-    { title: "Refreshing before saving", description: "Since invoice data isn't stored permanently, refreshing or closing the tab before printing or saving loses your entries." },
+    { title: "Relying on the draft instead of the PDF", description: "The draft is saved in this browser only, so clearing site data or switching devices loses it — download the PDF once the invoice is final." },
     { title: "Skipping the tax line for taxable sales", description: "Leaving tax out when it applies can create a mismatch between what's invoiced and what's actually owed." },
   ],
   tips: [
     "Use a consistent invoice numbering scheme, like INV-2026-001, so numbers never repeat across clients.",
     "Always set a due date, even for informal work, since it gives the client a concrete deadline.",
     "State payment terms and any late fee in the notes field, not just verbally.",
-    "Double-check quantities and rates before printing, since the tool can't catch a wrong number you typed in.",
-    "Save the invoice as a PDF right after finishing it, since the form resets on refresh.",
+    "Double-check quantities and rates before downloading, since the tool can't catch a wrong number you typed in.",
+    "Download the PDF as soon as the invoice is final, and keep it with your records — the browser draft is a convenience, not an archive.",
+    "Upload a PNG or JPG logo once; it stays with your saved draft, so next month's invoice is already branded.",
     "For recurring clients, keep a copy of a finished invoice as a template to speed up next month's billing.",
   ],
   glossary: [
