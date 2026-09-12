@@ -11,7 +11,7 @@ const config: ToolConfig = {
   faq: [
     { question: "What is a sleep cycle?", answer: "A sleep cycle lasts approximately 90 minutes and includes light sleep, deep sleep, and REM sleep. Waking up at the end of a cycle helps you feel more alert and refreshed." },
     { question: "How many sleep cycles do I need?", answer: "Most adults need 5-6 complete sleep cycles (7.5-9 hours) per night. Waking mid-cycle causes grogginess even after many hours of sleep." },
-    { question: "Should I factor in time to fall asleep?", answer: "Yes, the calculator adds about 15 minutes to account for the time it typically takes to fall asleep after lying down." },
+    { question: "Should I factor in time to fall asleep?", answer: "Yes, the calculator adds about 14 minutes to account for the time it typically takes to fall asleep after lying down." },
   ],
   howItWorks: [
     { step: 1, title: "Enter your wake-up time or bedtime", description: "Tell the calculator when you need to wake up or when you plan to go to bed." },

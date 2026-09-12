@@ -2,7 +2,7 @@ import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "roi-calculator",
   title: "ROI Calculator",
-  description: "Calculate your Return on Investment (ROI) quickly to evaluate the profitability of any investment or business decision. Compare multiple investments side by side.",
+  description: "Calculate your Return on Investment (ROI) quickly to evaluate the profitability of any investment or business decision. See your ROI percentage, net profit or loss, and annualized ROI instantly.",
   shortDescription: "Calculate ROI for any investment — free tool",
   category: "finance",
   keywords: ["roi calculator", "return on investment", "roi formula", "investment return calculator", "profit calculator", "business roi", "marketing roi", "calculate roi"],

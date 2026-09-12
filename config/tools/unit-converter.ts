@@ -10,7 +10,7 @@ const config: ToolConfig = {
   featured: true,
   toolType: "calculator",
   faq: [
-    { question: "What types of units can I convert?", answer: "You can convert length (meters, feet, miles), weight (kg, lbs, oz), volume (liters, gallons), area, speed, temperature, time, and many more unit types." },
+    { question: "What types of units can I convert?", answer: "You can convert length (meters, feet, miles), weight (kg, lbs, oz), volume (liters, gallons), area, and speed." },
     { question: "Does the converter support both metric and imperial?", answer: "Yes. All conversions support both metric (SI) and imperial/US customary units, making it useful for any country or field." },
     { question: "Is the conversion result accurate?", answer: "Yes. All conversions use precise mathematical formulas and constants for accurate results across all unit types." },
   ],

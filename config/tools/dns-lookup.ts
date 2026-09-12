@@ -9,7 +9,7 @@ const config: ToolConfig = {
   icon: "🔍",
   toolType: "utility",
   faq: [
-    { question: "What DNS record types can I look up?", answer: "You can look up A, AAAA, MX, CNAME, TXT, NS, SOA, and PTR records — all from one tool." },
+    { question: "What DNS record types can I look up?", answer: "You can look up A, AAAA, MX, CNAME, TXT, NS and SOA records, individually or all at once." },
     { question: "Why would I need to check MX records?", answer: "MX records control where email for a domain is delivered — checking them helps diagnose email delivery problems." },
     { question: "How long do DNS changes take to show up?", answer: "DNS changes can take anywhere from a few minutes to 48 hours to propagate worldwide due to TTL caching." },
   ],

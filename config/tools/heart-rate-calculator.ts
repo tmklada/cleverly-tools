@@ -15,7 +15,7 @@ const config: ToolConfig = {
   ],
   howItWorks: [
     { step: 1, title: "Enter your age", description: "Your age is used to calculate your estimated maximum heart rate." },
-    { step: 2, title: "Choose your formula", description: "Select from multiple heart rate formulas for different levels of accuracy." },
+    { step: 2, title: "See your max heart rate", description: "The calculator instantly applies the 220-minus-age formula to estimate your maximum heart rate." },
     { step: 3, title: "See your training zones", description: "View all five heart rate zones with BPM ranges for each workout intensity level." },
   ],
   relatedTools: ["calorie-calculator", "bmi-calculator", "sleep-calculator"],

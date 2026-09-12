@@ -10,8 +10,8 @@ const config: ToolConfig = {
   toolType: "text",
   faq: [
     { question: "What is Morse code?", answer: "Morse code is a system that uses dots (.) and dashes (-) to represent letters and numbers, originally used for telegraph communication." },
-    { question: "Can I hear the Morse code as audio?", answer: "Yes, the tool plays the Morse code as audio beeps at adjustable speed so you can learn or verify the output." },
-    { question: "Does it support international characters?", answer: "Standard English letters, numbers, and punctuation are supported per the international Morse code standard." },
+    { question: "Can I hear the Morse code as audio?", answer: "Yes, the tool plays the Morse code as a sequence of audio beeps using standard dot-and-dash timing, so you can listen to the pattern or check your translation by ear." },
+    { question: "Does it support international characters?", answer: "It supports the 26 English letters, digits 0-9, and four punctuation marks (period, comma, question mark, exclamation point). Accented letters and other symbols aren't mapped and show as a question mark." },
   ],
   howItWorks: [
     { step: 1, title: "Enter text or Morse code", description: "Type plain text to encode, or paste dots and dashes to decode." },

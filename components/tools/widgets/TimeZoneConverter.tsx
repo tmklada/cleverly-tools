@@ -23,6 +23,25 @@ const TIMEZONES = [
   { label: "Riyadh (AST)", value: "Asia/Riyadh" },
 ];
 
+function partsInZone(date: Date, tz: string) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: tz,
+    hourCycle: "h23",
+    year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit",
+  }).formatToParts(date);
+  const get = (type: string) => Number(parts.find((p) => p.type === type)?.value ?? 0);
+  return { year: get("year"), month: get("month"), day: get("day"), hour: get("hour"), minute: get("minute") };
+}
+
+// Wall-clock time in `tz` → the real instant. Guess UTC, measure the zone's offset at that guess, correct.
+function zonedTimeToUtc(year: number, month: number, day: number, hour: number, minute: number, tz: string): Date {
+  const guess = Date.UTC(year, month - 1, day, hour, minute);
+  const p = partsInZone(new Date(guess), tz);
+  const asIfUtc = Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute);
+  return new Date(guess - (asIfUtc - guess));
+}
+
 function formatTime(date: Date, tz: string, use24h: boolean): string {
   return date.toLocaleTimeString("en-US", {
     timeZone: tz,
@@ -63,20 +82,8 @@ export default function TimeZoneConverter() {
     if (!sourceTime) return null;
     try {
       const [hours, minutes] = sourceTime.split(":").map(Number);
-      const now = new Date();
-      const dateStr = `${now.toDateString()} ${hours}:${minutes}:00`;
-      const utcMs = new Date(dateStr + " " + sourceTz).getTime();
-      if (isNaN(utcMs)) return null;
-      // Use the Intl trick to parse a date in source tz
-      const formatter = new Intl.DateTimeFormat("en-US", {
-        timeZone: sourceTz,
-        year: "numeric", month: "2-digit", day: "2-digit",
-        hour: "2-digit", minute: "2-digit", second: "2-digit",
-        hour12: false,
-      });
-      const base = new Date();
-      base.setHours(hours, minutes, 0, 0);
-      return base;
+      const today = partsInZone(new Date(), sourceTz);
+      return zonedTimeToUtc(today.year, today.month, today.day, hours, minutes, sourceTz);
     } catch {
       return null;
     }

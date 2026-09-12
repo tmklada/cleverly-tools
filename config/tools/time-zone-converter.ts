@@ -10,8 +10,8 @@ const config: ToolConfig = {
   toolType: "utility",
   isNew: true,
   faq: [
-    { question: "How many time zones does this tool support?", answer: "All major world time zones are supported, including standard zones and regional offsets like IST, CST, and GMT+5:30." },
-    { question: "Does it automatically adjust for daylight saving time?", answer: "Yes, DST is handled automatically based on the selected region and the date you specify." },
+    { question: "How many time zones does this tool support?", answer: "19 major zones and cities are covered, including UTC, New York, Los Angeles, Chicago, London, Paris, Dubai, Mumbai, Singapore, Tokyo, Sydney, São Paulo, Toronto, Berlin, Seoul, Beijing, Moscow, Tel Aviv, and Riyadh, spanning every major region and common offsets like IST and GST." },
+    { question: "Does it automatically adjust for daylight saving time?", answer: "Yes, each zone uses its real current daylight saving rules automatically, since conversions are always based on today's date; there's no separate date picker for checking a past or future date." },
     { question: "Can I compare multiple time zones at once?", answer: "Yes, you can add multiple zones and see the equivalent time for all of them simultaneously in a side-by-side view." },
   ],
   howItWorks: [

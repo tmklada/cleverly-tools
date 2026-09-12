@@ -10,13 +10,13 @@ const config: ToolConfig = {
   toolType: "image",
   featured: true,
   faq: [
-    { question: "Can I crop to a specific aspect ratio?", answer: "Yes, choose from presets like 1:1, 4:3, 16:9, or enter custom width and height values." },
+    { question: "Can I crop to a specific aspect ratio?", answer: "Yes, choose Free, 1:1, 16:9, 4:3, or 3:2 to size the crop box, then drag it into position. You can also set an exact output width and height in pixels for the exported file." },
     { question: "What image formats are supported?", answer: "JPG, PNG, WebP, and GIF images are all supported for cropping." },
     { question: "Is my image uploaded to a server?", answer: "No — all cropping is done directly in your browser, so your images stay private." },
   ],
   howItWorks: [
     { step: 1, title: "Upload your image", description: "Drag and drop your image or click to select it from your device." },
-    { step: 2, title: "Select the crop area", description: "Drag the crop handles to select exactly the area you want to keep." },
+    { step: 2, title: "Select the crop area", description: "Pick an aspect ratio (or Free) to size the crop box, then drag it into position over the area you want to keep." },
     { step: 3, title: "Download the result", description: "Click Crop and download your cropped image instantly." },
   ],
   relatedTools: ["image-resizer", "image-compressor", "image-flipper"],

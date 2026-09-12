@@ -10,8 +10,8 @@ const config: ToolConfig = {
   isNew: true,
   toolType: "developer",
   faq: [
-    { question: "What types of gradients can I create?", answer: "You can create linear gradients (angled), radial gradients (circular or elliptical), and conic gradients (rotating around a center point) with full color stop control." },
-    { question: "Can I add multiple color stops?", answer: "Yes, you can add as many color stops as needed at any position. Drag them to adjust placement and use the color picker to set each color." },
+    { question: "What types of gradients can I create?", answer: "You can create linear gradients (angled), radial gradients (circular, expanding from the center), and conic gradients (rotating around a center point) with full color stop control." },
+    { question: "Can I add multiple color stops?", answer: "Yes, you can add as many color stops as needed. Use each stop's position slider to move it and the color picker to set its color." },
     { question: "Is the generated CSS compatible with all browsers?", answer: "Yes, the generated code includes standard CSS gradient syntax that works in all modern browsers including Chrome, Firefox, Safari, and Edge." },
   ],
   howItWorks: [
