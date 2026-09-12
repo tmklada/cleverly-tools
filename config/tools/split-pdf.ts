@@ -10,14 +10,14 @@ const config: ToolConfig = {
   isNew: true,
   toolType: "pdf",
   faq: [
-    { question: "Can I extract specific pages from a PDF?", answer: "Yes. You can select a custom page range (e.g. pages 2-5) or extract individual pages from your PDF file." },
-    { question: "Can I split a PDF into multiple files?", answer: "Absolutely. You can split every page into its own PDF, or define multiple ranges to create several separate documents at once." },
+    { question: "Can I extract specific pages from a PDF?", answer: "Yes. Enter a page range such as 2-5, or a single page like 7, and the tool saves exactly those pages as a new PDF." },
+    { question: "Can I split a PDF into multiple files?", answer: "Run the tool once per range you need. Each run extracts one range into its own PDF, so a 30-page file can be split into three documents in three quick passes." },
     { question: "Does splitting a PDF reduce quality?", answer: "No. Splitting only separates pages and does not alter the content, resolution, or quality of any page." },
   ],
   howItWorks: [
     { step: 1, title: "Upload your PDF", description: "Select or drag and drop the PDF file you want to split." },
-    { step: 2, title: "Choose pages or ranges", description: "Enter the page numbers or ranges you want to extract from the document." },
-    { step: 3, title: "Download your files", description: "Click Split and download the extracted pages as individual PDF files." },
+    { step: 2, title: "Enter the page range", description: "Type the first and last page you want to keep, for example 2 to 5." },
+    { step: 3, title: "Download the new PDF", description: "Click Split and download a PDF containing only the pages you selected." },
   ],
   relatedTools: ["merge-pdf", "compress-pdf", "rotate-pdf"],
   schema: "WebApplication",
