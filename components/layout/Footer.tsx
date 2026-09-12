@@ -85,6 +85,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-white transition-colors">About</Link></li>
               <li><Link href="/blog" className="hover:text-white transition-colors">Blog &amp; Guides</Link></li>
               <li><Link href="/search" className="hover:text-white transition-colors">Search all tools</Link></li>
+              <li><Link href="/embed" className="hover:text-white transition-colors">Embed a tool (free)</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact / Request a tool</Link></li>
               <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link></li>
