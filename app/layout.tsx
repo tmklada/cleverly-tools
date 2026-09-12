@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
+import SiteChrome from "@/components/layout/SiteChrome";
 import Footer from "@/components/layout/Footer";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import MicrosoftClarity from "@/components/analytics/MicrosoftClarity";
@@ -61,14 +62,18 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="min-h-full flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-        <EzoicScript />
-        <EzoicPageHandler />
-        <AdSenseScript />
+        <SiteChrome>
+          <EzoicScript />
+          <EzoicPageHandler />
+          <AdSenseScript />
+          <Header />
+        </SiteChrome>
         <GoogleAnalytics />
         <MicrosoftClarity />
-        <Header />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <SiteChrome>
+          <Footer />
+        </SiteChrome>
       </body>
     </html>
   );

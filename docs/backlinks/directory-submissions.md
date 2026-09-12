@@ -14,7 +14,7 @@ Free online tools for everyone — video downloaders, PDF tools, calculators. No
 cleverly.tools offers 94 free online tools including video downloaders (TikTok, Facebook, Instagram, YouTube), PDF tools (merge, split, compress), image editors, calculators, SEO tools, and developer utilities. No registration. No watermarks.
 
 **Long Description (500 chars):**
-cleverly.tools is a free online tools platform with 94 tools across 15 categories. Download TikTok videos without watermark, merge PDF files without Adobe, remove image backgrounds with AI, convert videos, calculate BMI and compound interest, generate QR codes, format JSON, create meta tags, and much more. Everything runs in your browser — no uploads to servers, complete privacy. Works on iPhone, Android, and desktop. 100% free, no sign-up required.
+cleverly.tools is a free online tools platform with 94 tools across 13 categories. Download TikTok videos without watermark, merge PDF files without Adobe, remove image backgrounds with AI, convert videos, calculate BMI and compound interest, generate QR codes, format JSON, create meta tags, and much more. Everything runs in your browser — no uploads to servers, complete privacy. Works on iPhone, Android, and desktop. 100% free, no sign-up required.
 
 **Keywords:**
 free online tools, video downloader, tiktok downloader no watermark, merge pdf free, background remover, bmi calculator, qr code generator, json formatter, image converter

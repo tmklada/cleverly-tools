@@ -10,6 +10,7 @@ import ShareButtons from "@/components/ui/ShareButtons";
 import TrackToolVisit from "@/components/tools/TrackToolVisit";
 import ToolUsageEvents from "@/components/analytics/ToolUsageEvents";
 import FavoriteButton from "@/components/tools/FavoriteButton";
+import EmbedButton from "@/components/tools/EmbedButton";
 import AlsoTry from "@/components/tools/AlsoTry";
 import ToolBenefits from "@/components/tools/ToolBenefits";
 import ToolGuideContent from "@/components/tools/ToolGuideContent";
@@ -99,7 +100,10 @@ export default async function ToolPage({ params }: Props) {
               <span className="text-4xl">{tool.icon}</span>
               <h1 className="text-3xl font-bold text-gray-900 dark:text-white">{tool.title}</h1>
             </div>
-            <FavoriteButton slug={tool.slug} />
+            <div className="flex items-center gap-2">
+              <EmbedButton slug={tool.slug} title={tool.title} />
+              <FavoriteButton slug={tool.slug} />
+            </div>
           </div>
           <p className="text-lg text-gray-600 dark:text-gray-400">{tool.description}</p>
           <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-gray-500 dark:text-gray-400">
