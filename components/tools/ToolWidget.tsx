@@ -2,8 +2,23 @@
 import dynamic from "next/dynamic";
 import type { ToolConfig } from "@/types/tool";
 import DownloaderWidget from "./DownloaderWidget";
+// Statically imported: this is the site's highest-impression tool page, so it
+// must be in the HTML instead of waiting for a client-side chunk.
+import TwitterDownloader from "./widgets/TwitterDownloader";
 
-const ld = (path: string) => dynamic(() => import(`./widgets/${path}`), { ssr: false });
+// Shown while a widget's chunk downloads, so the tool box is never blank.
+function WidgetSkeleton() {
+  return (
+    <div className="animate-pulse space-y-4" aria-hidden="true">
+      <div className="h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded" />
+      <div className="h-12 w-full bg-gray-200 dark:bg-gray-700 rounded-xl" />
+      <div className="h-12 w-40 bg-gray-200 dark:bg-gray-700 rounded-xl" />
+    </div>
+  );
+}
+
+const ld = (path: string) =>
+  dynamic(() => import(`./widgets/${path}`), { ssr: false, loading: WidgetSkeleton });
 
 // Calculators
 const BmiCalculator = ld("BmiCalculator");
@@ -117,7 +132,6 @@ const DnsLookup = ld("DnsLookup");
 // Video/Social extras
 const YoutubeToMp3 = ld("YoutubeToMp3");
 const YoutubeThumbnailDownloader = ld("YoutubeThumbnailDownloader");
-const TwitterDownloader = ld("TwitterDownloader");
 
 const DOWNLOADER_SLUGS = [
   "facebook-video-downloader",
