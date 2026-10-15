@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "number-to-words",
+  seoTitle: "Number to Words — Write Any Number in English, Free",
+  metaDescription:
+    "Convert any number into written English, including large numbers, decimals and currency amounts. Free and instant — handy for cheques and forms.",
   title: "Number to Words Converter",
   description: "Convert any number to words in English for free online, including large numbers, decimals, and currency amounts. Useful for writing checks, legal documents, and accessibility labels.",
   shortDescription: "Convert numbers to spelled-out English words",

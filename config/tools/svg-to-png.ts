@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "svg-to-png",
+  seoTitle: "SVG to PNG Converter — Any Resolution, Free",
+  metaDescription:
+    "Turn SVG code or an .svg file into a crisp PNG at whatever resolution you need. Free and instant, with no sign-up and nothing to install.",
   title: "SVG to PNG Converter",
   description: "Convert SVG vector files to PNG images online for free at any resolution you choose. Export crisp, high-quality PNG files from SVG code or uploaded .svg files instantly.",
   shortDescription: "Convert SVG files to PNG at any resolution",

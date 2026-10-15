@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "cron-expression-builder",
+  seoTitle: "Cron Expression Builder — Generate & Explain Cron",
+  metaDescription:
+    "Build a cron expression without memorizing the syntax and read a plain-English explanation of when it runs. Free and instant, with no sign-up.",
   title: "Cron Expression Builder",
   description: "Build and validate cron expressions visually with a human-readable explanation for each schedule. Generate cron syntax for any repeating task without memorizing the format.",
   shortDescription: "Build cron expressions with plain-English explanations",

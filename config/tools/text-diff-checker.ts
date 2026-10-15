@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "text-diff-checker",
+  seoTitle: "Text Diff Checker — Compare Two Texts Side by Side",
+  metaDescription:
+    "Paste two versions and see every added, removed and changed line highlighted side by side. Free and instant, with no sign-up required.",
   title: "Text Diff Checker",
   description: "Compare two texts side by side and instantly highlight all differences online for free. Find added, removed, and changed lines with a clear visual diff output.",
   shortDescription: "Compare two texts and highlight differences",

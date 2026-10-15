@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "time-zone-converter",
+  seoTitle: "Time Zone Converter — Compare Times Across Cities",
+  metaDescription:
+    "Convert a time between any two zones and see several cities at once, so you can find a meeting slot that works. Free and instant, no sign-up.",
   title: "Time Zone Converter",
   description: "Convert any time between time zones around the world for free online. Schedule meetings across continents, find overlapping work hours, and see current time in multiple cities at once.",
   shortDescription: "Convert time between any time zones worldwide",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-flipper",
+  seoTitle: "Image Flipper — Mirror a Photo Online, Free",
+  metaDescription:
+    "Flip or mirror any image horizontally or vertically and download the result as a PNG. Free and instant, with nothing at all to install.",
   title: "Image Flipper & Mirror",
   description: "Flip or mirror any image horizontally or vertically online for free with no software needed. Create perfect mirror images instantly and download the result as a PNG file.",
   shortDescription: "Flip and mirror images horizontally or vertically",

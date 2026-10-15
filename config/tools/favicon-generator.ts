@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "favicon-generator",
+  seoTitle: "Favicon Generator — Real .ico Plus Every PNG Size",
+  metaDescription:
+    "Turn an image or text into a true multi-size favicon.ico plus every PNG size, with the HTML snippet and web manifest included. Free, no sign-up.",
   title: "Favicon Generator",
   description: "Generate favicon files from any image or text online for free and download all required sizes instantly. Creates a real multi-size favicon.ico plus PNGs at 16, 32, 48, 64, 180, 192, and 512 pixels for browsers, Apple devices, and Android — with the HTML head snippet and web manifest included.",
   shortDescription: "Create a favicon.ico and PNG favicons in every required size",

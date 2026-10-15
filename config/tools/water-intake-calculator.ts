@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "water-intake-calculator",
+  seoTitle: "Water Intake Calculator — How Much Water a Day?",
+  metaDescription:
+    "Get your daily water target from your weight and how active you are. Free and instant, with no sign-up — just enter two numbers and read it off.",
   title: "Daily Water Intake Calculator",
   description: "Calculate exactly how much water you should drink per day based on your weight and activity level. Stay properly hydrated with a personalized daily water intake target.",
   shortDescription: "Calculate your daily water intake — free tool",

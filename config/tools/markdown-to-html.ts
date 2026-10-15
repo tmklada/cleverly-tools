@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "markdown-to-html",
+  seoTitle: "Markdown to HTML — Convert With Live Preview, Free",
+  metaDescription:
+    "Paste Markdown and get clean HTML, with tables, code blocks, lists, links and images all supported, plus a live preview. Free and instant.",
   title: "Markdown to HTML",
   description: "Convert Markdown text to clean, ready-to-use HTML code instantly in your browser. Supports headings H1-H6, bold, italic, strikethrough, links, images, ordered and unordered lists, tables, blockquotes, horizontal rules, and code blocks — with a live preview.",
   shortDescription: "Convert Markdown to HTML instantly",

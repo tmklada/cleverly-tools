@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "date-calculator",
+  seoTitle: "Date Duration Calculator — Days Between Two Dates",
+  metaDescription:
+    "Find the exact days, weeks, months and years between two dates, or add and subtract days to land on a deadline. Free and instant, no sign-up.",
   title: "Date Duration Calculator",
   description: "Calculate the exact number of days, weeks, months, and years between two dates for free online. Add or subtract days from any date and find due dates, deadlines, and anniversaries instantly.",
   shortDescription: "Calculate days, weeks, and months between two dates",

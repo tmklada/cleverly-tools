@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "scientific-calculator",
+  seoTitle: "Scientific Calculator Online — Free, Full Function",
+  metaDescription:
+    "Trig, logs, powers, factorials, memory keys, a DEG/RAD toggle and saved history, with full keyboard input. Free on any device, with no sign-up.",
   title: "Scientific Calculator",
   description: "A full-featured online scientific calculator with trigonometric, logarithmic, exponential, and power functions, a DEG/RAD toggle, factorials, memory keys, and saved calculation history. Supports parentheses for complex expressions and full keyboard input — free to use on any device.",
   shortDescription: "Advanced online scientific calculator",

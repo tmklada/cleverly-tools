@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "video-converter",
+  seoTitle: "Video Converter — MP4, WebM, GIF & MP3, No Upload",
+  metaDescription:
+    "Convert video between MP4, WebM, GIF and MP3 entirely in your browser. Free, no watermark, and your file is never uploaded anywhere.",
   title: "Video Converter",
   description: "Convert videos between MP4, WebM, GIF, and MP3 formats entirely in your browser. No upload, no watermark, completely free.",
   shortDescription: "Convert videos to MP4, WebM, GIF, MP3 — free & private",

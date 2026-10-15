@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "keyword-density-checker",
+  seoTitle: "Keyword Density Checker — Free SEO Text Analysis",
+  metaDescription:
+    "Paste your text to see which keywords you use most and how often, so you can spot thin coverage or over-optimization. Free and instant.",
   title: "Keyword Density Checker",
   description: "Analyze your content's keyword density to ensure optimal SEO performance. Find how often keywords appear in your text and avoid over-optimization penalties.",
   shortDescription: "Check keyword density in your content — free",

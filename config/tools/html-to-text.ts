@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "html-to-text",
+  seoTitle: "HTML to Text — Strip Tags and Get Clean Text, Free",
+  metaDescription:
+    "Paste HTML and get clean readable text with every tag removed. Free and instant, with no sign-up and nothing at all to install.",
   title: "HTML to Plain Text",
   description: "Strip HTML tags and convert HTML code to plain readable text online for free. Remove all markup and extract clean text content from any HTML document instantly.",
   shortDescription: "Strip HTML tags and extract plain text",

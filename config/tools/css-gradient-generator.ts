@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "css-gradient-generator",
+  seoTitle: "CSS Gradient Generator — Linear, Radial & Conic",
+  metaDescription:
+    "Build linear, radial and conic gradients with a live preview and copy the ready-to-use CSS. Free and instant, with no sign-up required.",
   title: "CSS Gradient Generator",
   description: "Create beautiful CSS gradients visually with a live preview. Generate linear, radial, and conic gradients and copy the ready-to-use CSS code instantly.",
   shortDescription: "Create CSS gradients with live preview — free",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "open-graph-preview",
+  seoTitle: "Open Graph Preview — See Your Link Before You Share",
+  metaDescription:
+    "Check how your page will look on Facebook, LinkedIn, X, WhatsApp and Google, and see which of them cuts your title short. Free and instant.",
   title: "Open Graph Preview Tool",
   description: "Preview how your website looks when shared on Facebook, LinkedIn, Twitter, WhatsApp, and Google Search before publishing. Enter your Open Graph tags manually, check them instantly, and see which platforms will truncate your title or description.",
   shortDescription: "Preview social media link cards for your site",

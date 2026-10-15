@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "meta-tag-generator",
+  seoTitle: "Meta Tag Generator — SEO, Open Graph & Twitter Card",
+  metaDescription:
+    "Generate the full set of meta tags for search, Open Graph and Twitter Cards, then paste them into your head. Free and instant, with no sign-up.",
   title: "Meta Tag Generator",
   description: "Generate complete HTML meta tags for SEO, Open Graph, and Twitter Cards in seconds. Improve your search rankings and social media previews with properly formatted meta tags.",
   shortDescription: "Generate SEO meta tags instantly — free tool",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "box-shadow-generator",
+  seoTitle: "CSS Box Shadow Generator — Live Preview & Code",
+  metaDescription:
+    "Set offset, blur, spread and color, see the shadow update live, then copy the CSS in one click. Free and instant, with no sign-up required.",
   title: "CSS Box Shadow Generator",
   description: "Generate CSS box shadow effects visually with a live preview. Control offset, blur, spread, and color to create perfect shadows and copy the CSS code instantly.",
   shortDescription: "Generate CSS box shadows with live preview — free",

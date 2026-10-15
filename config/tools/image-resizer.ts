@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-resizer",
+  seoTitle: "Image Resizer — Resize Photos to Exact Pixels, Free",
+  metaDescription:
+    "Resize any JPG, PNG, WebP or GIF to exact pixel dimensions or by percentage. Free and instant, with no sign-up and nothing to install.",
   title: "Image Resizer",
   description: "Resize any image to exact pixel dimensions or by percentage online — instantly and for free. Supports JPG, PNG, WebP, and GIF without needing to install any software.",
   shortDescription: "Resize images to any dimension online free",

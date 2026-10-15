@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "sleep-calculator",
+  seoTitle: "Sleep Calculator — Best Time to Sleep or Wake Up",
+  metaDescription:
+    "Work out when to go to bed or set your alarm so you wake at the end of a sleep cycle, not the middle of one. Free and instant, with no sign-up.",
   title: "Sleep Calculator",
   description: "Find the best time to wake up or go to sleep based on natural sleep cycles. Wake up feeling refreshed by timing your alarm to the end of a complete sleep cycle.",
   shortDescription: "Calculate the best time to sleep and wake up",

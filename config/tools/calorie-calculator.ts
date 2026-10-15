@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "calorie-calculator",
+  seoTitle: "Calorie Calculator — Your Daily Calorie Needs, Free",
+  metaDescription:
+    "Enter your age, height, weight and activity level to get your daily calorie target for losing, maintaining or gaining weight. Free and instant.",
   title: "Calorie Calculator",
   description: "Calculate your daily calorie needs based on your age, weight, height, and activity level. Get personalized calorie targets for weight loss, maintenance, or muscle gain.",
   shortDescription: "Calculate your daily calorie needs — free tool",

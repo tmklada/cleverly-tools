@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-metadata-reader",
+  seoTitle: "EXIF Viewer — Photo Metadata, GPS and Camera Data",
+  metaDescription:
+    "See a photo's full EXIF data: GPS coordinates with a map link, camera, lens, shutter, aperture, ISO and capture date. Nothing is uploaded.",
   title: "Image EXIF Metadata Reader",
   description: "Read and display EXIF metadata from JPEG and PNG photos online for free, including full GPS coordinates with a map link, camera make and model, lens, exposure time, aperture, ISO, focal length, software, and the original capture date. No upload to a server — all processing is local.",
   shortDescription: "View hidden EXIF data and GPS location from photos instantly",

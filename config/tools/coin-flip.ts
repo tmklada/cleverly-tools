@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "coin-flip",
+  seoTitle: "Coin Flip — Flip a Virtual Coin Online, Free",
+  metaDescription:
+    "Flip a coin for a random heads or tails, one at a time or up to 100 at once. Free and instant — a fair 50/50 call whenever you need one.",
   title: "Coin Flip",
   description: "Flip a virtual coin online to get a random heads or tails result, one coin at a time or up to 100 at once. A quick and fair decision-making tool for any situation that needs a 50/50 choice.",
   shortDescription: "Virtual coin flip for quick decisions — free",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "timer-stopwatch",
+  seoTitle: "Online Timer & Stopwatch — Free, With Lap Times",
+  metaDescription:
+    "A countdown timer and a stopwatch with lap tracking on one page. Free and instant — for workouts, cooking, studying and anything timed.",
   title: "Timer & Stopwatch",
   description: "A free online timer and stopwatch with lap tracking. Perfect for workouts, cooking, studying, or any activity that needs precise time measurement.",
   shortDescription: "Online timer and stopwatch with lap tracking",

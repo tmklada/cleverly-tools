@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "text-repeater",
+  seoTitle: "Text Repeater — Repeat Any Text X Times, Free",
+  metaDescription:
+    "Repeat a word, a line or a block of text as many times as you want in one click. Free and instant — for test data, patterns and filler.",
   title: "Text Repeater",
   description: "Repeat any text, word, or character a specified number of times online for free. Useful for generating test data, patterns, filler content, or repeated strings quickly.",
   shortDescription: "Repeat any text or character N times instantly",

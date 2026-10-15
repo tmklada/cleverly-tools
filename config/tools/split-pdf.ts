@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "split-pdf",
+  seoTitle: "Split PDF — Extract Pages or Split a PDF File Free",
+  metaDescription:
+    "Pull out chosen pages, split several ranges like 1-3, 5, 8-10 into separate PDFs, or break every page into its own file. Free and instant.",
   title: "Split PDF",
   description: "Extract specific pages or split a PDF into multiple separate files in one pass. List several ranges like 1-3, 5, 8-10 to get one PDF per range, pull chosen pages into a single document, or split every page into its own file — free and instant, no software needed.",
   shortDescription: "Extract pages from a PDF file",

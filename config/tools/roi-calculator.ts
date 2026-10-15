@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "roi-calculator",
+  seoTitle: "ROI Calculator — Return on Investment & Net Profit",
+  metaDescription:
+    "Enter your cost and your return to get ROI percentage, net profit or loss and annualized ROI. Free and instant, with no sign-up required.",
   title: "ROI Calculator",
   description: "Calculate your Return on Investment (ROI) quickly to evaluate the profitability of any investment or business decision. See your ROI percentage, net profit or loss, and annualized ROI instantly.",
   shortDescription: "Calculate ROI for any investment — free tool",

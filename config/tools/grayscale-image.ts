@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "grayscale-image",
+  seoTitle: "Grayscale Image Converter — Photo to Black & White",
+  metaDescription:
+    "Turn any color photo black and white in seconds with an instant preview and full detail kept. Free, with no sign-up and nothing to install.",
   title: "Grayscale Image Converter",
   description: "Convert any color photo to black and white or grayscale online for free in seconds. Remove all color from images while preserving detail and quality, with instant preview.",
   shortDescription: "Convert color photos to grayscale instantly",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "css-minifier",
+  seoTitle: "CSS Minifier — Compress and Shrink Your CSS, Free",
+  metaDescription:
+    "Strip whitespace, comments and dead characters from your CSS to cut file size and speed up your pages. Free and instant, with no sign-up.",
   title: "CSS Minifier",
   description: "Minify and compress your CSS code online for free to reduce file size and improve page load speed. Remove whitespace, comments, and unnecessary characters instantly.",
   shortDescription: "Compress and minify CSS code instantly",

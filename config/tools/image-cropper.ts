@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-cropper",
+  seoTitle: "Image Cropper — Crop Photos Online Free, No Sign-Up",
+  metaDescription:
+    "Drag to crop any photo, or use an exact size or a preset ratio for social profiles and posts. Free and instant, with no sign-up required.",
   title: "Image Cropper Online",
   description: "Crop images online for free with a simple drag-and-drop interface and no sign-up required. Set custom dimensions or use preset aspect ratios for social media, profiles, and more.",
   shortDescription: "Crop images online with drag-and-drop ease",

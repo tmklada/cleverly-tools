@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "discount-calculator",
+  seoTitle: "Discount Calculator — Sale Price & Percent Off",
+  metaDescription:
+    "Find the final price after a percentage off, or work out what discount was applied. Free and instant — for sales, coupons and bulk pricing.",
   title: "Discount Calculator",
   description: "Calculate the final price after a percentage discount or find what percentage discount was applied for free online. Works for sale prices, coupons, bulk pricing, and markdown calculations.",
   shortDescription: "Calculate sale price after any percentage discount",

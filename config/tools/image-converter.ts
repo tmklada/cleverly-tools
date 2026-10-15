@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-converter",
+  seoTitle: "Image Converter — JPG, PNG, WebP, GIF & BMP, Free",
+  metaDescription:
+    "Convert images between JPG, PNG, WebP, GIF and BMP in seconds. Free, with no sign-up and no software to install — just upload and download.",
   title: "Image Converter",
   description: "Convert images between JPG, PNG, WebP, GIF, and BMP formats online for free. No software or registration needed — just upload, convert, and download in seconds.",
   shortDescription: "Convert JPG, PNG, WebP images online free",

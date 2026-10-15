@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "text-to-slug",
+  seoTitle: "Text to Slug — Make SEO-Friendly URLs, Free",
+  metaDescription:
+    "Turn any title into a clean URL slug: lowercase, hyphens instead of spaces and special characters stripped. Free and instant, no sign-up.",
   title: "Text to Slug",
   description: "Convert any title or text into a clean, URL-friendly slug instantly. Automatically removes special characters, replaces spaces with hyphens, and converts to lowercase — perfect for SEO-friendly URLs.",
   shortDescription: "Convert text to URL-friendly slugs",

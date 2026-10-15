@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "base64-encoder",
+  seoTitle: "Base64 Encoder & Decoder — Free, Runs in Browser",
+  metaDescription:
+    "Encode text or files to Base64 and decode Base64 back to plain text. Free and instant, and it runs in your browser so nothing is uploaded.",
   title: "Base64 Encoder / Decoder",
   description: "Encode text or files to Base64 and decode Base64 strings back to plain text. Fast, free, works entirely in your browser.",
   shortDescription: "Encode & decode Base64 strings instantly",

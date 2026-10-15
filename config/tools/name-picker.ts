@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "name-picker",
+  seoTitle: "Random Name Picker — Pick a Winner From a List",
+  metaDescription:
+    "Paste a list of names and pick one at random. Free and instant — for prize draws, classroom turns, team picks and any fair selection.",
   title: "Random Name Picker",
   description: "Pick a random name or winner from a list instantly. Great for classroom activities, prize draws, team assignments, and fair random selection from any group.",
   shortDescription: "Pick a random name from your list — free tool",

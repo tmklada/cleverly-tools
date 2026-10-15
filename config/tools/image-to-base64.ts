@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-to-base64",
+  seoTitle: "Image to Base64 — Convert and Embed Images, Free",
+  metaDescription:
+    "Turn any image into a Base64 string you can paste straight into HTML, CSS or JavaScript. It runs in your browser, so nothing is uploaded.",
   title: "Image to Base64",
   description: "Convert any image to a Base64-encoded string instantly in your browser. Use the output in HTML, CSS, or JavaScript to embed images directly without external file references.",
   shortDescription: "Convert images to Base64 string online",

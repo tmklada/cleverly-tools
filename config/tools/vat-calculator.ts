@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "vat-calculator",
+  seoTitle: "VAT Calculator — Add or Remove VAT at Any Rate",
+  metaDescription:
+    "Add VAT to a net price or strip it out of a gross one at any country's rate. Free and instant — for invoices, receipts and bookkeeping.",
   title: "VAT Calculator",
   description: "Add or remove VAT from any price instantly. Calculate VAT amounts for any country's tax rate, useful for invoices, receipts, and business accounting.",
   shortDescription: "Add or remove VAT from prices — free calculator",

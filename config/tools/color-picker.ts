@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "color-picker",
+  seoTitle: "Color Picker — HEX, RGB, HSL & HSV Values, Free",
+  metaDescription:
+    "Pick a color or paste a HEX, RGB or HSL value and see it in every format at once. Copy any of them in one click. Free, instant, no sign-up.",
   title: "Color Picker",
   description: "Pick any color, or type and paste a HEX, RGB or HSL value, and instantly see it in HEX, HEX8, RGB, RGBA, HSL, and HSV. Copy any format with one click — perfect for designers and developers.",
   shortDescription: "Convert HEX, RGB, HSL, HSV and RGBA colors",

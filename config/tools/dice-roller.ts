@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "dice-roller",
+  seoTitle: "Dice Roller — Roll Virtual Dice Online, Free",
+  metaDescription:
+    "Roll standard or custom dice online for board games, tabletop RPGs or anything else that needs them. Free and instant, with no sign-up.",
   title: "Dice Roller",
   description: "Roll virtual dice online with support for standard and custom dice types. Perfect for board games, tabletop RPGs, and any game that requires dice.",
   shortDescription: "Roll virtual dice for games — free online tool",

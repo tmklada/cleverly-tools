@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "rotate-pdf",
+  seoTitle: "Rotate PDF — Fix Sideways Pages Online, Free",
+  metaDescription:
+    "Rotate a whole PDF, a page range, or each page by its own angle, then save the corrected file. Free and instant, with no account needed.",
   title: "Rotate PDF",
   description: "Rotate PDF pages 90, 180, or 270 degrees — the whole document, a page range like 2, 5-7, or a different angle for each page. Rotation is added on top of each page's existing angle, and there is a reset-to-0° option. Fix sideways or upside-down pages and save the corrected PDF instantly — no account needed.",
   shortDescription: "Rotate all pages or selected pages by 90, 180 or 270 degrees",

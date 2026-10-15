@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-color-picker",
+  seoTitle: "Image Color Picker — Get HEX & RGB From Any Photo",
+  metaDescription:
+    "Upload an image and click anywhere to read that pixel's HEX, RGB and HSL values. Free and instant — perfect for matching a color from a design.",
   title: "Image Color Picker",
   description: "Pick any color from an uploaded image and get its HEX, RGB, and HSL values instantly online for free. Identify exact colors from photos, designs, or screenshots with a single click.",
   shortDescription: "Pick colors from any image and get HEX, RGB, HSL values",

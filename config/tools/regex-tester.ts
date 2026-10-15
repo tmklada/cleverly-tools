@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "regex-tester",
+  seoTitle: "Regex Tester — Test & Debug Regular Expressions Free",
+  metaDescription:
+    "Write a regular expression and see every match highlighted in your text as you type, flags included. Free and instant, with no sign-up.",
   title: "Regex Tester",
   description: "Test, debug, and validate regular expressions in real time with match highlighting and detailed results. Supports JavaScript regex syntax with flags — an essential tool for every developer.",
   shortDescription: "Test and debug regular expressions online",

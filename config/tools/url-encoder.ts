@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "url-encoder",
+  seoTitle: "URL Encoder & Decoder — Percent-Encoding, Free",
+  metaDescription:
+    "Encode special characters for a URL or decode an encoded string back to plain text. Free and instant — for query strings and API work.",
   title: "URL Encoder / Decoder",
   description: "Encode special characters in URLs and decode encoded URL strings. Essential for web developers working with query parameters and APIs.",
   shortDescription: "Encode & decode URL strings for web development",

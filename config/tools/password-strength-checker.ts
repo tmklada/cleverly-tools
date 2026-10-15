@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "password-strength-checker",
+  seoTitle: "Password Strength Checker — How Strong Is It? Free",
+  metaDescription:
+    "Test how strong a password really is and see exactly what makes it weak, with suggestions to fix it. Free and instant, with no sign-up.",
   title: "Password Strength Checker",
   description: "Check how strong and secure your password is instantly. Get a detailed analysis of your password's weaknesses and suggestions to make it stronger.",
   shortDescription: "Check your password strength — free & private",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "compound-interest-calculator",
+  seoTitle: "Compound Interest Calculator — See Your Money Grow",
+  metaDescription:
+    "Enter your starting amount, rate and compounding frequency to see what your investment is worth over time. Free and instant, with no sign-up.",
   title: "Compound Interest Calculator",
   description: "Calculate how your investment grows over time with compound interest. See projections for any principal amount, interest rate, and compounding frequency.",
   shortDescription: "Calculate compound interest and investment growth",

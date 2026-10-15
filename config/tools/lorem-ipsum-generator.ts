@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "lorem-ipsum-generator",
+  seoTitle: "Lorem Ipsum Generator — Placeholder Text, Free",
+  metaDescription:
+    "Generate exactly as much dummy text as you need by paragraphs, sentences or words, then copy it in one click. Free, instant and no sign-up.",
   title: "Lorem Ipsum Generator",
   description: "Generate custom lorem ipsum placeholder text for your designs, wireframes, and mockups. Choose paragraphs, sentences, or words, set the exact amount, and copy the dummy text in one click.",
   shortDescription: "Generate lorem ipsum placeholder text",

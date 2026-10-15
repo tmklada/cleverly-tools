@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "invoice-generator",
+  seoTitle: "Invoice Generator — Free Invoices With Logo and PDF",
+  metaDescription:
+    "Build a professional invoice with your logo, line items and taxes, then download it as a PDF. Free, and everything stays in your browser.",
   title: "Invoice Generator",
   description: "Create professional invoices online for free and download them as a PDF in one click. Add your logo, line items, taxes, and business details to send polished invoices to clients instantly — everything stays in your browser.",
   shortDescription: "Create and download professional invoices — free",

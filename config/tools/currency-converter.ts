@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "currency-converter",
+  seoTitle: "Currency Converter — 160+ Currencies, Live Rates",
+  metaDescription:
+    "Convert between more than 160 world currencies at live exchange rates. Free and instant — for travel, invoices and international shopping.",
   title: "Currency Converter",
   description: "Convert between 160+ world currencies with live exchange rates for free online. Get accurate currency conversions for travel, business, and international purchases instantly.",
   shortDescription: "Convert currencies with live exchange rates",

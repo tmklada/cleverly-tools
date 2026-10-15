@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "tip-calculator",
+  seoTitle: "Tip Calculator — Work Out the Tip and Split the Bill",
+  metaDescription:
+    "Enter the bill to get the tip at any percentage and what each person owes once you split it. Free and instant, with no sign-up required.",
   title: "Tip Calculator",
   description: "Calculate the right tip amount for any bill and split it easily among multiple people. Perfect for restaurants, taxis, and any service where tipping is expected.",
   shortDescription: "Calculate tips and split bills — free tool",

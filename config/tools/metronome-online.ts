@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "metronome-online",
+  seoTitle: "Online Metronome — Free, Adjustable BPM & Time Sig",
+  metaDescription:
+    "Keep time while you practise with an accurate online metronome: set the BPM and the time signature and play. Free, with nothing to download.",
   title: "Online Metronome",
   description: "Use a free online metronome to keep perfect time during music practice, with adjustable BPM and time signature. No download needed — works instantly in your browser with accurate click sounds.",
   shortDescription: "Free online metronome for music practice",

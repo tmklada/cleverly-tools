@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "dns-lookup",
+  seoTitle: "DNS Lookup — Check A, MX, TXT & CNAME Records Free",
+  metaDescription:
+    "Look up any domain's A, AAAA, MX, CNAME, TXT and NS records to debug email or verify a setup. Free and instant, with no sign-up required.",
   title: "DNS Lookup Tool",
   description: "Look up DNS records for any domain online for free, including A, AAAA, MX, CNAME, TXT, and NS records. Diagnose email delivery issues, verify domain configuration, and debug DNS instantly.",
   shortDescription: "Look up all DNS records for any domain instantly",

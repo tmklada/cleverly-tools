@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "text-case-converter",
+  seoTitle: "Text Case Converter — UPPER, lower, Title, camelCase",
+  metaDescription:
+    "Switch text to UPPERCASE, lowercase, Title Case, camelCase, snake_case and more in one click. Free and instant, with no sign-up required.",
   title: "Text Case Converter",
   description: "Convert text to UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more with one click. Free online text transformer.",
   shortDescription: "Convert text to any case — uppercase, title, camel, snake",

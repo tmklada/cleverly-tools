@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "temperature-converter",
+  seoTitle: "Temperature Converter — Celsius, Fahrenheit & Kelvin",
+  metaDescription:
+    "Type one temperature and watch Celsius, Fahrenheit and Kelvin update together. Free and instant — for cooking, science and travel.",
   title: "Temperature Converter",
   description: "Convert temperatures between Celsius, Fahrenheit, and Kelvin instantly. Enter any temperature value and see all three scales updated in real time — perfect for cooking, science, and travel.",
   shortDescription: "Convert Celsius, Fahrenheit and Kelvin",

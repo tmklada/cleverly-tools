@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "border-radius-generator",
+  seoTitle: "CSS Border Radius Generator — Live Preview & Code",
+  metaDescription:
+    "Drag the sliders to shape rounded corners, pills and custom shapes, watch the live preview, then copy the CSS. Free, instant and no sign-up.",
   title: "CSS Border Radius Generator",
   description: "Visually generate CSS border-radius values with a live preview online for free. Create perfect rounded corners, pills, and custom shapes with a simple slider interface.",
   shortDescription: "Generate CSS border-radius values visually",

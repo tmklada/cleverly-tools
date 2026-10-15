@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "wifi-qr-code-generator",
+  seoTitle: "WiFi QR Code Generator — Guests Join, No Password",
+  metaDescription:
+    "Make a QR code for your WiFi so guests join by scanning instead of typing the password. Supports WPA, WPA2 and open networks. Free, no sign-up.",
   title: "WiFi QR Code Generator",
   description: "Create a QR code for your WiFi network so guests can connect instantly without typing passwords. Supports WPA, WPA2, and open networks.",
   shortDescription: "Share WiFi access with a scannable QR code",

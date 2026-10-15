@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "hash-generator",
+  seoTitle: "Hash Generator — MD5, SHA-1 & SHA-256 Checksums",
+  metaDescription:
+    "Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes for text or a file to check a download. It runs in your browser — nothing is uploaded.",
   title: "Hash Generator",
   description: "Generate MD5, SHA-1, SHA-256, SHA-384, and SHA-512 hashes for any text or file. Verify a download against its published checksum — everything runs in your browser.",
   shortDescription: "Generate MD5, SHA1, SHA256 hashes online",

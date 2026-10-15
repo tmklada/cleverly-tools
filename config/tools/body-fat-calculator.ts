@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "body-fat-calculator",
+  seoTitle: "Body Fat Calculator — US Navy Method, Free",
+  metaDescription:
+    "Estimate your body fat percentage from a few tape measurements using the US Navy method. Free and instant, with no sign-up required.",
   title: "Body Fat Calculator",
   description: "Estimate your body fat percentage using measurements or the US Navy method. Understand your fitness level and get a clearer picture of your health beyond just weight.",
   shortDescription: "Estimate your body fat percentage — free tool",

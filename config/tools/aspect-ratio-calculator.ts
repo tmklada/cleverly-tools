@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "aspect-ratio-calculator",
+  seoTitle: "Aspect Ratio Calculator — 16:9, 4:3 & Custom Ratios",
+  metaDescription:
+    "Enter one dimension and get the matching width or height for 16:9, 4:3 or any custom ratio. Free and instant, with no sign-up required.",
   title: "Aspect Ratio Calculator",
   description: "Calculate and convert aspect ratios between different screen sizes and resolutions for free online. Find the correct width or height to maintain a 16:9, 4:3, or any custom aspect ratio.",
   shortDescription: "Calculate width and height for any aspect ratio",

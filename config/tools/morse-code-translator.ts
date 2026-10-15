@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "morse-code-translator",
+  seoTitle: "Morse Code Translator — Text to Morse and Back, Free",
+  metaDescription:
+    "Translate text into Morse code and decode dots and dashes back into words, with optional audio playback. Free and instant, with no sign-up.",
   title: "Morse Code Translator",
   description: "Translate text to Morse code and Morse code back to text online for free. Encode and decode messages using dots and dashes with optional audio playback of the Morse signal.",
   shortDescription: "Translate text to Morse code and back instantly",

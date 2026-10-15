@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "string-reverse",
+  seoTitle: "String Reverse — Reverse Text or Word Order, Free",
+  metaDescription:
+    "Flip any text backwards character by character, or reverse the order of the words in a sentence. Free and instant, with no sign-up required.",
   title: "String Reverse Tool",
   description: "Reverse any string, word, or sentence instantly online for free. Flip text backwards character by character or reverse the order of words in a sentence.",
   shortDescription: "Reverse any text or string instantly",

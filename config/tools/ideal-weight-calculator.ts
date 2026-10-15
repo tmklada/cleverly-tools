@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "ideal-weight-calculator",
+  seoTitle: "Ideal Weight Calculator — Hamwi, Devine & Robinson",
+  metaDescription:
+    "Get your ideal weight range from your height, gender and frame using the Hamwi, Devine and Robinson formulas side by side. Free and instant.",
   title: "Ideal Weight Calculator",
   description: "Find your ideal body weight range based on your height, gender, and frame size. Uses multiple formulas including Hamwi, Devine, and Robinson for a complete picture.",
   shortDescription: "Find your ideal weight by height and gender",

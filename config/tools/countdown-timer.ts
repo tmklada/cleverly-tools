@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "countdown-timer",
+  seoTitle: "Countdown Timer — Count Down to Any Date, Free",
+  metaDescription:
+    "Set a countdown to any date and time and watch exactly how long is left. Free and instant — for deadlines, launches, birthdays and events.",
   title: "Countdown Timer",
   description: "Set a countdown timer to any date or time and track exactly how long until your event. Perfect for deadlines, launches, birthdays, and special events.",
   shortDescription: "Count down to any date or time — free tool",

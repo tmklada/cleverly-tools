@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "csv-to-json",
+  seoTitle: "CSV to JSON Converter — Spreadsheet to JSON, Free",
+  metaDescription:
+    "Paste or upload a CSV and get a clean JSON array ready to drop into an API or an app. Free and instant, with no sign-up required.",
   title: "CSV to JSON Converter",
   description: "Convert CSV files to JSON format online for free in one click. Transform spreadsheet data into structured JSON arrays ready for use in APIs and applications.",
   shortDescription: "Convert CSV data to JSON instantly",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "robots-txt-generator",
+  seoTitle: "Robots.txt Generator — Free, Valid robots.txt File",
+  metaDescription:
+    "Build a valid robots.txt that tells search engines what to crawl and what to leave alone, then copy it to your site. Free and instant.",
   title: "Robots.txt Generator",
   description: "Generate a valid robots.txt file for your website to control which pages search engines can crawl and index. Protect private pages and optimize your crawl budget.",
   shortDescription: "Create a robots.txt file for your website — free",
