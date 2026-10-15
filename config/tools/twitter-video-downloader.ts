@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "twitter-video-downloader",
+  seoTitle: "Twitter / X Video Downloader — HD MP4, No Login, Free",
+  metaDescription:
+    "Paste a tweet link and save its video as MP4 in the best quality X offers. Free, no app and no login — works with twitter.com and x.com links.",
   title: "Twitter/X Video Downloader",
   description: "Download videos from Twitter and X (formerly Twitter) directly to your device for free. Just paste the tweet URL and save the video in HD quality — no app or login required.",
   shortDescription: "Download Twitter and X videos for free",

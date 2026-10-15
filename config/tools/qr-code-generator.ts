@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "qr-code-generator",
+  seoTitle: "QR Code Generator — Free Custom QR Codes, PNG & SVG",
+  metaDescription:
+    "Turn any link, text or contact details into a QR code, choose the colors and size, then download it as a sharp PNG or SVG. Free, with no sign-up.",
   title: "QR Code Generator",
   description: "Generate QR codes instantly for any URL, text, or contact information. Customize colors, size, and download your QR code as a high-quality PNG or SVG.",
   shortDescription: "Create custom QR codes instantly — free tool",

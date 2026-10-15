@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "bpm-calculator",
+  seoTitle: "BPM Calculator — Tap the Beat to Find a Song's Tempo",
+  metaDescription:
+    "Tap the spacebar along to any song and read its exact BPM, its tempo marking from Grave to Presto, and the delay and reverb times in milliseconds.",
   title: "BPM Calculator",
   description: "Calculate BPM (beats per minute) by tapping along to any song online for free. Find the exact tempo of music by tapping the beat or the spacebar, see its classical tempo marking from Grave to Presto, and read off the BPM-to-milliseconds table for delay and reverb times.",
   shortDescription: "Find song tempo by tapping the beat",

@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "age-calculator",
+  seoTitle: "Age Calculator — Your Exact Age in Years, Days & Hours",
+  metaDescription:
+    "Enter your birth date to get your exact age in years, months, days, hours and minutes, plus the days left until your next birthday. Free and instant.",
   title: "Age Calculator",
   description: "Calculate your exact age in years, months, days, hours and minutes. Find out how many days until your next birthday.",
   shortDescription: "Calculate your exact age in years, months & days",

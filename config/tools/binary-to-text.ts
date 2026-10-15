@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "binary-to-text",
+  seoTitle: "Binary to Text Converter — Decode Binary Instantly",
+  metaDescription:
+    "Paste 0s and 1s to decode them into plain English, or turn any text into binary. Free and instant, with no sign-up — works on phone and desktop.",
   title: "Binary to Text Converter",
   description: "Convert binary code to readable text and text to binary online for free. Instantly decode 0s and 1s into plain English or encode any text into binary format.",
   shortDescription: "Convert binary to text and text to binary",

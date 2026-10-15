@@ -2,6 +2,9 @@ import type { ToolConfig } from "@/types/tool";
 
 const config: ToolConfig = {
   slug: "instagram-video-downloader",
+  seoTitle: "Instagram Video Downloader — Reels & IGTV in HD, Free",
+  metaDescription:
+    "Paste any public Instagram link to save Reels, IGTV and feed videos in HD. Free, with no login and no app — works on phone and desktop.",
   title: "Instagram Video Downloader",
   description:
     "Download Instagram videos, Reels and IGTV for free. Paste any public Instagram URL and save HD videos instantly — no login required.",

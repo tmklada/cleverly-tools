@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "profit-margin-calculator",
+  seoTitle: "Profit Margin Calculator — Gross, Net & Markup %",
+  metaDescription:
+    "Enter your cost and revenue to get gross margin, net margin and markup percentage, so you can see how much of every dollar you actually keep. Free.",
   title: "Profit Margin Calculator",
   description: "Calculate gross profit margin, net profit margin, and markup percentage for your business instantly. Understand exactly how much of every dollar in revenue you actually keep.",
   shortDescription: "Calculate profit margins for your business — free",

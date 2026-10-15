@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "word-counter",
+  seoTitle: "Word Counter — Count Words, Characters & Sentences",
+  metaDescription:
+    "Paste your text to count words, characters, sentences and paragraphs as you type. Free and instant — useful for essays, articles and post limits.",
   title: "Word Counter",
   description: "Count words, characters, sentences, and paragraphs instantly. Ideal for essays, articles, blog posts, and social media character limits.",
   shortDescription: "Count words, characters & sentences in real-time",

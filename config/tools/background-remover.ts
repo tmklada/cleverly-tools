@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "background-remover",
+  seoTitle: "Background Remover — Free AI Cutout, Nothing Uploaded",
+  metaDescription:
+    "Remove the background from any photo with AI and download a transparent PNG. Free with no sign-up, and it runs in your browser so nothing is uploaded.",
   title: "Background Remover",
   description: "Remove image backgrounds instantly with AI — completely free, no sign-up, no upload. Everything runs in your browser for maximum privacy.",
   shortDescription: "Remove image background with AI — free, instant, private",

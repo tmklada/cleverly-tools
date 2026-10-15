@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "youtube-thumbnail-downloader",
+  seoTitle: "YouTube Thumbnail Downloader — Full HD JPG, Free",
+  metaDescription:
+    "Paste a YouTube link and download its thumbnail as a full-HD JPG in one click. Free and instant, with no sign-up and nothing to install.",
   title: "YouTube Thumbnail Downloader",
   description: "Download YouTube video thumbnails in full HD quality for free. Just paste the video URL and save the thumbnail as a JPG image instantly.",
   shortDescription: "Download YouTube thumbnails in HD — free tool",

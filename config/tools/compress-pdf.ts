@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "compress-pdf",
+  seoTitle: "Compress PDF — Reduce PDF File Size Online Free",
+  metaDescription:
+    "Shrink a PDF so it fits an email or upload limit, without the text turning to mush. Free and instant, with no registration required.",
   title: "Compress PDF",
   description: "Reduce PDF file size without losing quality. Ideal for emailing large documents, uploading to websites, or saving storage space — compress your PDF online for free in seconds.",
   shortDescription: "Reduce PDF file size online for free",

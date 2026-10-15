@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "youtube-video-downloader",
+  seoTitle: "YouTube Video Downloader — HD, 4K & MP3, Free",
+  metaDescription:
+    "Paste a YouTube link and save the video in HD or 4K, or take just the audio as MP3. Free, nothing to install, and it works on phone and desktop.",
   title: "YouTube Video Downloader",
   description: "Download YouTube videos in HD, 4K, and MP3 for free. Paste any YouTube URL and save it instantly — no software needed.",
   shortDescription: "Download YouTube videos in HD & 4K — free",

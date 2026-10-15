@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "merge-pdf",
+  seoTitle: "Merge PDF — Combine PDF Files Online Free",
+  metaDescription:
+    "Upload several PDFs, drag them into the order you want, and download them as a single file. Free and instant, with no registration required.",
   title: "Merge PDF",
   description: "Combine multiple PDF files into a single document in seconds. Upload your PDFs, arrange them in the right order, and download the merged file instantly — no registration required.",
   shortDescription: "Combine multiple PDFs into one file",

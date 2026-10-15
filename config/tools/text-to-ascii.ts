@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "text-to-ascii",
+  seoTitle: "Text to ASCII Art Generator — Banner & Block Letters",
+  metaDescription:
+    "Turn any text into ASCII art in five font styles — block letters, banners and headings for terminals, readmes and posts. Free and instant.",
   title: "Text to ASCII Art Generator",
   description: "Convert any text into ASCII art with five font styles for free online. Create block letters, banner art, and decorative headings for terminals, readmes, and social media posts.",
   shortDescription: "Generate ASCII art text in dozens of font styles",

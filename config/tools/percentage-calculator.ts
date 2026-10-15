@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "percentage-calculator",
+  seoTitle: "Percentage Calculator — % Of, Increase & Decrease",
+  metaDescription:
+    "Work out what percent one number is of another, a percentage increase or decrease, or X% of a number. Free and instant, and it shows the formula used.",
   title: "Percentage Calculator",
   description: "Calculate percentages instantly. Find what percent of a number is, percentage increase/decrease, or what percentage one number is of another.",
   shortDescription: "Calculate percentages, increases & decreases instantly",

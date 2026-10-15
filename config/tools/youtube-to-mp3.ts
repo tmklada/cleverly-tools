@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "youtube-to-mp3",
+  seoTitle: "YouTube to MP3 — Convert & Download Audio Free",
+  metaDescription:
+    "Paste a YouTube link and download the audio as a high-quality MP3 in seconds. Free, with no software to install and no sign-up required.",
   title: "YouTube to MP3 Downloader",
   description: "Convert and download YouTube videos as high-quality MP3 audio files online for free with no software installation. Extract audio from any YouTube video in seconds.",
   shortDescription: "Download YouTube videos as MP3 audio files free",

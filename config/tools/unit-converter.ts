@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "unit-converter",
+  seoTitle: "Unit Converter — Length, Weight, Temperature & More",
+  metaDescription:
+    "Convert length, weight, temperature, time, volume, area, speed and digital storage in one place, metric or imperial. Free, instant, nothing to install.",
   title: "Unit Converter",
   description: "Convert between length, weight, temperature, time, volume, area, speed, and digital storage — all in one place. Supports metric and imperial units with instant results and no installation required.",
   shortDescription: "Convert length, weight, temperature, time & more",

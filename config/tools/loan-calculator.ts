@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "loan-calculator",
+  seoTitle: "Loan Calculator — Monthly Payment & Interest, Free",
+  metaDescription:
+    "Enter the amount, rate and term to see your monthly payment, total interest and full amortization schedule. Works for mortgages, car and personal loans.",
   title: "Loan Calculator",
   description: "Calculate your monthly loan payments, total interest, and amortization schedule. Works for mortgages, car loans, personal loans and more.",
   shortDescription: "Calculate monthly loan payments & total interest",

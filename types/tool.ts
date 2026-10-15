@@ -17,8 +17,17 @@ export interface HowItWorksStep {
 
 export interface ToolConfig {
   slug: string;
+  /** On-page H1. Keep it natural — it is not the search-result title. */
   title: string;
+  /**
+   * The <title> Google shows in search results, written to earn the click.
+   * Used verbatim (no site-name suffix). Falls back to `title` when absent.
+   */
+  seoTitle?: string;
+  /** On-page intro paragraph under the H1. */
   description: string;
+  /** The search-result snippet. Falls back to `description` when absent. */
+  metaDescription?: string;
   shortDescription: string;
   category: string;
   keywords: string[];

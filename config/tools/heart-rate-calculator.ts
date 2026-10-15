@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "heart-rate-calculator",
+  seoTitle: "Heart Rate Zone Calculator — Max HR & Training Zones",
+  metaDescription:
+    "Enter your age to get your maximum heart rate and every training zone, from fat burn to peak performance. Free, instant and no sign-up needed.",
   title: "Heart Rate Zone Calculator",
   description: "Calculate your maximum heart rate and target heart rate zones for fat burning, cardio, and peak performance. Optimize your workouts with personalized heart rate zones.",
   shortDescription: "Find your heart rate zones for optimal workouts",

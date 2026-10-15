@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "ip-address-lookup",
+  seoTitle: "IP Address Lookup — Find Location, ISP & Your Own IP",
+  metaDescription:
+    "Look up any public IP address to see its location, ISP and organization, or check your own IP in one click. Free, instant and no sign-up required.",
   title: "IP Address Lookup",
   description: "Look up any IP address and get detailed information including location, ISP, organization, and geolocation data for free. Find your own IP or look up any public IP address instantly.",
   shortDescription: "Look up location and details for any IP address",

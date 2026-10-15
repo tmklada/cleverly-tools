@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "password-generator",
+  seoTitle: "Password Generator — Strong Random Passwords, Free",
+  metaDescription:
+    "Generate a strong random password with the length and character mix you choose. Free and instant, and it runs in your browser — nothing is sent anywhere.",
   title: "Password Generator",
   description: "Generate strong, random, secure passwords instantly. Choose length, include symbols, numbers, uppercase and lowercase letters.",
   shortDescription: "Generate strong random passwords instantly",

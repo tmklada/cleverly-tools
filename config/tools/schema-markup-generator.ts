@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "schema-markup-generator",
+  seoTitle: "Schema Markup Generator — Free JSON-LD Structured Data",
+  metaDescription:
+    "Build valid JSON-LD structured data and paste it straight into your pages, so search engines can show rich results. Free, instant and no sign-up.",
   title: "Schema Markup Generator",
   description: "Generate structured data schema markup in JSON-LD format for your website. Help search engines understand your content and earn rich snippets in search results.",
   shortDescription: "Generate JSON-LD schema markup — free SEO tool",

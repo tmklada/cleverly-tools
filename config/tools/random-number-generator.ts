@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "random-number-generator",
+  seoTitle: "Random Number Generator — Pick a Number in Any Range",
+  metaDescription:
+    "Generate a random number between any two values in one click. Free and instant — for games, draws, sampling and anything that needs a fair pick.",
   title: "Random Number Generator",
   description: "Generate truly random numbers within any range instantly. Ideal for games, lotteries, statistical sampling, and any situation requiring unbiased random selection.",
   shortDescription: "Generate random numbers in any range — free",

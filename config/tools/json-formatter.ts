@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "json-formatter",
+  seoTitle: "JSON Formatter & Validator — Beautify, Minify, Free",
+  metaDescription:
+    "Paste JSON to format it readably, minify it, or find exactly where it breaks. Free and instant, with no sign-up and nothing to install.",
   title: "JSON Formatter & Validator",
   description: "Format, beautify and validate JSON online for free. Minify JSON, fix errors, and make it human-readable instantly.",
   shortDescription: "Format, validate & minify JSON instantly",

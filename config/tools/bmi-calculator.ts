@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "bmi-calculator",
+  seoTitle: "BMI Calculator — Check Your Body Mass Index Free",
+  metaDescription:
+    "Enter your height and weight to get your BMI instantly and see which range it falls into: underweight, normal, overweight or obese. Free, no sign-up.",
   title: "BMI Calculator",
   description: "Calculate your Body Mass Index (BMI) instantly. Enter your height and weight to find out if you're underweight, normal, overweight or obese.",
   shortDescription: "Calculate your BMI — free body mass index tool",

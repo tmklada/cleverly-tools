@@ -40,24 +40,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (arTools[tool.slug]) languages.ar = `${SITE_URL}/ar/tools/${tool.slug}`;
   if (esTools[tool.slug]) languages.es = `${SITE_URL}/es/tools/${tool.slug}`;
 
+  // seoTitle is written for the search result and already carries its own
+  // value proposition, so it bypasses the "| cleverly.tools" layout template.
+  const title = tool.seoTitle ? { absolute: tool.seoTitle } : tool.title;
+  const description = tool.metaDescription ?? tool.description;
+
   return {
-    title: tool.title,
-    description: tool.description,
+    title,
+    description,
     keywords: tool.keywords,
     alternates: {
       canonical: `${SITE_URL}/tools/${tool.slug}`,
       languages,
     },
     openGraph: {
-      title: `${tool.title} | ${SITE_NAME}`,
-      description: tool.description,
+      title: tool.seoTitle ?? `${tool.title} | ${SITE_NAME}`,
+      description,
       url: `${SITE_URL}/tools/${tool.slug}`,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tool.title} | ${SITE_NAME}`,
-      description: tool.description,
+      title: tool.seoTitle ?? `${tool.title} | ${SITE_NAME}`,
+      description,
     },
   };
 }

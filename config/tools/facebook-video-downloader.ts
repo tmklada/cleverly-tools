@@ -2,6 +2,9 @@ import type { ToolConfig } from "@/types/tool";
 
 const config: ToolConfig = {
   slug: "facebook-video-downloader",
+  seoTitle: "Facebook Video Downloader — Save FB Videos in HD, Free",
+  metaDescription:
+    "Paste a Facebook video link and save it to your device in HD. Free, no app and no registration — works on iPhone, Android and desktop.",
   title: "Facebook Video Downloader",
   description:
     "Download Facebook videos in HD quality for free. Paste any Facebook video URL and save it to your device instantly — no registration required.",

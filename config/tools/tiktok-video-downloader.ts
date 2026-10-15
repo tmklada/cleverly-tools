@@ -2,6 +2,9 @@ import type { ToolConfig } from "@/types/tool";
 
 const config: ToolConfig = {
   slug: "tiktok-video-downloader",
+  seoTitle: "TikTok Video Downloader — No Watermark, HD MP4, Free",
+  metaDescription:
+    "Paste a TikTok link and save the video without the watermark, in HD MP4. Free, no app and no sign-up — works on iPhone, Android and desktop.",
   title: "TikTok Video Downloader",
   description:
     "Download TikTok videos without watermark for free. Paste any TikTok video URL and save it in HD quality — no app needed.",

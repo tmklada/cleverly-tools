@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "list-randomizer",
+  seoTitle: "List Randomizer — Shuffle Any List Into Random Order",
+  metaDescription:
+    "Paste names, tasks or any list and shuffle it into a random order in one click. Free and instant — handy for fair draws, teams and running orders.",
   title: "List Randomizer",
   description: "Shuffle any list of items into a random order instantly. Enter names, tasks, or any items and get a randomized list perfect for fair assignments or ordering.",
   shortDescription: "Shuffle any list into random order — free",

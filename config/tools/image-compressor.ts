@@ -1,6 +1,9 @@
 import type { ToolConfig } from "@/types/tool";
 const config: ToolConfig = {
   slug: "image-compressor",
+  seoTitle: "Image Compressor — Shrink JPG, PNG & WebP Free",
+  metaDescription:
+    "Compress JPG, PNG and WebP images by up to 80% with no visible quality loss, for faster pages and smaller uploads. Free, instant and no sign-up.",
   title: "Image Compressor",
   description: "Compress JPG, PNG, and WebP images online without losing visible quality. Reduce file size up to 80% for faster websites, smaller uploads, and lower storage costs — completely free.",
   shortDescription: "Compress images without losing quality",
